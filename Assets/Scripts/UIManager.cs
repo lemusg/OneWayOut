@@ -101,6 +101,5 @@ public class UIManager : MonoBehaviour
         fadeIn.SetActive(true);
         yield return new WaitForSeconds(6f);
         fadeIn.SetActive(false);
-        player.GetComponent<PlayerMovement>().canMove = true;
     }
 }

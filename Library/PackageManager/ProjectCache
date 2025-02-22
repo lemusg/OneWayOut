@@ -5,16 +5,16 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638756816262243459
-    m_Hash: 1406902011
+      ticks: 638757554280040123
+    m_Hash: 3725847042
   m_LockFileStatus:
     m_FilePath: C:/Users/gabri/Documents/GitHub/OneWayOut/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638756816262634094
-    m_Hash: 266852741
+      ticks: 638757554280050125
+    m_Hash: 776913302
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_LocalPackages:

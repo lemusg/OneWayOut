@@ -4,50 +4,22 @@ using UnityEngine;
 
 public class boxPush : MonoBehaviour
 {
-    public Rigidbody2D rb;
-    public float pushForce = 2f;
-    public bool isPushed = false;
-    public bool isPushable = true;
-    public PolygonCollider2D boundaryCollider;
+    private Rigidbody rb;
+    public float pushForce = 2.5f;
 
     void Start()
     {
-        rb = GetComponent<Rigidbody2D>();
-
-        if(isPushable && rb != null)
-        {
-            rb.gravityScale = 0f;
-            rb.drag = 10f;  // Increase drag for more controlled movement
-            rb.mass = 2f;  // Make it a bit heavier
-            rb.constraints = RigidbodyConstraints2D.FreezeRotation;  // Only freeze rotation
-        }
+        rb = GetComponent<Rigidbody>();
     }
 
-    void OnCollisionStay2D(Collision2D collision)
+    void OnCollisionStay(Collision collision)
     {
-        if (collision.gameObject.CompareTag("Player") && isPushable)
+        if (collision.gameObject.CompareTag("Player"))
         {
-            Vector2 pushDirection = (transform.position - collision.transform.position).normalized;
-            
-            // Calculate potential new position
-            Vector2 potentialNewPosition = (Vector2)transform.position + (pushDirection * pushForce * Time.deltaTime);
-            
-            // Only apply force if new position would be within boundary
-            if (boundaryCollider.OverlapPoint(potentialNewPosition))
-            {
-                rb.AddForce(pushDirection * pushForce, ForceMode2D.Force);
-                isPushed = true;
-            }
-        }
-        else
-        {
-            isPushed = false;
+            Vector3 pushDirection = collision.contacts[0].point - transform.position;
+            pushDirection = -pushDirection.normalized;
+            pushDirection.y = 0; // Prevent vertical pushing
+            rb.AddForce(pushDirection * pushForce, ForceMode.Force);
         }
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-
-    }    
 }
