@@ -11,4 +11,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Main Menu.unity
     guid: a5ffd7ab24da108428d1e995887b376e
+  - enabled: 1
+    path: Assets/Scenes/LevelOne/RoomA.unity
+    guid: ccde64de80073fc44a0b07872cb9ccc4
+  - enabled: 1
+    path: Assets/Scenes/LevelOne/RoomB.unity
+    guid: de7547b69c16cd24abc734b554d48931
+  - enabled: 1
+    path: Assets/Scenes/LevelOne/RoomF.unity
+    guid: c9e13182f8075b54a9ef575bd92537c2
   m_configObjects: {}
