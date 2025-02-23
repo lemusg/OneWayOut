@@ -1,27 +1,56 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
+using System.Linq;
 
 public class boxTrigger : MonoBehaviour
 {
+    public static int boxesInTrigger = 0;
+    public Color triggerColor;
+    public GameObject winText;
+
+    void Start()
+    {
+        triggerColor = GetComponent<Renderer>().material.color;
+    }
+
+    private bool ColorMatch(Color boxColor, Color triggerColor)
+    {
+        return Mathf.Abs(boxColor.r - triggerColor.r) < 0.01f &&
+               Mathf.Abs(boxColor.g - triggerColor.g) < 0.01f &&
+               Mathf.Abs(boxColor.b - triggerColor.b) < 0.01f;
+    }
+
     private void OnTriggerEnter(Collider other)
     {
-        // Check if the colliding object is a box
         if (other.CompareTag("Box"))
         {
-            // Trigger the event when a box enters the trigger area
-            Debug.Log("Box entered trigger area");
-            // You can add your custom event logic here
+            Color boxColor = other.GetComponent<Renderer>().material.color;
+            if (ColorMatch(boxColor, triggerColor))
+            {
+                boxesInTrigger++;
+            }
         }
     }
 
     private void OnTriggerExit(Collider other)
     {
-        // Check if the box leaves the trigger area
         if (other.CompareTag("Box"))
         {
-            Debug.Log("Box left trigger area");
-            // You can add your custom event logic here when the box leaves
+            Color boxColor = other.GetComponent<Renderer>().material.color;
+            if (ColorMatch(boxColor, triggerColor))
+            {
+                boxesInTrigger--;
+            }
+        }
+    }
+
+    private void Update()
+    {
+        if (boxesInTrigger == 3)
+        {
+            winText.SetActive(true);
         }
     }
 }

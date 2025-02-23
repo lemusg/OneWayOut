@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 4737159998350252751}
   - component: {fileID: 8974841358762220823}
   m_Layer: 0
-  m_Name: Door 1
+  m_Name: DoorA.B
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -120,6 +120,100 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   LevelName: RoomB
   LevelEntryPoint: 1
+--- !u!1 &539898765600214508
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 659047005956156085}
+  - component: {fileID: 8006287699512297116}
+  m_Layer: 0
+  m_Name: Directional Light
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &659047005956156085
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 539898765600214508}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.7071068, y: 0.7071068, z: 0.000000029802322, w: 0.000000059604645}
+  m_LocalPosition: {x: 0, y: 0, z: 24}
+  m_LocalScale: {x: 0.009999998, y: 0.01, z: 0.19999996}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 6754615996601034713}
+  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!108 &8006287699512297116
+Light:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 539898765600214508}
+  m_Enabled: 1
+  serializedVersion: 10
+  m_Type: 1
+  m_Shape: 0
+  m_Color: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
+  m_Intensity: 1
+  m_Range: 10
+  m_SpotAngle: 30
+  m_InnerSpotAngle: 21.80208
+  m_CookieSize: 10
+  m_Shadows:
+    m_Type: 2
+    m_Resolution: -1
+    m_CustomResolution: -1
+    m_Strength: 1
+    m_Bias: 0.05
+    m_NormalBias: 0.4
+    m_NearPlane: 0.2
+    m_CullingMatrixOverride:
+      e00: 1
+      e01: 0
+      e02: 0
+      e03: 0
+      e10: 0
+      e11: 1
+      e12: 0
+      e13: 0
+      e20: 0
+      e21: 0
+      e22: 1
+      e23: 0
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
+    m_UseCullingMatrixOverride: 0
+  m_Cookie: {fileID: 0}
+  m_DrawHalo: 0
+  m_Flare: {fileID: 0}
+  m_RenderMode: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RenderingLayerMask: 1
+  m_Lightmapping: 4
+  m_LightShadowCasterMode: 0
+  m_AreaSize: {x: 1, y: 1}
+  m_BounceIntensity: 1
+  m_ColorTemperature: 6570
+  m_UseColorTemperature: 0
+  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_UseBoundingSphereOverride: 0
+  m_UseViewFrustumForShadowCasterCull: 1
+  m_ShadowRadius: 0
+  m_ShadowAngle: 0
 --- !u!1 &1487041789138622528
 GameObject:
   m_ObjectHideFlags: 0
@@ -130,7 +224,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3458168597444105865}
   m_Layer: 0
-  m_Name: Entry 1
+  m_Name: EntryA.B
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -654,7 +748,7 @@ GameObject:
   m_Component:
   - component: {fileID: 130591438645421394}
   m_Layer: 0
-  m_Name: Entry 2
+  m_Name: EntryA.F
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1001,7 +1095,7 @@ GameObject:
   - component: {fileID: 771713505992135567}
   - component: {fileID: 7141113198623479890}
   m_Layer: 0
-  m_Name: Door 2
+  m_Name: DoorA.F
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1106,7 +1200,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   LevelName: RoomF
-  LevelEntryPoint: 2
+  LevelEntryPoint: 1
 --- !u!1001 &6500820766658789426
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1208,6 +1302,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: 1fc0f12331551424d9573de17ff1819f, type: 3}
       insertIndex: -1
       addedObject: {fileID: 5481372975081668556}
+    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: 1fc0f12331551424d9573de17ff1819f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 659047005956156085}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1fc0f12331551424d9573de17ff1819f, type: 3}
 --- !u!4 &6754615996601034713 stripped

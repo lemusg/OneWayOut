@@ -12,18 +12,15 @@ public class UIManager : MonoBehaviour
     public GameObject gameUI;
     public GameObject menuUI;
     public GameObject clues;
-    public GameObject fadeIn;
-    public GameObject fadeOut;
     public TextMeshProUGUI dialogue;
     private float typingSpeed = 0.05f;
     private bool isTyping = false;
     private Coroutine typingCoroutine;
     private string fullText;
-    public GameObject player;
+    
     // Start is called before the first frame update
     void Start()
     {
-        StartCoroutine(FadeIn());
         gameUI.SetActive(true);
         menuUI.SetActive(false);
         menuButton.onClick.AddListener(Menu);
@@ -95,11 +92,5 @@ public class UIManager : MonoBehaviour
             dialogue.text = fullText;  // Show full text immediately
             isTyping = false;
         }
-    }
-
-    private IEnumerator FadeIn() {
-        fadeIn.SetActive(true);
-        yield return new WaitForSeconds(6f);
-        fadeIn.SetActive(false);
     }
 }

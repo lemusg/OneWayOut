@@ -23,7 +23,10 @@ public class Door : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         //TODO: When the player enter's the door's trigger, set the destination level/entry point ID in the manager, then load the level
-        PersistantGameManager.SetTargetLevel(LevelName, LevelEntryPoint);
-        SceneManager.LoadScene(LevelName);
+        if (other.gameObject.CompareTag("Player"))
+        {
+            PersistantGameManager.SetTargetLevel(LevelName, LevelEntryPoint);
+            SceneManager.LoadScene(LevelName);
+        }
     }
 }

@@ -29,5 +29,4 @@ public class PersistantGameManager : MonoBehaviour
         LevelName = level;
         LevelEntryPoint = entrypoint;
     }
-
 }

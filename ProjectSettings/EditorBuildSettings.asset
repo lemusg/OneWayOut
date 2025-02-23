@@ -18,6 +18,24 @@ EditorBuildSettings:
     path: Assets/Scenes/LevelOne/RoomB.unity
     guid: de7547b69c16cd24abc734b554d48931
   - enabled: 1
+    path: Assets/Scenes/LevelOne/RoomC.unity
+    guid: 793590b3a3f07544aa261786ff40758d
+  - enabled: 1
+    path: Assets/Scenes/LevelOne/RoomD.unity
+    guid: 8824d2926934a134c9580d6c2154965f
+  - enabled: 1
+    path: Assets/Scenes/LevelOne/RoomE.unity
+    guid: 5d359d58bc7d15b499017c030f059cf0
+  - enabled: 1
     path: Assets/Scenes/LevelOne/RoomF.unity
     guid: c9e13182f8075b54a9ef575bd92537c2
+  - enabled: 1
+    path: Assets/Scenes/LevelOne/RoomG.unity
+    guid: bfa083e5a9c057c4f936454d80676d2f
+  - enabled: 1
+    path: Assets/Scenes/LevelOne/RoomH.unity
+    guid: bf87d787395b80b46bb67b095e3a8692
+  - enabled: 1
+    path: Assets/Scenes/LevelOne/RoomI.unity
+    guid: 95de376c38c11d14b82cad7563256beb
   m_configObjects: {}

@@ -25,6 +25,7 @@ public class LevelNavigationManager : MonoBehaviour
     {
         GameObject player = GameObject.Find("Player");
         int entryPointId = PersistantGameManager.LevelEntryPoint;
-        player.transform.position = EntryPoints[entryPointId].transform.position;
+        Vector3 entryPointPosition = EntryPoints[entryPointId - 1].transform.position;
+        player.transform.position = new Vector3(entryPointPosition.x, player.transform.position.y, entryPointPosition.z);
     }
 }

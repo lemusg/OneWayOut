@@ -26,7 +26,7 @@ public class Interactable : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.E) && !dialogueBox.activeSelf)
             {
                 dialogueBox.SetActive(true);
-                uiManager.ShowDialogue("Test Dialogue Scroll");
+                uiManager.ShowDialogue("Push me onto the matching color");
                 interactIcon.SetActive(false);
                 interactText.text = "";
                 skipText.text = "Left Click to Skip";
@@ -35,17 +35,15 @@ public class Interactable : MonoBehaviour
 
     }
 
-    void OnTriggerEnter2D(Collider2D collision)
+    void OnTriggerEnter(Collider other)
     {
-        Debug.Log("Interactable");
         interactIcon.SetActive(true);
         interactText.text = "Interact";
         isInteractable = true;
     }
 
-    void OnTriggerExit2D(Collider2D collision)
+    void OnTriggerExit(Collider other)
     {
-        Debug.Log("Not Interactable");
         dialogueBox.SetActive(false);
         interactIcon.SetActive(false);
         uiManager.SkipTyping();
