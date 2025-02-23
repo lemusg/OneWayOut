@@ -48,6 +48,7 @@ public class Switch : MonoBehaviour
             }
         }
     }
+    
 
     void OnTriggerEnter(Collider other)
     {
