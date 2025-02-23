@@ -449,7 +449,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   triggerColor: {r: 0, g: 0, b: 0, a: 0}
-  winText: {fileID: 1667360456}
+  door: {fileID: 1735622459}
 --- !u!64 &883400130
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -570,7 +570,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   triggerColor: {r: 0, g: 0, b: 0, a: 0}
-  winText: {fileID: 1667360456}
+  door: {fileID: 1735622459}
 --- !u!64 &1497994135
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -1013,6 +1013,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1667360456}
   m_CullTransparentMesh: 1
+--- !u!1 &1735622459 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 336370712304296771, guid: 0d7d68eb7c538944580b4008d630767a, type: 3}
+  m_PrefabInstance: {fileID: 1751426770}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1750412446
 GameObject:
   m_ObjectHideFlags: 0
@@ -1169,6 +1174,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 336370712304296771, guid: 0d7d68eb7c538944580b4008d630767a, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6266450857255189859, guid: 0d7d68eb7c538944580b4008d630767a, type: 3}
       propertyPath: m_Name
       value: RoomB
@@ -1211,6 +1220,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6754615996601034713, guid: 0d7d68eb7c538944580b4008d630767a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6962755191036947481, guid: 0d7d68eb7c538944580b4008d630767a, type: 3}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7141113198623479890, guid: 0d7d68eb7c538944580b4008d630767a, type: 3}
@@ -1267,7 +1280,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   triggerColor: {r: 0, g: 0, b: 0, a: 0}
-  winText: {fileID: 1667360456}
+  door: {fileID: 1735622459}
 --- !u!64 &1822442098
 MeshCollider:
   m_ObjectHideFlags: 0

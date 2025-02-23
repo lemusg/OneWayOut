@@ -8,7 +8,7 @@ public class boxTrigger : MonoBehaviour
 {
     public static int boxesInTrigger = 0;
     public Color triggerColor;
-    public GameObject winText;
+    public GameObject door;
 
     void Start()
     {
@@ -50,7 +50,7 @@ public class boxTrigger : MonoBehaviour
     {
         if (boxesInTrigger == 3)
         {
-            winText.SetActive(true);
+            door.SetActive(true);
         }
     }
 }

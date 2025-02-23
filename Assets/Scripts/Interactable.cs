@@ -32,7 +32,6 @@ public class Interactable : MonoBehaviour
                 skipText.text = "Left Click to Skip";
             }
         }
-
     }
 
     void OnTriggerEnter(Collider other)
