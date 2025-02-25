@@ -26,5 +26,18 @@ public class CameraFollow : MonoBehaviour
             // Update the camera position
             transform.position = smoothedPosition;
         }
+		
+		
+		if (Input.GetAxis("Mouse ScrollWheel") != 0f && Camera.main.orthographicSize >= 30f)
+        {
+            Camera.main.orthographicSize -= 30 * Input.GetAxis("Mouse ScrollWheel");
+			
+			if (Camera.main.orthographicSize < 30f)
+			{
+				Camera.main.orthographicSize = 30f;
+			}
+        }
+		
+		// TODO: Add an outer limit for zoom; perhaps this scales depending on room size
     }
 }
