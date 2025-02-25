@@ -30,6 +30,8 @@ public class boxTrigger : MonoBehaviour
             if (ColorMatch(boxColor, triggerColor))
             {
                 boxesInTrigger++;
+				
+				gameObject.transform.GetChild(0).GetComponent<Light>().enabled = true;
             }
         }
     }
