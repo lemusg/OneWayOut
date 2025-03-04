@@ -14,11 +14,18 @@ public class PlayerController : MonoBehaviour
     private Rigidbody rb;
     private Vector3 isoForward = new Vector3(1f, 0f, 1f).normalized;
     private Vector3 isoRight = new Vector3(1f, 0f, -1f).normalized;
+    
+    private AudioSource audioSource;
+    public AudioClip footstepSound;
+    private float footstepTimer = 0f;
+    private float footstepInterval = 0.5f; // Adjust this value to change how often the footstep plays
 
     void Start()
     {
         rb = GetComponent<Rigidbody>();
         spriteRenderer = transform.GetChild(0).GetComponent<SpriteRenderer>();
+        
+        audioSource = gameObject.AddComponent<AudioSource>();
     }
 
     void Update()
@@ -45,6 +52,24 @@ public class PlayerController : MonoBehaviour
         {
             timer = 0f;
             spriteRenderer.sprite = (spriteRenderer.sprite == sprite1) ? sprite2 : sprite1;
+        }
+
+        // Add this footstep sound logic
+        if (direction.magnitude > 0.1f) // If the player is moving
+        {
+            footstepTimer += Time.deltaTime;
+            if (footstepTimer >= footstepInterval)
+            {
+                footstepTimer = 0f;
+                if (footstepSound != null)
+                {
+                    audioSource.PlayOneShot(footstepSound);
+                }
+            }
+        }
+        else
+        {
+            footstepTimer = footstepInterval; // Reset timer when not moving
         }
     }
 }

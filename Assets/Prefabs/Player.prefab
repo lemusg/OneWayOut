@@ -2081,6 +2081,7 @@ MonoBehaviour:
   sprite1: {fileID: 21300000, guid: 2eb5dbaed1ab1cf47836d0684dec176b, type: 3}
   sprite2: {fileID: 21300000, guid: d3b59372cbc49f744a3c1758ab3602f8, type: 3}
   moveSpeed: 50
+  footstepSound: {fileID: 8300000, guid: 1f0199a4c6005ec4abbb302f71bc036d, type: 3}
 --- !u!1 &6187864771026471203
 GameObject:
   m_ObjectHideFlags: 0
