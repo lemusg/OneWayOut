@@ -3,12 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class UIManager : MonoBehaviour
 {
     public Button menuButton;
     public Button returnMenu;
     public Button cluesButton;
+    public Button exitButton;
     public GameObject gameUI;
     public GameObject menuUI;
     public GameObject clues;
@@ -18,18 +20,23 @@ public class UIManager : MonoBehaviour
     private Coroutine typingCoroutine;
     private string fullText;
     public Slider soundSlider;
-    //public Button exitButton;
+    
+    [Header("Audio")]
+    public AudioClip buttonClickSound;
+    private AudioSource audioSource;
     
     // Start is called before the first frame update
     void Start()
     {
+        audioSource = gameObject.AddComponent<AudioSource>();
+        
         gameUI.SetActive(true);
         menuUI.SetActive(false);
         menuButton.onClick.AddListener(Menu);
         returnMenu.onClick.AddListener(ReturnMenu);
         cluesButton.onClick.AddListener(ShowClues);
+        exitButton.onClick.AddListener(ExitToMainMenu);
         soundSlider.onValueChanged.AddListener(HandleVolumeChange);
-        //exitButton.onClick.AddListener(ExitToMainMenu);
         soundSlider.value = AudioListener.volume;
     }
 
@@ -103,9 +110,20 @@ public class UIManager : MonoBehaviour
     {
         AudioListener.volume = value;
     }
-    
-    //void ExitToMainMenu()
-    //{
-    //    UnityEngine.SceneManagement.SceneManager.LoadScene("MainMenu");
-    //}
+
+    void ExitToMainMenu()
+    {
+        if (buttonClickSound != null)
+        {
+            audioSource.PlayOneShot(buttonClickSound);
+        }
+        
+        // Stop the background music
+        if (PersistantGameManager.Instance != null)
+        {
+            PersistantGameManager.Instance.StopMusic();
+        }
+        
+        SceneManager.LoadScene("Scenes/Main Menu");
+    }
 }

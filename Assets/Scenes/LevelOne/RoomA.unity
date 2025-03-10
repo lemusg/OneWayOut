@@ -151,7 +151,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 170a84c44e84a8f41ace6262ef25249f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  backgroundMusic: {fileID: 8300000, guid: 6b08ccefe2c8c5e4fb69ec0c3d5d92df, type: 3}
+  backgroundMusic: {fileID: 8300000, guid: 658cef2307cbb4960b9de6eb248cf613, type: 3}
 --- !u!4 &243210797
 Transform:
   m_ObjectHideFlags: 0

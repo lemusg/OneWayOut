@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 
 //Idea: This script has static data/methods that will keep track of some data between scenes.
@@ -58,6 +59,42 @@ public class PersistantGameManager : MonoBehaviour
         if (audioSource != null)
         {
             audioSource.volume = volume;
+        }
+    }
+
+    void OnEnable()
+    {
+        SceneManager.sceneLoaded += OnSceneLoaded;
+    }
+
+    void OnDisable()
+    {
+        SceneManager.sceneLoaded -= OnSceneLoaded;
+    }
+
+    void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        // Play music when entering game scenes, but not the main menu
+        if (scene.name != "Main Menu")
+        {
+            PlayMusic();
+        }
+    }
+
+    public void StopMusic()
+    {
+        if (audioSource != null)
+        {
+            audioSource.Stop();
+        }
+    }
+
+    public void PlayMusic()
+    {
+        if (audioSource != null && !audioSource.isPlaying)
+        {
+            audioSource.clip = backgroundMusic;
+            audioSource.Play();
         }
     }
 }
