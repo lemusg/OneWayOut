@@ -17,6 +17,8 @@ public class UIManager : MonoBehaviour
     private bool isTyping = false;
     private Coroutine typingCoroutine;
     private string fullText;
+    public Slider soundSlider;
+    //public Button exitButton;
     
     // Start is called before the first frame update
     void Start()
@@ -26,6 +28,9 @@ public class UIManager : MonoBehaviour
         menuButton.onClick.AddListener(Menu);
         returnMenu.onClick.AddListener(ReturnMenu);
         cluesButton.onClick.AddListener(ShowClues);
+        soundSlider.onValueChanged.AddListener(HandleVolumeChange);
+        //exitButton.onClick.AddListener(ExitToMainMenu);
+        soundSlider.value = AudioListener.volume;
     }
 
     // Update is called once per frame
@@ -93,4 +98,14 @@ public class UIManager : MonoBehaviour
             isTyping = false;
         }
     }
+
+    void HandleVolumeChange(float value)
+    {
+        AudioListener.volume = value;
+    }
+    
+    //void ExitToMainMenu()
+    //{
+    //    UnityEngine.SceneManagement.SceneManager.LoadScene("MainMenu");
+    //}
 }

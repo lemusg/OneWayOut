@@ -14,15 +14,27 @@ namespace UnityEngine.UI {
         void Start()
         {
             sound.minValue = 0;
-            sound.maxValue = 100;
-            sound.wholeNumbers = true;
-            sound.value = 100;
+            sound.maxValue = 1;
+            sound.wholeNumbers = false;
+            sound.value = 1;
+            
+            // Add listener for value changes
+            sound.onValueChanged.AddListener(OnVolumeChanged);
+        }
+
+        void OnVolumeChanged(float value)
+        {
+            soundPercent.text = ((int)(sound.value*100)) + "%";
+            // Convert slider value (0-100) to volume range (0-1)
+            float volume = value;
+            PersistantGameManager.Instance.SetMusicVolume(volume);
         }
 
         // Update is called once per frame
         void Update()
         {
-            soundPercent.text = sound.value + "%";
+            soundPercent.text = ((int)(sound.value*100)) + "%";
         }
     }
 }
+

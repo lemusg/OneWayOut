@@ -4,10 +4,16 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    private float timer = 0f;
+    private float animationTimer = 0f;
+    private int currentFrame = 0;
     private SpriteRenderer spriteRenderer;
-    public Sprite sprite1;
-    public Sprite sprite2;
+    
+    // Separate arrays for different animation states
+    public Sprite[] idleSprites;    // Array for idle animation frames
+    public Sprite[] walkingSprites; // Array for walking animation frames
+    
+    public float animationFrameRate = 0.1f;
+    private bool isMoving = false;
 
     public float moveSpeed = 3f;
     
@@ -33,26 +39,43 @@ public class PlayerController : MonoBehaviour
         float x = Input.GetAxisRaw("Horizontal");
         float z = Input.GetAxisRaw("Vertical");
 
-        // Convert input to isometric direction
         Vector3 direction = isoRight * x + isoForward * z;
         Vector3 velocity = direction.normalized * moveSpeed;
         rb.velocity = velocity;
 
-        if (x!= 0)
+        // Determine if character is moving
+        isMoving = direction.magnitude > 0.1f;
+
+        // Handle sprite flipping instead of using separate left/right sprites
+        if (x != 0)
         {
             spriteRenderer.flipX = x < 0;
         }
 
-        Vector3 spritePosition = transform.position;
-        spritePosition.y += .3f;
-        transform.GetChild(0).position = spritePosition;
-
-        timer += Time.deltaTime;
-        if (timer >= 1f)
+        // Animation state machine
+        animationTimer += Time.deltaTime;
+        if (animationTimer >= animationFrameRate)
         {
-            timer = 0f;
-            spriteRenderer.sprite = (spriteRenderer.sprite == sprite1) ? sprite2 : sprite1;
+            animationTimer = 0f;
+            
+            if (isMoving)
+            {
+                // Play walking animation
+                currentFrame = (currentFrame + 1) % walkingSprites.Length;
+                spriteRenderer.sprite = walkingSprites[currentFrame];
+            }
+            else
+            {
+                // Play idle animation
+                currentFrame = (currentFrame + 1) % idleSprites.Length;
+                spriteRenderer.sprite = idleSprites[currentFrame];
+            }
         }
+
+        // Adjust these values as needed
+        Vector3 spritePosition = transform.position;
+        spritePosition.y += 1f; // Increased from 0.3f to 1f
+        transform.GetChild(0).position = spritePosition;
 
         // Add this footstep sound logic
         if (direction.magnitude > 0.1f) // If the player is moving

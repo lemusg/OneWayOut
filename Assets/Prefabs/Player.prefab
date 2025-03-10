@@ -2078,8 +2078,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 151f2b4659774ab41b3e8e17bb204ab1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sprite1: {fileID: 21300000, guid: 2eb5dbaed1ab1cf47836d0684dec176b, type: 3}
-  sprite2: {fileID: 21300000, guid: d3b59372cbc49f744a3c1758ab3602f8, type: 3}
+  walkingSprites: []
+  animationFrameRate: 0.1
   moveSpeed: 50
   footstepSound: {fileID: 8300000, guid: 1f0199a4c6005ec4abbb302f71bc036d, type: 3}
 --- !u!1 &6187864771026471203
@@ -2212,6 +2212,7 @@ MonoBehaviour:
   menuUI: {fileID: 3088550771720404737}
   clues: {fileID: 5549448955033908514}
   dialogue: {fileID: 896139803634900486}
+  soundSlider: {fileID: 944131192102574600}
 --- !u!1 &6552430430169556403
 GameObject:
   m_ObjectHideFlags: 0
