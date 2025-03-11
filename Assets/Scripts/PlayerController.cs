@@ -38,7 +38,6 @@ public class PlayerController : MonoBehaviour
     {
         float x = Input.GetAxisRaw("Horizontal");
         float z = Input.GetAxisRaw("Vertical");
-
         Vector3 direction = isoRight * x + isoForward * z;
         Vector3 velocity = direction.normalized * moveSpeed;
         rb.velocity = velocity;

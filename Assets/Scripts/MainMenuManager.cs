@@ -6,13 +6,14 @@ using UnityEngine.SceneManagement;
 
 public class Title : MonoBehaviour
 {
-    public Image titleImage;
+    public GameObject title;
     public GameObject fadeIn;
     public GameObject fadeOut;
     public bool fadeDone;
     public Button button;
     public Sprite buttonImage1;
     public Sprite buttonImage2;
+    public Button quit;
     
     [Header("Audio")]
     public AudioClip backgroundMusic;  // The music clip to play
@@ -26,8 +27,10 @@ public class Title : MonoBehaviour
     {
         StartCoroutine(FadeIn());
         button.interactable = false;
+        quit.interactable = false;
         StartCoroutine(Animation());
         button.onClick.AddListener(OnButtonClick);
+        quit.onClick.AddListener(Quit);
 
         // Setup and play background music
         audioSource = gameObject.AddComponent<AudioSource>();
@@ -46,6 +49,7 @@ public class Title : MonoBehaviour
         if (fadeDone)
         {
             button.interactable = true;
+            quit.interactable = true;
         }
     }
 
@@ -55,12 +59,21 @@ public class Title : MonoBehaviour
         {
             audioSource.PlayOneShot(buttonClickSound);
         }
-        FadeOut();
+        FadeOut(false);
     }
 
-    private void FadeOut()
+    private void Quit()
     {
-        StartCoroutine(FadeOutRoutine());
+        if (buttonClickSound != null)
+        {
+            audioSource.PlayOneShot(buttonClickSound);
+        }
+        FadeOut(true);
+    }
+
+    private void FadeOut(bool isQuit)
+    {
+        StartCoroutine(FadeOutRoutine(isQuit));
     }
 
     private IEnumerator Animation()
@@ -68,10 +81,46 @@ public class Title : MonoBehaviour
         while (true)
         {
             button.image.sprite = buttonImage2;
+            button.transform.localScale = new Vector3(4f, 4f, 4f);
             yield return new WaitForSeconds(1f);
             button.image.sprite = buttonImage1;
+            button.transform.localScale = new Vector3(3f, 3f, 3f);
             yield return new WaitForSeconds(1f);
         }
+    }
+
+    private IEnumerator TitleAnimation()
+    {
+        Vector3 startPos = title.transform.position + Vector3.up * 1000f;
+        Vector3 targetPos = title.transform.position;
+        title.transform.position = startPos;
+        title.SetActive(true);
+        float duration = 4f;
+        float elapsed = 0f;
+        float shakeAmount = 15f;
+        
+        while (elapsed < duration)
+        {
+            elapsed += Time.deltaTime;
+            float t = elapsed / duration;
+            
+            Vector3 currentPos = Vector3.Lerp(startPos, targetPos, t);
+            
+            if (t < 3f)
+            {
+                currentPos += new Vector3(
+                    Random.Range(-shakeAmount, shakeAmount),
+                    Random.Range(-shakeAmount, shakeAmount),
+                    0
+                ) * (1 - t);
+            }
+            
+            title.transform.position = currentPos;
+            yield return null;
+        }
+        title.transform.position = targetPos;
+        button.gameObject.SetActive(true);
+        quit.gameObject.SetActive(true);
     }
 
     private IEnumerator FadeIn()
@@ -79,13 +128,19 @@ public class Title : MonoBehaviour
         fadeIn.SetActive(true);
         yield return new WaitForSeconds(6f);
         fadeIn.SetActive(false);
+        StartCoroutine(TitleAnimation());
         fadeDone = true;
     }
 
-    private IEnumerator FadeOutRoutine()
+    private IEnumerator FadeOutRoutine(bool isQuit)
     {
         fadeOut.SetActive(true);
         yield return new WaitForSeconds(6f);
-        SceneManager.LoadScene("Scenes/LevelOne/RoomA");
+        if (isQuit)
+        {
+            Application.Quit();
+        } else {
+            SceneManager.LoadScene("Scenes/LevelOne/RoomA");
+        }
     }
 }
