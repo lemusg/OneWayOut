@@ -157,11 +157,12 @@ MonoBehaviour:
   isInteractable: 0
   isLit: 0
   shouldBeLit: 1
-  litMaterial: {fileID: 2100000, guid: 621e34f4c0a4de24084d31ae5af087ef, type: 2}
-  unlitMaterial: {fileID: 2100000, guid: f429b1a87d4e2684683ba10db8eddcc6, type: 2}
+  litMaterial: {fileID: 2100000, guid: 63955e6228feac34aa5077114c0a6e99, type: 2}
+  unlitMaterial: {fileID: 2100000, guid: efbaff4d84b347a4ca58fc3d7d910240, type: 2}
   interactText: {fileID: 1020009013}
   interactIcon: {fileID: 674630344}
-  doorToUnlock: {fileID: 6962755191973806447}
+  doorToUnlock: {fileID: 1881447227}
+  doorSprite: {fileID: 545370745}
 --- !u!65 &299195725
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -203,7 +204,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: efbaff4d84b347a4ca58fc3d7d910240, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -283,11 +284,12 @@ MonoBehaviour:
   isInteractable: 0
   isLit: 0
   shouldBeLit: 1
-  litMaterial: {fileID: 2100000, guid: 621e34f4c0a4de24084d31ae5af087ef, type: 2}
-  unlitMaterial: {fileID: 2100000, guid: f429b1a87d4e2684683ba10db8eddcc6, type: 2}
+  litMaterial: {fileID: 2100000, guid: 63955e6228feac34aa5077114c0a6e99, type: 2}
+  unlitMaterial: {fileID: 2100000, guid: efbaff4d84b347a4ca58fc3d7d910240, type: 2}
   interactText: {fileID: 1020009013}
   interactIcon: {fileID: 674630344}
-  doorToUnlock: {fileID: 3239270061510145894}
+  doorToUnlock: {fileID: 1881447227}
+  doorSprite: {fileID: 545370745}
 --- !u!65 &341291695
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -329,7 +331,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: efbaff4d84b347a4ca58fc3d7d910240, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -409,11 +411,12 @@ MonoBehaviour:
   isInteractable: 0
   isLit: 0
   shouldBeLit: 1
-  litMaterial: {fileID: 2100000, guid: 621e34f4c0a4de24084d31ae5af087ef, type: 2}
-  unlitMaterial: {fileID: 2100000, guid: f429b1a87d4e2684683ba10db8eddcc6, type: 2}
+  litMaterial: {fileID: 2100000, guid: 63955e6228feac34aa5077114c0a6e99, type: 2}
+  unlitMaterial: {fileID: 2100000, guid: efbaff4d84b347a4ca58fc3d7d910240, type: 2}
   interactText: {fileID: 1020009013}
   interactIcon: {fileID: 674630344}
-  doorToUnlock: {fileID: 6962755191973806447}
+  doorToUnlock: {fileID: 1881447227}
+  doorSprite: {fileID: 545370745}
 --- !u!65 &376054052
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -455,7 +458,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: efbaff4d84b347a4ca58fc3d7d910240, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -535,11 +538,12 @@ MonoBehaviour:
   isInteractable: 0
   isLit: 0
   shouldBeLit: 0
-  litMaterial: {fileID: 2100000, guid: 621e34f4c0a4de24084d31ae5af087ef, type: 2}
-  unlitMaterial: {fileID: 2100000, guid: f429b1a87d4e2684683ba10db8eddcc6, type: 2}
+  litMaterial: {fileID: 2100000, guid: 63955e6228feac34aa5077114c0a6e99, type: 2}
+  unlitMaterial: {fileID: 2100000, guid: efbaff4d84b347a4ca58fc3d7d910240, type: 2}
   interactText: {fileID: 1020009013}
   interactIcon: {fileID: 674630344}
-  doorToUnlock: {fileID: 6962755191973806447}
+  doorToUnlock: {fileID: 1881447227}
+  doorSprite: {fileID: 545370745}
 --- !u!65 &416616201
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -581,7 +585,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: efbaff4d84b347a4ca58fc3d7d910240, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -626,6 +630,132 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &545370745 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3046810523072908927, guid: e640bee937613674388d75aa53bf8f2e, type: 3}
+  m_PrefabInstance: {fileID: 7978079680287091612}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &607026042
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 607026047}
+  - component: {fileID: 607026046}
+  - component: {fileID: 607026045}
+  - component: {fileID: 607026044}
+  - component: {fileID: 607026043}
+  m_Layer: 0
+  m_Name: Quad
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &607026043
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 607026042}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c5f7f893fba5a345ae2e4d7ad758b30, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scrollSpeedX: 0.05
+  scrollSpeedY: 0.05
+--- !u!64 &607026044
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 607026042}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!23 &607026045
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 607026042}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 10cf84a101c46734dad6226ca47f7ef7, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &607026046
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 607026042}
+  m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &607026047
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 607026042}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0.38268343, z: 0, w: 0.92387956}
+  m_LocalPosition: {x: 150, y: 0, z: 150}
+  m_LocalScale: {x: 1000, y: 1000, z: 1000}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 45, z: 0}
 --- !u!1 &674630344 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1126825402105678875, guid: 9e1a34f21ac67bc4f9842655339bf1c9, type: 3}
@@ -666,11 +796,12 @@ MonoBehaviour:
   isInteractable: 0
   isLit: 0
   shouldBeLit: 0
-  litMaterial: {fileID: 2100000, guid: 621e34f4c0a4de24084d31ae5af087ef, type: 2}
-  unlitMaterial: {fileID: 2100000, guid: f429b1a87d4e2684683ba10db8eddcc6, type: 2}
+  litMaterial: {fileID: 2100000, guid: 63955e6228feac34aa5077114c0a6e99, type: 2}
+  unlitMaterial: {fileID: 2100000, guid: efbaff4d84b347a4ca58fc3d7d910240, type: 2}
   interactText: {fileID: 1020009013}
   interactIcon: {fileID: 674630344}
-  doorToUnlock: {fileID: 3239270061510145894}
+  doorToUnlock: {fileID: 1881447227}
+  doorSprite: {fileID: 545370745}
 --- !u!65 &712052841
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -712,7 +843,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: efbaff4d84b347a4ca58fc3d7d910240, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -792,11 +923,12 @@ MonoBehaviour:
   isInteractable: 0
   isLit: 0
   shouldBeLit: 0
-  litMaterial: {fileID: 2100000, guid: 621e34f4c0a4de24084d31ae5af087ef, type: 2}
-  unlitMaterial: {fileID: 2100000, guid: f429b1a87d4e2684683ba10db8eddcc6, type: 2}
+  litMaterial: {fileID: 2100000, guid: 63955e6228feac34aa5077114c0a6e99, type: 2}
+  unlitMaterial: {fileID: 2100000, guid: efbaff4d84b347a4ca58fc3d7d910240, type: 2}
   interactText: {fileID: 1020009013}
   interactIcon: {fileID: 674630344}
-  doorToUnlock: {fileID: 3239270061510145894}
+  doorToUnlock: {fileID: 1881447227}
+  doorSprite: {fileID: 545370745}
 --- !u!65 &761295713
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -838,7 +970,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: efbaff4d84b347a4ca58fc3d7d910240, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -918,11 +1050,12 @@ MonoBehaviour:
   isInteractable: 0
   isLit: 0
   shouldBeLit: 0
-  litMaterial: {fileID: 2100000, guid: 621e34f4c0a4de24084d31ae5af087ef, type: 2}
-  unlitMaterial: {fileID: 2100000, guid: f429b1a87d4e2684683ba10db8eddcc6, type: 2}
+  litMaterial: {fileID: 2100000, guid: 63955e6228feac34aa5077114c0a6e99, type: 2}
+  unlitMaterial: {fileID: 2100000, guid: efbaff4d84b347a4ca58fc3d7d910240, type: 2}
   interactText: {fileID: 1020009013}
   interactIcon: {fileID: 674630344}
-  doorToUnlock: {fileID: 6962755191973806447}
+  doorToUnlock: {fileID: 1881447227}
+  doorSprite: {fileID: 545370745}
 --- !u!65 &864388416
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -964,7 +1097,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: efbaff4d84b347a4ca58fc3d7d910240, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1044,11 +1177,12 @@ MonoBehaviour:
   isInteractable: 0
   isLit: 0
   shouldBeLit: 0
-  litMaterial: {fileID: 2100000, guid: 621e34f4c0a4de24084d31ae5af087ef, type: 2}
-  unlitMaterial: {fileID: 2100000, guid: f429b1a87d4e2684683ba10db8eddcc6, type: 2}
+  litMaterial: {fileID: 2100000, guid: 63955e6228feac34aa5077114c0a6e99, type: 2}
+  unlitMaterial: {fileID: 2100000, guid: efbaff4d84b347a4ca58fc3d7d910240, type: 2}
   interactText: {fileID: 1020009013}
   interactIcon: {fileID: 674630344}
-  doorToUnlock: {fileID: 6962755191973806447}
+  doorToUnlock: {fileID: 1881447227}
+  doorSprite: {fileID: 545370745}
 --- !u!65 &943604285
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1090,7 +1224,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: efbaff4d84b347a4ca58fc3d7d910240, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1146,6 +1280,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1881447227 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5354337615534564584, guid: e640bee937613674388d75aa53bf8f2e, type: 3}
+  m_PrefabInstance: {fileID: 7978079680287091612}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2056476662
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1270,11 +1409,12 @@ MonoBehaviour:
   isInteractable: 0
   isLit: 0
   shouldBeLit: 0
-  litMaterial: {fileID: 2100000, guid: 621e34f4c0a4de24084d31ae5af087ef, type: 2}
-  unlitMaterial: {fileID: 2100000, guid: f429b1a87d4e2684683ba10db8eddcc6, type: 2}
+  litMaterial: {fileID: 2100000, guid: 63955e6228feac34aa5077114c0a6e99, type: 2}
+  unlitMaterial: {fileID: 2100000, guid: efbaff4d84b347a4ca58fc3d7d910240, type: 2}
   interactText: {fileID: 1020009013}
   interactIcon: {fileID: 674630344}
-  doorToUnlock: {fileID: 6962755191973806447}
+  doorToUnlock: {fileID: 1881447227}
+  doorSprite: {fileID: 545370745}
 --- !u!65 &2098281993
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1316,7 +1456,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: efbaff4d84b347a4ca58fc3d7d910240, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1361,16 +1501,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &3239270061510145894 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6341687175113615902, guid: e640bee937613674388d75aa53bf8f2e, type: 3}
-  m_PrefabInstance: {fileID: 7978079680287091612}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &6962755191973806447 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7438324881285152945, guid: e640bee937613674388d75aa53bf8f2e, type: 3}
-  m_PrefabInstance: {fileID: 7978079680287091612}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &7978079680287091612
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1379,6 +1509,22 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 329951515223535675, guid: e640bee937613674388d75aa53bf8f2e, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 428514764854428235, guid: e640bee937613674388d75aa53bf8f2e, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4569132986873998387, guid: e640bee937613674388d75aa53bf8f2e, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6393369432614891551, guid: e640bee937613674388d75aa53bf8f2e, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8442318121441003489, guid: e640bee937613674388d75aa53bf8f2e, type: 3}
       propertyPath: m_Name
       value: RoomE
@@ -1443,3 +1589,4 @@ SceneRoots:
   - {fileID: 712052844}
   - {fileID: 341291698}
   - {fileID: 761295716}
+  - {fileID: 607026047}

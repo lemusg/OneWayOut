@@ -15,6 +15,7 @@ public class Switch : MonoBehaviour
     public TextMeshProUGUI interactText;
     public GameObject interactIcon;
     public GameObject door;
+    public GameObject doorSprite;
     // Start is called before the first frame update
     void Start()
     {
@@ -41,6 +42,7 @@ public class Switch : MonoBehaviour
                 if (correctSwitchesFlipped == 2 && incorrectSwitchesFlipped == 0)
                 {
                     door.SetActive(true);
+                    doorSprite.SetActive(true);
                 }
                 Debug.Log("Correct Switches Flipped: " + correctSwitchesFlipped);
                 Debug.Log("Incorrect Switches Flipped: " + incorrectSwitchesFlipped);

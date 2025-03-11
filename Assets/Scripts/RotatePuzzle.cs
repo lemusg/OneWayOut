@@ -7,15 +7,20 @@ public class RotatePuzzle : MonoBehaviour
 {
     public int correctRotation;
     public GameObject door;
+    public GameObject doorSprite;
     public bool isInteractable = false;
     public TextMeshProUGUI interactText;
     public GameObject interactIcon;
     private static int correctRotations = 0;
     private bool isCorrect = false;
+    public Material correctMat;
+    public Material incorrectMat;
+    private MeshRenderer objectRenderer;
 
     void Start()
     {
         correctRotations = 0;  // Reset the counter when scene starts
+        objectRenderer = transform.GetChild(0).GetComponent<MeshRenderer>();
     }
 
     void Update()
@@ -31,9 +36,11 @@ public class RotatePuzzle : MonoBehaviour
                     {
                         isCorrect = true;
                         correctRotations++;
+                        objectRenderer.material = correctMat;
                         if (correctRotations >= 4)
                         {
                             door.SetActive(true);  // Or however you want to open the door
+                            doorSprite.SetActive(true);
                         }
                     }
                 }
@@ -41,6 +48,7 @@ public class RotatePuzzle : MonoBehaviour
                 {
                     isCorrect = false;
                     correctRotations--;
+                    objectRenderer.material = incorrectMat;
                 }
             }
         }

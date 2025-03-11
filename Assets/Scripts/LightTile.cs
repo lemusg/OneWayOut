@@ -16,6 +16,7 @@ public class LightTile : MonoBehaviour
     public TextMeshProUGUI interactText;
     public GameObject interactIcon;
     public GameObject doorToUnlock;
+    public GameObject doorSprite;
 
     // Start is called before the first frame update
     void Start()
@@ -60,10 +61,12 @@ public class LightTile : MonoBehaviour
         if (correctTilesLit == 3 && incorrectTilesLit == 0)  
         {
             doorToUnlock.SetActive(true);
+            doorSprite.SetActive(true);
         }
         else
         {
             doorToUnlock.SetActive(false);
+            doorSprite.SetActive(false);
         }
     }
 

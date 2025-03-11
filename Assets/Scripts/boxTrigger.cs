@@ -7,31 +7,22 @@ using System.Linq;
 public class boxTrigger : MonoBehaviour
 {
     public static int boxesInTrigger = 0;
-    public Color triggerColor;
+    public Material mat;
     public GameObject door;
-
+    public GameObject doorSprite;
     void Start()
     {
-        triggerColor = GetComponent<Renderer>().material.color;
-    }
-
-    private bool ColorMatch(Color boxColor, Color triggerColor)
-    {
-        return Mathf.Abs(boxColor.r - triggerColor.r) < 0.01f &&
-               Mathf.Abs(boxColor.g - triggerColor.g) < 0.01f &&
-               Mathf.Abs(boxColor.b - triggerColor.b) < 0.01f;
+        
     }
 
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Box"))
         {
-            Color boxColor = other.GetComponent<Renderer>().material.color;
-            if (ColorMatch(boxColor, triggerColor))
+            Material boxMat = other.GetComponent<Renderer>().sharedMaterial;
+            if (boxMat == mat)
             {
                 boxesInTrigger++;
-				
-				gameObject.transform.GetChild(0).GetComponent<Light>().enabled = true;
             }
         }
     }
@@ -40,8 +31,8 @@ public class boxTrigger : MonoBehaviour
     {
         if (other.CompareTag("Box"))
         {
-            Color boxColor = other.GetComponent<Renderer>().material.color;
-            if (ColorMatch(boxColor, triggerColor))
+            Material boxMat = other.GetComponent<Renderer>().sharedMaterial;
+            if (boxMat == mat)
             {
                 boxesInTrigger--;
             }
@@ -53,6 +44,7 @@ public class boxTrigger : MonoBehaviour
         if (boxesInTrigger == 3)
         {
             door.SetActive(true);
+            doorSprite.SetActive(true);
         }
     }
 }
