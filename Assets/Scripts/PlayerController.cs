@@ -12,7 +12,7 @@ public class PlayerController : MonoBehaviour
     public Sprite[] idleSprites;    // Array for idle animation frames
     public Sprite[] walkingSprites; // Array for walking animation frames
     
-    public float animationFrameRate = 0.1f;
+    public float animationFrameRate = 0.5f;
     private bool isMoving = false;
 
     public float moveSpeed = 3f;
@@ -73,7 +73,6 @@ public class PlayerController : MonoBehaviour
 
         // Adjust these values as needed
         Vector3 spritePosition = transform.position;
-        spritePosition.y += 1f; // Increased from 0.3f to 1f
         transform.GetChild(0).position = spritePosition;
 
         // Add this footstep sound logic

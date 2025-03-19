@@ -3855,6 +3855,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2029414204790901652, guid: 9e1a34f21ac67bc4f9842655339bf1c9, type: 3}
+      propertyPath: animationFrameRate
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2029414204790901652, guid: 9e1a34f21ac67bc4f9842655339bf1c9, type: 3}
       propertyPath: idleSprites.Array.size
       value: 3
       objectReference: {fileID: 0}
