@@ -173,7 +173,7 @@ MonoBehaviour:
   interactIcon: {fileID: 2022260880}
   interactText: {fileID: 2022260879}
   skipText: {fileID: 2022260878}
-  dialogueText: 
+  dialogueText: Push me onto the matching color.
 --- !u!65 &337742586
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -379,8 +379,16 @@ PrefabInstance:
       propertyPath: interactText
       value: 
       objectReference: {fileID: 2022260879}
+    - target: {fileID: 1926084960963149477, guid: e640bee937613674388d75aa53bf8f2e, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5354337615534564584, guid: e640bee937613674388d75aa53bf8f2e, type: 3}
       propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5477063165046462207, guid: e640bee937613674388d75aa53bf8f2e, type: 3}
+      propertyPath: isOpen
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5477063165046462207, guid: e640bee937613674388d75aa53bf8f2e, type: 3}
@@ -389,7 +397,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5477063165046462207, guid: e640bee937613674388d75aa53bf8f2e, type: 3}
       propertyPath: LevelEntryPoint
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5907802326652795178, guid: e640bee937613674388d75aa53bf8f2e, type: 3}
       propertyPath: m_IsActive
@@ -401,7 +409,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6384176332066172972, guid: e640bee937613674388d75aa53bf8f2e, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7438324881285152945, guid: e640bee937613674388d75aa53bf8f2e, type: 3}
       propertyPath: m_IsActive
@@ -409,6 +417,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7545945345651158629, guid: e640bee937613674388d75aa53bf8f2e, type: 3}
       propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8099392821585885818, guid: e640bee937613674388d75aa53bf8f2e, type: 3}
+      propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8442318121441003489, guid: e640bee937613674388d75aa53bf8f2e, type: 3}
@@ -537,7 +549,7 @@ MonoBehaviour:
   interactIcon: {fileID: 2022260880}
   interactText: {fileID: 2022260879}
   skipText: {fileID: 2022260878}
-  dialogueText: 
+  dialogueText: Push me onto the matching color.
 --- !u!1 &634654013
 GameObject:
   m_ObjectHideFlags: 0
@@ -1213,7 +1225,7 @@ MonoBehaviour:
   interactIcon: {fileID: 2022260880}
   interactText: {fileID: 2022260879}
   skipText: {fileID: 2022260878}
-  dialogueText: 
+  dialogueText: Push me onto the matching color.
 --- !u!65 &1604044031
 BoxCollider:
   m_ObjectHideFlags: 0

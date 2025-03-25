@@ -17,6 +17,7 @@ public class boxTrigger : MonoBehaviour
 
     void Update()
     {
+        Debug.Log(boxesInTrigger);
         if (boxesInTrigger == 3)
         {
             d.isOpen = true;
