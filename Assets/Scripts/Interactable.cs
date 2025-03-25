@@ -11,7 +11,8 @@ public class Interactable : MonoBehaviour
     public GameObject interactIcon;
     public TextMeshProUGUI interactText;
     public TextMeshProUGUI skipText;
-    public bool isInteractable = false;
+    public string dialogueText;
+    private bool isInteractable = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -26,7 +27,7 @@ public class Interactable : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.E) && !dialogueBox.activeSelf)
             {
                 dialogueBox.SetActive(true);
-                uiManager.ShowDialogue("Push me onto the matching color");
+                uiManager.ShowDialogue(dialogueText);
                 interactIcon.SetActive(false);
                 interactText.text = "";
                 skipText.text = "Left Click to Skip";
@@ -36,19 +37,25 @@ public class Interactable : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        interactIcon.SetActive(true);
-        interactText.text = "Interact";
-        isInteractable = true;
+        if (other.gameObject.CompareTag("Player"))
+        {
+            interactIcon.SetActive(true);
+            interactText.text = "Interact";
+            isInteractable = true;
+        }
     }
 
     void OnTriggerExit(Collider other)
     {
-        dialogueBox.SetActive(false);
-        interactIcon.SetActive(false);
-        uiManager.SkipTyping();
-        dialogue.text = "";
-        interactText.text = "";
-        skipText.text = "";
-        isInteractable = false;
+        if (other.gameObject.CompareTag("Player"))
+        {
+            dialogueBox.SetActive(false);
+            interactIcon.SetActive(false);
+            uiManager.SkipTyping();
+            dialogue.text = "";
+            interactText.text = "";
+            skipText.text = "";
+            isInteractable = false;
+        }
     }
 }
