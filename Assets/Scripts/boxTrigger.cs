@@ -9,6 +9,7 @@ public class boxTrigger : MonoBehaviour
     public static int boxesInTrigger = 0;
     public Material mat;
     public GameObject door;
+    public GameObject popup;
     private Door d;
     void Start()
     {
@@ -17,7 +18,6 @@ public class boxTrigger : MonoBehaviour
 
     void Update()
     {
-        Debug.Log(boxesInTrigger);
         if (boxesInTrigger == 3)
         {
             d.isOpen = true;
@@ -28,7 +28,7 @@ public class boxTrigger : MonoBehaviour
     {
         if (other.CompareTag("Box"))
         {
-            BoxPopup.triggered = true;
+            popup.GetComponent<Popup>().triggered = true;
             Material boxMat = other.GetComponent<Renderer>().sharedMaterial;
             if (boxMat == mat)
             {

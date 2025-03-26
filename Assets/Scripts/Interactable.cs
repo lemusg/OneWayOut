@@ -5,18 +5,22 @@ using TMPro;
 
 public class Interactable : MonoBehaviour
 {
-    public TextMeshProUGUI dialogue;
-    public GameObject dialogueBox;
-    public UIManager uiManager;
-    public GameObject interactIcon;
-    public TextMeshProUGUI interactText;
-    public TextMeshProUGUI skipText;
+    public GameObject UI;
+    private TextMeshProUGUI dialogue;
+    private GameObject dialogueBox;
+    private GameObject interactIcon;
+    private TextMeshProUGUI interactText;
+    private TextMeshProUGUI skipText;
     public string dialogueText;
     private bool isInteractable = false;
     // Start is called before the first frame update
     void Start()
     {
-        uiManager = FindObjectOfType<UIManager>();
+        dialogue = UI.transform.Find("Dialogue")?.GetComponent<TextMeshProUGUI>();
+        dialogueBox = UI.transform.Find("DialogueBG").gameObject;
+        interactIcon = UI.transform.Find("Interact").gameObject;
+        interactText = UI.transform.Find("InteractText")?.GetComponent<TextMeshProUGUI>();
+        skipText = UI.transform.Find("SkipText")?.GetComponent<TextMeshProUGUI>();
     }
 
     // Update is called once per frame
@@ -27,7 +31,7 @@ public class Interactable : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.E) && !dialogueBox.activeSelf)
             {
                 dialogueBox.SetActive(true);
-                uiManager.ShowDialogue(dialogueText);
+                UI.GetComponent<UIManager>().ShowDialogue(dialogueText);
                 interactIcon.SetActive(false);
                 interactText.text = "";
                 skipText.text = "Left Click to Skip";
@@ -51,7 +55,7 @@ public class Interactable : MonoBehaviour
         {
             dialogueBox.SetActive(false);
             interactIcon.SetActive(false);
-            uiManager.SkipTyping();
+            UI.GetComponent<UIManager>().SkipTyping();
             dialogue.text = "";
             interactText.text = "";
             skipText.text = "";

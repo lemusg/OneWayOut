@@ -7,7 +7,6 @@ public class RotatePuzzle : MonoBehaviour
 {
     public int correctRotation;
     public GameObject door;
-    public GameObject doorSprite;
     public bool isInteractable = false;
     public TextMeshProUGUI interactText;
     public GameObject interactIcon;
@@ -39,8 +38,7 @@ public class RotatePuzzle : MonoBehaviour
                         objectRenderer.material = correctMat;
                         if (correctRotations >= 4)
                         {
-                            door.SetActive(true);  // Or however you want to open the door
-                            doorSprite.SetActive(true);
+                            door.GetComponent<Door>().isOpen = true;
                         }
                     }
                 }

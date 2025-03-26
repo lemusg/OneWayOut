@@ -24,7 +24,7 @@ public class PlayerController : MonoBehaviour
     private AudioSource audioSource;
     public AudioClip footstepSound;
     private float footstepTimer = 0f;
-    private float footstepInterval = 0.5f; // Adjust this value to change how often the footstep plays
+    private float footstepInterval = 0.5f;
 
     void Start()
     {

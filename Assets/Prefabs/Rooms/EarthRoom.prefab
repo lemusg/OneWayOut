@@ -145,7 +145,7 @@ GameObject:
   - component: {fileID: 2827552720084444317}
   - component: {fileID: 7158223643955543477}
   m_Layer: 0
-  m_Name: EastDoorOpenSprite
+  m_Name: OpenSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -511,8 +511,9 @@ GameObject:
   - component: {fileID: 596394573119714261}
   - component: {fileID: 8797565967925104378}
   - component: {fileID: 4988027444741766776}
+  - component: {fileID: 2284069333040902374}
   m_Layer: 0
-  m_Name: EastDoorTrigger
+  m_Name: Trigger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -616,13 +617,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fd572275af7bd324eaad4e7fec075fcc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogue: {fileID: 0}
-  dialogueBox: {fileID: 0}
-  uiManager: {fileID: 0}
-  interactIcon: {fileID: 0}
-  interactText: {fileID: 0}
-  skipText: {fileID: 0}
+  UI: {fileID: 0}
   dialogueText: 
+--- !u!114 &2284069333040902374
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1179294602134566737}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e8435ea75a8ded94d8ed6cd2c91a34e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1590424823490677898
 GameObject:
   m_ObjectHideFlags: 0
@@ -636,8 +644,9 @@ GameObject:
   - component: {fileID: 248508996359852498}
   - component: {fileID: 984516499794248398}
   - component: {fileID: 1287758154497070013}
+  - component: {fileID: 5669459537416510749}
   m_Layer: 0
-  m_Name: WestDoorTrigger
+  m_Name: Trigger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -741,13 +750,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fd572275af7bd324eaad4e7fec075fcc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogue: {fileID: 0}
-  dialogueBox: {fileID: 0}
-  uiManager: {fileID: 0}
-  interactIcon: {fileID: 0}
-  interactText: {fileID: 0}
-  skipText: {fileID: 0}
+  UI: {fileID: 0}
   dialogueText: 
+--- !u!114 &5669459537416510749
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1590424823490677898}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e8435ea75a8ded94d8ed6cd2c91a34e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1926084960963149477
 GameObject:
   m_ObjectHideFlags: 0
@@ -1040,7 +1056,7 @@ GameObject:
   - component: {fileID: 2557178433577332655}
   - component: {fileID: 5303879127296494477}
   m_Layer: 0
-  m_Name: EastDoorSprite
+  m_Name: ClosedSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1280,7 +1296,7 @@ GameObject:
   - component: {fileID: 7140902895910142722}
   - component: {fileID: 8066791067470700673}
   m_Layer: 0
-  m_Name: WestDoorOpenSprite
+  m_Name: OpenSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1366,8 +1382,9 @@ GameObject:
   - component: {fileID: 2031098731281738855}
   - component: {fileID: 8375595708436020316}
   - component: {fileID: 6987460411940426496}
+  - component: {fileID: 6467458865001506384}
   m_Layer: 0
-  m_Name: NorthDoorTrigger
+  m_Name: Trigger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1471,13 +1488,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fd572275af7bd324eaad4e7fec075fcc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogue: {fileID: 0}
-  dialogueBox: {fileID: 0}
-  uiManager: {fileID: 0}
-  interactIcon: {fileID: 0}
-  interactText: {fileID: 0}
-  skipText: {fileID: 0}
+  UI: {fileID: 0}
   dialogueText: 
+--- !u!114 &6467458865001506384
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3655515257713459988}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e8435ea75a8ded94d8ed6cd2c91a34e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &5030391051680698467
 GameObject:
   m_ObjectHideFlags: 0
@@ -1489,7 +1513,7 @@ GameObject:
   - component: {fileID: 487385895325270265}
   - component: {fileID: 1062871009180676734}
   m_Layer: 0
-  m_Name: NorthDoorSprite
+  m_Name: ClosedSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1562,6 +1586,127 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &5036696517681438959
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5446358654243464703}
+  - component: {fileID: 7171867587910524181}
+  - component: {fileID: 5777536204244703478}
+  - component: {fileID: 8472081503799114095}
+  - component: {fileID: 2412897350731241706}
+  m_Layer: 0
+  m_Name: Background
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5446358654243464703
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5036696517681438959}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0.6532815, y: 0.27059805, z: -0.27059805, w: 0.6532815}
+  m_LocalPosition: {x: 150.00002, y: 150.00005, z: 120.00006}
+  m_LocalScale: {x: 1000.0002, y: 999.99976, z: 999.99994}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8474596053396824017}
+  m_LocalEulerAnglesHint: {x: 0, y: 45, z: 0}
+--- !u!33 &7171867587910524181
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5036696517681438959}
+  m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!23 &5777536204244703478
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5036696517681438959}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 10cf84a101c46734dad6226ca47f7ef7, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &8472081503799114095
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5036696517681438959}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &2412897350731241706
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5036696517681438959}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c5f7f893fba5a345ae2e4d7ad758b30, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scrollSpeedX: 0.05
+  scrollSpeedY: 0.05
 --- !u!1 &5354337615534564584
 GameObject:
   m_ObjectHideFlags: 0
@@ -2008,7 +2153,7 @@ GameObject:
   - component: {fileID: 2763426871164655149}
   - component: {fileID: 8262073201972823418}
   m_Layer: 0
-  m_Name: SouthDoorOpenSprite
+  m_Name: OpenSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2123,7 +2268,7 @@ GameObject:
   - component: {fileID: 1309455833417944604}
   - component: {fileID: 7508938419852132094}
   m_Layer: 0
-  m_Name: NorthDoorOpenSprite
+  m_Name: OpenSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2256,7 +2401,7 @@ GameObject:
   - component: {fileID: 7086414572155435149}
   - component: {fileID: 4908292728058258321}
   m_Layer: 0
-  m_Name: WestDoorSprite
+  m_Name: ClosedSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2533,8 +2678,9 @@ GameObject:
   - component: {fileID: 786832233230619990}
   - component: {fileID: 2649438884630783360}
   - component: {fileID: 6573589933122559634}
+  - component: {fileID: 3202528936581399361}
   m_Layer: 0
-  m_Name: SouthDoorTrigger
+  m_Name: Trigger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2638,13 +2784,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fd572275af7bd324eaad4e7fec075fcc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogue: {fileID: 0}
-  dialogueBox: {fileID: 0}
-  uiManager: {fileID: 0}
-  interactIcon: {fileID: 0}
-  interactText: {fileID: 0}
-  skipText: {fileID: 0}
+  UI: {fileID: 0}
   dialogueText: 
+--- !u!114 &3202528936581399361
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7875246371878289365}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e8435ea75a8ded94d8ed6cd2c91a34e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &8228599177699762288
 GameObject:
   m_ObjectHideFlags: 0
@@ -2656,7 +2809,7 @@ GameObject:
   - component: {fileID: 4331172256919027551}
   - component: {fileID: 2754114291285257932}
   m_Layer: 0
-  m_Name: SouthDoorSprite
+  m_Name: ClosedSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2759,6 +2912,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 4941394525628707728}
+  - {fileID: 5446358654243464703}
   - {fileID: 4589649992615285105}
   - {fileID: 1738068053308464061}
   - {fileID: 1359785858548365924}
