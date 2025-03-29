@@ -433,6 +433,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5b1e028973bdfaa4d8560edb6184a099, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  triggered: 0
+--- !u!1 &96595401 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 930055178448954070, guid: e640bee937613674388d75aa53bf8f2e, type: 3}
+  m_PrefabInstance: {fileID: 1241944262}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &256336242
 GameObject:
   m_ObjectHideFlags: 0
@@ -472,8 +478,7 @@ MonoBehaviour:
   originalMaterial: {fileID: 2100000, guid: b64b5073ac6b5f44b8b8f3a580c44c36, type: 2}
   interactText: {fileID: 1514567567}
   interactIcon: {fileID: 974043410}
-  door: {fileID: 0}
-  doorSprite: {fileID: 0}
+  door: {fileID: 96595401}
 --- !u!65 &256336244
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -600,8 +605,7 @@ MonoBehaviour:
   originalMaterial: {fileID: 2100000, guid: b64b5073ac6b5f44b8b8f3a580c44c36, type: 2}
   interactText: {fileID: 1514567567}
   interactIcon: {fileID: 974043410}
-  door: {fileID: 0}
-  doorSprite: {fileID: 0}
+  door: {fileID: 96595401}
 --- !u!65 &402767245
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1173,8 +1177,7 @@ MonoBehaviour:
   originalMaterial: {fileID: 2100000, guid: b64b5073ac6b5f44b8b8f3a580c44c36, type: 2}
   interactText: {fileID: 1514567567}
   interactIcon: {fileID: 974043410}
-  door: {fileID: 0}
-  doorSprite: {fileID: 0}
+  door: {fileID: 96595401}
 --- !u!65 &1253937637
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1452,8 +1455,7 @@ MonoBehaviour:
   originalMaterial: {fileID: 2100000, guid: b64b5073ac6b5f44b8b8f3a580c44c36, type: 2}
   interactText: {fileID: 1514567567}
   interactIcon: {fileID: 974043410}
-  door: {fileID: 0}
-  doorSprite: {fileID: 0}
+  door: {fileID: 96595401}
 --- !u!65 &1665932117
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1580,8 +1582,7 @@ MonoBehaviour:
   originalMaterial: {fileID: 2100000, guid: b64b5073ac6b5f44b8b8f3a580c44c36, type: 2}
   interactText: {fileID: 1514567567}
   interactIcon: {fileID: 974043410}
-  door: {fileID: 0}
-  doorSprite: {fileID: 0}
+  door: {fileID: 96595401}
 --- !u!65 &2105780659
 BoxCollider:
   m_ObjectHideFlags: 0
