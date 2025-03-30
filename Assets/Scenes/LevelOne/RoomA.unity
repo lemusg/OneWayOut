@@ -152,7 +152,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   backgroundMusic: {fileID: 8300000, guid: 658cef2307cbb4960b9de6eb248cf613, type: 3}
-  popup: {fileID: 1377426746}
 --- !u!4 &243210797
 Transform:
   m_ObjectHideFlags: 0
@@ -584,6 +583,10 @@ PrefabInstance:
     - target: {fileID: 6042916457949869888, guid: 9e1a34f21ac67bc4f9842655339bf1c9, type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 7563209670646488882, guid: 9e1a34f21ac67bc4f9842655339bf1c9, type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
