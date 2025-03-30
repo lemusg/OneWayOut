@@ -74,8 +74,8 @@ public class PersistantGameManager : MonoBehaviour
 
     void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
-        // Play music when entering game scenes, but not the main menu
-        if (scene.name != "Main Menu")
+        // Play music when entering game scenes, but not the main menu or credits
+        if (scene.name != "Main Menu" && scene.name != "Credits")
         {
             PlayMusic();
         }

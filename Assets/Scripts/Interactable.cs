@@ -5,7 +5,7 @@ using TMPro;
 
 public class Interactable : MonoBehaviour
 {
-    public GameObject UI;
+    private GameObject UI;
     private TextMeshProUGUI dialogue;
     private GameObject dialogueBox;
     private GameObject interactIcon;
@@ -16,6 +16,8 @@ public class Interactable : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        GameObject player = GameObject.FindGameObjectWithTag("Player");
+        UI = player.transform.Find("UI")?.gameObject;
         dialogue = UI.transform.Find("Dialogue")?.GetComponent<TextMeshProUGUI>();
         dialogueBox = UI.transform.Find("DialogueBG").gameObject;
         interactIcon = UI.transform.Find("Interact").gameObject;
