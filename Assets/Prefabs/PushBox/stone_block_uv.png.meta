@@ -1,0 +1,301 @@
+fileFormatVersion: 2
+guid: 02206e81f485b7d43a84abd0548283b3
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 0
+    wrapV: 0
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 0
+  spriteTessellationDetail: -1
+  textureType: 0
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: stone_block_uv back
+      rect:
+        serializedVersion: 2
+        x: 1120
+        y: 2250
+        width: 750
+        height: 750
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -375}
+        - {x: 375, y: 0}
+        - {x: 0, y: 375}
+        - {x: -375, y: 0}
+      physicsShape:
+      - - {x: 0, y: -375}
+        - {x: 375, y: 0}
+        - {x: 0, y: 375}
+        - {x: -375, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77e55e55810bd3e4392ac554152482a8
+      internalID: -1903191995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stone_block_uv bottom
+      rect:
+        serializedVersion: 2
+        x: 370
+        y: 1500
+        width: 750
+        height: 750
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -375}
+        - {x: 375, y: 0}
+        - {x: 0, y: 375}
+        - {x: -375, y: 0}
+      physicsShape:
+      - - {x: 0, y: -375}
+        - {x: 375, y: 0}
+        - {x: 0, y: 375}
+        - {x: -375, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 303ddc557cb78f14ea8f2cc4fd53a17c
+      internalID: -1016889047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stone_block_uv left
+      rect:
+        serializedVersion: 2
+        x: 1120
+        y: 1500
+        width: 750
+        height: 750
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -375}
+        - {x: 375, y: 0}
+        - {x: 0, y: 375}
+        - {x: -375, y: 0}
+      physicsShape:
+      - - {x: 0, y: -375}
+        - {x: 375, y: 0}
+        - {x: 0, y: 375}
+        - {x: -375, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86626b2fb8013ae49aa925407883c408
+      internalID: 1256285937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stone_block_uv top
+      rect:
+        serializedVersion: 2
+        x: 1870
+        y: 1494
+        width: 750
+        height: 750
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -375}
+        - {x: 375, y: 0}
+        - {x: 0, y: 375}
+        - {x: -375, y: 0}
+      physicsShape:
+      - - {x: 0, y: -375}
+        - {x: 375, y: 0}
+        - {x: 0, y: 375}
+        - {x: -375, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 848d98c58ade28d459556350971f9262
+      internalID: -40361112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stone_block_uv front
+      rect:
+        serializedVersion: 2
+        x: 1120
+        y: 750
+        width: 750
+        height: 750
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -375}
+        - {x: 375, y: 0}
+        - {x: 0, y: 375}
+        - {x: -375, y: 0}
+      physicsShape:
+      - - {x: 0, y: -375}
+        - {x: 375, y: 0}
+        - {x: 0, y: 375}
+        - {x: -375, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b10034e4ebedec41a76302119e23cf0
+      internalID: 1638997281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stone_block_uv right
+      rect:
+        serializedVersion: 2
+        x: 1120
+        y: 0
+        width: 750
+        height: 750
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -375}
+        - {x: 375, y: 0}
+        - {x: 0, y: 375}
+        - {x: -375, y: 0}
+      physicsShape:
+      - - {x: 0, y: -375}
+        - {x: 375, y: 0}
+        - {x: 0, y: 375}
+        - {x: -375, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d3476d007d803241844b811492d884d
+      internalID: 1616121892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: e6bf8977b97c68f4aa548101b0b955a0
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      stone_block_uv 1_11: -1018618265
+      stone_block_uv 1_12: -371198933
+      stone_block_uv 1_2: 411908687
+      stone_block_uv 1_3: -1792159410
+      stone_block_uv 1_7: 1451193631
+      stone_block_uv 1_8: -1374440478
+      stone_block_uv 1_9: -632868596
+      stone_block_uv back: -1903191995
+      stone_block_uv bottom: -1016889047
+      stone_block_uv front: 1638997281
+      stone_block_uv left: 1256285937
+      stone_block_uv right: 1616121892
+      stone_block_uv top: -40361112
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
