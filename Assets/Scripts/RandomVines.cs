@@ -4,21 +4,31 @@ using UnityEngine;
 
 public class RandomVines : MonoBehaviour
 {
-    public GameObject dirt;
+    public GameObject vine;
     private bool done = false;
     // Start is called before the first frame update
     void Awake()
     {
         if (!done) {
             done = true;
-            int rand = Random.Range(10, 25);
+            int rand = Random.Range(1, 3);
             for (int i = 0; i < rand; i++) {
-                //Gets "coordinates" of a random floor tile. One of the tiles in the middle is at 2.85, 2.85
-                //So it just places another in reference to that
-                float randomX = Random.Range(-6,5)*15.65f + 2.85f;
-                float randomZ = Random.Range(-6,5)*15.65f + 2.85f;
-                Vector3 randPos = new Vector3(randomX, 5.01f, randomZ);
-                Instantiate(dirt, randPos, Quaternion.Euler(-90, 0, 0));
+                //Picks whether to put on north wall or west wall
+                float wall = Random.Range(0, 2);
+                float randomScale = (float)Random.Range(25, 40);
+                float posY = 105f-randomScale/2f;
+                //Gets "coordinates" of a random vine
+                if (wall == 0) {
+                    float randomX = (float)Random.Range(-80, 70);
+                    Vector3 randPos = new Vector3(randomX, posY, 89.9f);
+                    GameObject vineCopy = Instantiate(vine, randPos, Quaternion.identity);
+                    vineCopy.transform.localScale = new Vector3(randomScale, randomScale, randomScale);
+                } else {
+                    float randomZ = (float)Random.Range(-80, 70);
+                    Vector3 randPos = new Vector3(89.9f, posY, randomZ);
+                    GameObject vineCopy = Instantiate(vine, randPos, Quaternion.Euler(0, 90, 0));
+                    vineCopy.transform.localScale = new Vector3(randomScale, randomScale, randomScale);
+                }
             }
         }
     }
