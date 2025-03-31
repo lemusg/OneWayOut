@@ -4,13 +4,14 @@ using UnityEngine;
 
 public class Torch : MonoBehaviour
 {
-    private List<Transform> lights;
+    private List<Transform> lights = new List<Transform>();
     // Start is called before the first frame update
     void Start()
     {
         foreach (Transform child in transform) {
             Transform gChild = child.GetChild(0);
             Light flame = gChild.GetComponent<Light>();
+            lights.Add(gChild);
             StartCoroutine(ChangeColor(flame));
         } 
     }

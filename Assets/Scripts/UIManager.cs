@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 using UnityEngine.SceneManagement;
+using UnityEngine.EventSystems;
 
 public class UIManager : MonoBehaviour
 {
@@ -20,6 +21,9 @@ public class UIManager : MonoBehaviour
     private Coroutine typingCoroutine;
     private string fullText;
     public Slider soundSlider;
+    private bool tooltipShown = false;
+    public GameObject tooltip; // Reference to your Tooltip GameObject
+    
     
     [Header("Audio")]
     public AudioClip buttonClickSound;
@@ -38,6 +42,10 @@ public class UIManager : MonoBehaviour
         exitButton.onClick.AddListener(ExitToMainMenu);
         soundSlider.onValueChanged.AddListener(HandleVolumeChange);
         soundSlider.value = AudioListener.volume;
+
+        // Make sure tooltip starts hidden
+        if (tooltip != null)
+            tooltip.SetActive(false);
     }
 
     // Update is called once per frame
@@ -46,6 +54,80 @@ public class UIManager : MonoBehaviour
         if (Input.GetMouseButtonDown(0))
         {
             SkipTyping();
+        }
+
+        // Check if mouse is in the correct position
+        bool isMouseInPosition = Input.mousePosition.x > 45 && Input.mousePosition.x < 110 && 
+                               Input.mousePosition.y > 976 && Input.mousePosition.y < 1040;
+
+        // Show/hide tooltip based on mouse position
+        if (tooltip != null)
+        {
+            if (isMouseInPosition && !tooltipShown)
+            {
+                tooltip.SetActive(true);
+                tooltipShown = true;
+            }
+            else if (!isMouseInPosition && tooltipShown)
+            {
+                tooltip.SetActive(false);
+                tooltipShown = false;
+            }
+        }
+    }
+
+    public void AddClue(Sprite clueSprite, string clueText)
+    {
+        // Create a new image object for the clue
+        GameObject clueObj = new GameObject("Clue");
+        
+        // Add Image component and set the sprite
+        Image clueImage = clueObj.AddComponent<Image>();
+        clueImage.sprite = clueSprite;
+        clueImage.preserveAspect = true;
+        
+        // Set size of the clue icon
+        RectTransform rect = clueObj.GetComponent<RectTransform>();
+        rect.sizeDelta = new Vector2(50, 50); // Adjust size as needed
+        
+        // Add event trigger for hover effects
+        EventTrigger trigger = clueObj.AddComponent<EventTrigger>();
+        
+        // Add pointer enter event
+        EventTrigger.Entry enterEntry = new EventTrigger.Entry();
+        enterEntry.eventID = EventTriggerType.PointerEnter;
+        //enterEntry.callback.AddListener((data) => { ShowTooltip(clueObj, clueText); });
+        trigger.triggers.Add(enterEntry);
+        
+        // Add pointer exit event
+        EventTrigger.Entry exitEntry = new EventTrigger.Entry();
+        exitEntry.eventID = EventTriggerType.PointerExit;
+        exitEntry.callback.AddListener((data) => { HideTooltip(clueObj); });
+        trigger.triggers.Add(exitEntry);
+        
+        // Store the tooltip text
+    }
+/*
+    private void ShowTooltip(GameObject clueObj, string tooltipText)
+    {
+        while (Input.mousePosition.x > 45 && Input.mousePosition.x < 110 && Input.mousePosition.y > 976 && Input.mousePosition.y < 1040) {
+            Debug.Log("Showing tooltip");
+            GameObject tooltip = Instantiate(tooltipPrefab, clueObj.transform);
+            tooltip.name = "Tooltip";
+            tooltip.GetComponentInChildren<TextMeshProUGUI>().text = tooltipText;
+            
+            // Position the tooltip above the clue
+            RectTransform tooltipRect = tooltip.GetComponent<RectTransform>();
+            tooltipRect.anchoredPosition = new Vector2(0, 60); // Adjust position as needed
+        }
+    }
+*/
+    private void HideTooltip(GameObject clueObj)
+    {
+        Transform tooltip = clueObj.transform.Find("Tooltip");
+        if (tooltip)
+        {
+            Destroy(tooltip.gameObject);
         }
     }
 
