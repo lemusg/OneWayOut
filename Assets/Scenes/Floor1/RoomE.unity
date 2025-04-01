@@ -256,8 +256,8 @@ MonoBehaviour:
   shouldBeLit: 1
   litMaterial: {fileID: 2100000, guid: 63955e6228feac34aa5077114c0a6e99, type: 2}
   unlitMaterial: {fileID: 2100000, guid: efbaff4d84b347a4ca58fc3d7d910240, type: 2}
-  interactText: {fileID: 0}
-  interactIcon: {fileID: 0}
+  interactText: {fileID: 673260840}
+  interactIcon: {fileID: 951207123}
   door: {fileID: 427464586}
   popup: {fileID: 1931012927}
 --- !u!65 &299195725
@@ -383,8 +383,8 @@ MonoBehaviour:
   shouldBeLit: 1
   litMaterial: {fileID: 2100000, guid: 63955e6228feac34aa5077114c0a6e99, type: 2}
   unlitMaterial: {fileID: 2100000, guid: efbaff4d84b347a4ca58fc3d7d910240, type: 2}
-  interactText: {fileID: 0}
-  interactIcon: {fileID: 0}
+  interactText: {fileID: 673260840}
+  interactIcon: {fileID: 951207123}
   door: {fileID: 427464586}
   popup: {fileID: 1931012927}
 --- !u!65 &341291695
@@ -510,8 +510,8 @@ MonoBehaviour:
   shouldBeLit: 1
   litMaterial: {fileID: 2100000, guid: 63955e6228feac34aa5077114c0a6e99, type: 2}
   unlitMaterial: {fileID: 2100000, guid: efbaff4d84b347a4ca58fc3d7d910240, type: 2}
-  interactText: {fileID: 0}
-  interactIcon: {fileID: 0}
+  interactText: {fileID: 673260840}
+  interactIcon: {fileID: 951207123}
   door: {fileID: 427464586}
   popup: {fileID: 1931012927}
 --- !u!65 &376054052
@@ -637,8 +637,8 @@ MonoBehaviour:
   shouldBeLit: 0
   litMaterial: {fileID: 2100000, guid: 63955e6228feac34aa5077114c0a6e99, type: 2}
   unlitMaterial: {fileID: 2100000, guid: efbaff4d84b347a4ca58fc3d7d910240, type: 2}
-  interactText: {fileID: 0}
-  interactIcon: {fileID: 0}
+  interactText: {fileID: 673260840}
+  interactIcon: {fileID: 951207123}
   door: {fileID: 427464586}
   popup: {fileID: 1931012927}
 --- !u!65 &416616201
@@ -732,6 +732,17 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 5354337615534564584, guid: e640bee937613674388d75aa53bf8f2e, type: 3}
   m_PrefabInstance: {fileID: 6644666}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &673260840 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4185280220167373878, guid: a891dc2b9825fd54a84babe86d8f84fe, type: 3}
+  m_PrefabInstance: {fileID: 1650404254}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &712052839
 GameObject:
   m_ObjectHideFlags: 0
@@ -769,8 +780,8 @@ MonoBehaviour:
   shouldBeLit: 0
   litMaterial: {fileID: 2100000, guid: 63955e6228feac34aa5077114c0a6e99, type: 2}
   unlitMaterial: {fileID: 2100000, guid: efbaff4d84b347a4ca58fc3d7d910240, type: 2}
-  interactText: {fileID: 0}
-  interactIcon: {fileID: 0}
+  interactText: {fileID: 673260840}
+  interactIcon: {fileID: 951207123}
   door: {fileID: 427464586}
   popup: {fileID: 1931012927}
 --- !u!65 &712052841
@@ -896,8 +907,8 @@ MonoBehaviour:
   shouldBeLit: 0
   litMaterial: {fileID: 2100000, guid: 63955e6228feac34aa5077114c0a6e99, type: 2}
   unlitMaterial: {fileID: 2100000, guid: efbaff4d84b347a4ca58fc3d7d910240, type: 2}
-  interactText: {fileID: 0}
-  interactIcon: {fileID: 0}
+  interactText: {fileID: 673260840}
+  interactIcon: {fileID: 951207123}
   door: {fileID: 427464586}
   popup: {fileID: 1931012927}
 --- !u!65 &761295713
@@ -1023,8 +1034,8 @@ MonoBehaviour:
   shouldBeLit: 0
   litMaterial: {fileID: 2100000, guid: 63955e6228feac34aa5077114c0a6e99, type: 2}
   unlitMaterial: {fileID: 2100000, guid: efbaff4d84b347a4ca58fc3d7d910240, type: 2}
-  interactText: {fileID: 0}
-  interactIcon: {fileID: 0}
+  interactText: {fileID: 673260840}
+  interactIcon: {fileID: 951207123}
   door: {fileID: 427464586}
   popup: {fileID: 1931012927}
 --- !u!65 &864388416
@@ -1150,8 +1161,8 @@ MonoBehaviour:
   shouldBeLit: 0
   litMaterial: {fileID: 2100000, guid: 63955e6228feac34aa5077114c0a6e99, type: 2}
   unlitMaterial: {fileID: 2100000, guid: efbaff4d84b347a4ca58fc3d7d910240, type: 2}
-  interactText: {fileID: 0}
-  interactIcon: {fileID: 0}
+  interactText: {fileID: 673260840}
+  interactIcon: {fileID: 951207123}
   door: {fileID: 427464586}
   popup: {fileID: 1931012927}
 --- !u!65 &943604285
@@ -1240,6 +1251,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &951207123 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2708458438785552287, guid: a891dc2b9825fd54a84babe86d8f84fe, type: 3}
+  m_PrefabInstance: {fileID: 1650404254}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1650404254
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1416,8 +1432,8 @@ MonoBehaviour:
   shouldBeLit: 0
   litMaterial: {fileID: 2100000, guid: 63955e6228feac34aa5077114c0a6e99, type: 2}
   unlitMaterial: {fileID: 2100000, guid: efbaff4d84b347a4ca58fc3d7d910240, type: 2}
-  interactText: {fileID: 0}
-  interactIcon: {fileID: 0}
+  interactText: {fileID: 673260840}
+  interactIcon: {fileID: 951207123}
   door: {fileID: 427464586}
   popup: {fileID: 1931012927}
 --- !u!65 &2098281993

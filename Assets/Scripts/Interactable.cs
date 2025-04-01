@@ -17,7 +17,7 @@ public class Interactable : MonoBehaviour
     private bool isFloating = false;
     private bool shouldStartFloating = false;
     private Vector3 targetPosition;
-    private float floatSpeed = 1.5f;
+    private float floatSpeed = 3.0f;
     private Vector3 initialScale;
     private Vector3 targetScale;
     private UIManager uiManager;
@@ -59,8 +59,10 @@ public class Interactable : MonoBehaviour
                 if (isPaper)
                 {
                     shouldStartFloating = true;
+                    uiManager.clueCollected = true;
                 }
             }
+            
         }
 
         // Check for mouse click to close dialogue and start floating
@@ -90,7 +92,7 @@ public class Interactable : MonoBehaviour
             transform.localScale = Vector3.Lerp(transform.localScale, targetScale, Time.deltaTime * floatSpeed);
             
             // If paper is close enough to target position, destroy it
-            if (Vector3.Distance(transform.position, targetPosition) < 0.2f)
+            if (Vector3.Distance(transform.position, targetPosition) < 0.1f)
             {
                 Destroy(gameObject);
             }

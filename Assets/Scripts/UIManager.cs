@@ -23,6 +23,7 @@ public class UIManager : MonoBehaviour
     public Slider soundSlider;
     private bool tooltipShown = false;
     public GameObject tooltip;
+    public bool clueCollected = false;
     
     
     [Header("Audio")]
@@ -54,12 +55,12 @@ public class UIManager : MonoBehaviour
 
         bool isMouseInPosition = Input.mousePosition.x > 45 && Input.mousePosition.x < 110 && 
                                Input.mousePosition.y > 976 && Input.mousePosition.y < 1040;
-        if (isMouseInPosition && !tooltipShown)
+        if (isMouseInPosition && !tooltipShown && clues.activeSelf)
         {
             tooltip.SetActive(true);
             tooltipShown = true;
         }
-        else if (!isMouseInPosition && tooltipShown)
+        else if (!isMouseInPosition && tooltipShown && clues.activeSelf)
         {
             tooltip.SetActive(false);
             tooltipShown = false;
@@ -107,10 +108,12 @@ public class UIManager : MonoBehaviour
     }
 
     void ShowClues() {
-        if (clues.activeSelf)
-            clues.SetActive(false);
-        else
-            clues.SetActive(true);
+        if (clueCollected) {
+            if (clues.activeSelf)
+                clues.SetActive(false);
+            else
+                clues.SetActive(true);
+        }
     }
 
     public void ShowDialogue(string text)

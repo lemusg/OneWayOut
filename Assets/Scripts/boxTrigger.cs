@@ -7,7 +7,7 @@ using System.Linq;
 public class boxTrigger : MonoBehaviour
 {
     public static int boxesInTrigger = 0;
-    public Material mat;
+    public GameObject box;
     public GameObject door;
     public GameObject popup;
     private Door d;
@@ -29,8 +29,7 @@ public class boxTrigger : MonoBehaviour
         if (other.CompareTag("Box"))
         {
             popup.GetComponent<Popup>().triggered = true;
-            Material boxMat = other.GetComponent<Renderer>().sharedMaterial;
-            if (boxMat == mat)
+            if (other.gameObject == box)
             {
                 boxesInTrigger++;
             }
@@ -41,8 +40,7 @@ public class boxTrigger : MonoBehaviour
     {
         if (other.CompareTag("Box"))
         {
-            Material boxMat = other.GetComponent<Renderer>().sharedMaterial;
-            if (boxMat == mat)
+            if (other.gameObject == box)
             {
                 boxesInTrigger--;
             }
