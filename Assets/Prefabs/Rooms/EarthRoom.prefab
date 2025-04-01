@@ -520,6 +520,8 @@ MonoBehaviour:
   isOpen: 0
   LevelName: 
   LevelEntryPoint: 2
+  audioSource: {fileID: 0}
+  openDoorSound: {fileID: 0}
 --- !u!1 &963157434738036189
 GameObject:
   m_ObjectHideFlags: 0
@@ -974,6 +976,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogueText: 
+  isPaper: 0
+  screenOffsetRight: 50
+  screenOffsetTop: 50
+  finalScale: 0.4
 --- !u!114 &2284069333040902374
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1106,6 +1112,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogueText: 
+  isPaper: 0
+  screenOffsetRight: 50
+  screenOffsetTop: 50
+  finalScale: 0.4
 --- !u!114 &5669459537416510749
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1927,6 +1937,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogueText: 
+  isPaper: 0
+  screenOffsetRight: 50
+  screenOffsetTop: 50
+  finalScale: 0.4
 --- !u!114 &6467458865001506384
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2436,6 +2450,8 @@ MonoBehaviour:
   isOpen: 0
   LevelName: 
   LevelEntryPoint: 4
+  audioSource: {fileID: 0}
+  openDoorSound: {fileID: 0}
 --- !u!1 &5688770921413764613
 GameObject:
   m_ObjectHideFlags: 0
@@ -2832,6 +2848,8 @@ MonoBehaviour:
   isOpen: 0
   LevelName: 
   LevelEntryPoint: 1
+  audioSource: {fileID: 0}
+  openDoorSound: {fileID: 0}
 --- !u!1 &5930164653984850522
 GameObject:
   m_ObjectHideFlags: 0
@@ -3905,6 +3923,8 @@ MonoBehaviour:
   isOpen: 0
   LevelName: 
   LevelEntryPoint: 3
+  audioSource: {fileID: 0}
+  openDoorSound: {fileID: 8300000, guid: f677351afc9770e42aee78010e4f2765, type: 3}
 --- !u!1 &7460191704149648503
 GameObject:
   m_ObjectHideFlags: 0
@@ -4312,6 +4332,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogueText: 
+  isPaper: 0
+  screenOffsetRight: 50
+  screenOffsetTop: 50
+  finalScale: 0.4
 --- !u!114 &3202528936581399361
 MonoBehaviour:
   m_ObjectHideFlags: 0

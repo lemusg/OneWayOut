@@ -13,6 +13,8 @@ public class Door : MonoBehaviour
     private bool opened = false;
     public string LevelName;
     public int LevelEntryPoint;
+    private AudioSource audioSource;
+    public AudioClip openDoorSound;
     // Start is called before the first frame update
     void Start()
     {
@@ -20,6 +22,8 @@ public class Door : MonoBehaviour
         doorCollider = GetComponent<BoxCollider>();
         interact = transform.GetChild(0).gameObject;
         doorSprite = transform.GetChild(1).gameObject.GetComponent<SpriteRenderer>();
+        audioSource = gameObject.AddComponent<AudioSource>();
+        audioSource.clip = openDoorSound;
     }
 
     // Update is called once per frame
@@ -30,6 +34,7 @@ public class Door : MonoBehaviour
         {
             opening = true;
             StartCoroutine(OpenDoor());
+            audioSource.Play();
         }
     }
 
