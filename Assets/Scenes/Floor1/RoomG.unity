@@ -122,17 +122,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!114 &57372360 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4185280220167373878, guid: a891dc2b9825fd54a84babe86d8f84fe, type: 3}
-  m_PrefabInstance: {fileID: 389331713}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &83887022
 GameObject:
   m_ObjectHideFlags: 0
@@ -160,16 +149,16 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 83887022}
-  m_LocalRotation: {x: -0.000000029802319, y: 0.38268343, z: 0.0000000074505797, w: 0.9238795}
-  m_LocalPosition: {x: 0, y: 0, z: -244.19032}
-  m_LocalScale: {x: 75, y: 180, z: 75}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -332.29196}
+  m_LocalScale: {x: 6, y: 6, z: 6}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 389331714}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -955.8088, y: -26615}
+  m_AnchoredPosition: {x: -1661.459, y: -1770}
   m_SizeDelta: {x: 45, y: 32}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!225 &83887024
@@ -272,15 +261,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 074d6839a34470b4b9347e0fe050a990, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isInteractable: 0
-  flipped: 0
-  correct: 0
-  flippedMaterial: {fileID: 2100000, guid: efbaff4d84b347a4ca58fc3d7d910240, type: 2}
-  originalMaterial: {fileID: 2100000, guid: b64b5073ac6b5f44b8b8f3a580c44c36, type: 2}
-  interactText: {fileID: 57372360}
-  interactIcon: {fileID: 1105262289}
   door: {fileID: 96595401}
-  sequenceDelay: 1
+  buttOn: {fileID: -3802577036314081666, guid: 2764b762093d23644b9af08afcc5dd9b, type: 3}
+  buttOff: {fileID: -4064177444378859140, guid: 2764b762093d23644b9af08afcc5dd9b, type: 3}
 --- !u!65 &256336244
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -360,13 +343,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 256336242}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 85, y: 20, z: -70}
   m_LocalScale: {x: 20, y: 20, z: 20}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 1851123478}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1850328131}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &389331713
 PrefabInstance:
@@ -437,15 +420,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 074d6839a34470b4b9347e0fe050a990, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isInteractable: 0
-  flipped: 0
-  correct: 1
-  flippedMaterial: {fileID: 2100000, guid: 63955e6228feac34aa5077114c0a6e99, type: 2}
-  originalMaterial: {fileID: 2100000, guid: b64b5073ac6b5f44b8b8f3a580c44c36, type: 2}
-  interactText: {fileID: 57372360}
-  interactIcon: {fileID: 1105262289}
   door: {fileID: 96595401}
-  sequenceDelay: 1
+  buttOn: {fileID: -3802577036314081666, guid: 2764b762093d23644b9af08afcc5dd9b, type: 3}
+  buttOff: {fileID: -4064177444378859140, guid: 2764b762093d23644b9af08afcc5dd9b, type: 3}
 --- !u!65 &402767245
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -525,13 +502,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 402767243}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 85, y: 20, z: 35}
   m_LocalScale: {x: 20, y: 20, z: 20}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 540485465}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1850328131}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &540485464
 GameObject:
@@ -545,7 +522,7 @@ GameObject:
   - component: {fileID: 540485467}
   - component: {fileID: 540485466}
   m_Layer: 0
-  m_Name: Button ON
+  m_Name: Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -586,7 +563,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -3802577036314081666, guid: 2764b762093d23644b9af08afcc5dd9b, type: 3}
+  - {fileID: -4064177444378859140, guid: 2764b762093d23644b9af08afcc5dd9b, type: 3}
   - {fileID: -239302050275881172, guid: 2764b762093d23644b9af08afcc5dd9b, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
@@ -617,11 +594,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 540485464}
   m_Mesh: {fileID: -6561623251038253957, guid: 2764b762093d23644b9af08afcc5dd9b, type: 3}
---- !u!1 &1105262289 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2708458438785552287, guid: a891dc2b9825fd54a84babe86d8f84fe, type: 3}
-  m_PrefabInstance: {fileID: 389331713}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1241944262
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -676,7 +648,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5907802326652795178, guid: e640bee937613674388d75aa53bf8f2e, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6341687175113615902, guid: e640bee937613674388d75aa53bf8f2e, type: 3}
       propertyPath: m_IsActive
@@ -685,6 +657,10 @@ PrefabInstance:
     - target: {fileID: 6384176332066172972, guid: e640bee937613674388d75aa53bf8f2e, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6573589933122559634, guid: e640bee937613674388d75aa53bf8f2e, type: 3}
+      propertyPath: dialogueText
+      value: The door seems to be locked...
       objectReference: {fileID: 0}
     - target: {fileID: 7438324881285152945, guid: e640bee937613674388d75aa53bf8f2e, type: 3}
       propertyPath: m_IsActive
@@ -747,15 +723,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 074d6839a34470b4b9347e0fe050a990, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isInteractable: 0
-  flipped: 0
-  correct: 0
-  flippedMaterial: {fileID: 2100000, guid: efbaff4d84b347a4ca58fc3d7d910240, type: 2}
-  originalMaterial: {fileID: 2100000, guid: b64b5073ac6b5f44b8b8f3a580c44c36, type: 2}
-  interactText: {fileID: 57372360}
-  interactIcon: {fileID: 1105262289}
   door: {fileID: 96595401}
-  sequenceDelay: 1
+  buttOn: {fileID: -3802577036314081666, guid: 2764b762093d23644b9af08afcc5dd9b, type: 3}
+  buttOff: {fileID: -4064177444378859140, guid: 2764b762093d23644b9af08afcc5dd9b, type: 3}
 --- !u!65 &1253937637
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -835,13 +805,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1253937635}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 85, y: 20, z: 0}
   m_LocalScale: {x: 20, y: 20, z: 20}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 2458818398366545212}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1850328131}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1476610754
 GameObject:
@@ -855,7 +825,7 @@ GameObject:
   - component: {fileID: 1476610757}
   - component: {fileID: 1476610756}
   m_Layer: 0
-  m_Name: Button ON
+  m_Name: Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -896,7 +866,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -3802577036314081666, guid: 2764b762093d23644b9af08afcc5dd9b, type: 3}
+  - {fileID: -4064177444378859140, guid: 2764b762093d23644b9af08afcc5dd9b, type: 3}
   - {fileID: -239302050275881172, guid: 2764b762093d23644b9af08afcc5dd9b, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
@@ -959,15 +929,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 074d6839a34470b4b9347e0fe050a990, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isInteractable: 0
-  flipped: 0
-  correct: 0
-  flippedMaterial: {fileID: 2100000, guid: efbaff4d84b347a4ca58fc3d7d910240, type: 2}
-  originalMaterial: {fileID: 2100000, guid: b64b5073ac6b5f44b8b8f3a580c44c36, type: 2}
-  interactText: {fileID: 57372360}
-  interactIcon: {fileID: 1105262289}
   door: {fileID: 96595401}
-  sequenceDelay: 1
+  buttOn: {fileID: -3802577036314081666, guid: 2764b762093d23644b9af08afcc5dd9b, type: 3}
+  buttOff: {fileID: -4064177444378859140, guid: 2764b762093d23644b9af08afcc5dd9b, type: 3}
 --- !u!65 &1665932117
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1047,13 +1011,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1665932115}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 85, y: 20, z: 70}
   m_LocalScale: {x: 20, y: 20, z: 20}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 1476610755}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1850328131}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1850328129
 GameObject:
@@ -1064,7 +1028,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1850328131}
-  - component: {fileID: 1850328130}
+  - component: {fileID: 1850328132}
   m_Layer: 0
   m_Name: SimonSaysManager
   m_TagString: Untagged
@@ -1072,7 +1036,27 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1850328130
+--- !u!4 &1850328131
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1850328129}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 256336247}
+  - {fileID: 2105780662}
+  - {fileID: 1253937640}
+  - {fileID: 402767248}
+  - {fileID: 1665932120}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1850328132
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1084,26 +1068,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a62ca98a9f8214ff88faf0f6d80919cb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  correctSequence:
-  - {fileID: 256336243}
-  - {fileID: 1253937636}
-  - {fileID: 1665932116}
-  startDelay: 2
---- !u!4 &1850328131
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1850328129}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 87.93228, y: 36.890736, z: -10.609774}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  buttOn: {fileID: -3802577036314081666, guid: 2764b762093d23644b9af08afcc5dd9b, type: 3}
+  buttOff: {fileID: -4064177444378859140, guid: 2764b762093d23644b9af08afcc5dd9b, type: 3}
+  switches: 
 --- !u!1 &1851123477
 GameObject:
   m_ObjectHideFlags: 0
@@ -1116,7 +1083,7 @@ GameObject:
   - component: {fileID: 1851123480}
   - component: {fileID: 1851123479}
   m_Layer: 0
-  m_Name: Button ON
+  m_Name: Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1157,7 +1124,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -3802577036314081666, guid: 2764b762093d23644b9af08afcc5dd9b, type: 3}
+  - {fileID: -4064177444378859140, guid: 2764b762093d23644b9af08afcc5dd9b, type: 3}
   - {fileID: -239302050275881172, guid: 2764b762093d23644b9af08afcc5dd9b, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
@@ -1220,15 +1187,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 074d6839a34470b4b9347e0fe050a990, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isInteractable: 0
-  flipped: 0
-  correct: 1
-  flippedMaterial: {fileID: 2100000, guid: 63955e6228feac34aa5077114c0a6e99, type: 2}
-  originalMaterial: {fileID: 2100000, guid: b64b5073ac6b5f44b8b8f3a580c44c36, type: 2}
-  interactText: {fileID: 57372360}
-  interactIcon: {fileID: 1105262289}
   door: {fileID: 96595401}
-  sequenceDelay: 1
+  buttOn: {fileID: -3802577036314081666, guid: 2764b762093d23644b9af08afcc5dd9b, type: 3}
+  buttOff: {fileID: -4064177444378859140, guid: 2764b762093d23644b9af08afcc5dd9b, type: 3}
 --- !u!65 &2105780659
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1308,13 +1269,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2105780657}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 85, y: 20, z: -35}
   m_LocalScale: {x: 20, y: 20, z: 20}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 2318384613187291180}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1850328131}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &1540485839654002831
 MeshRenderer:
@@ -1336,7 +1297,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -3802577036314081666, guid: 2764b762093d23644b9af08afcc5dd9b, type: 3}
+  - {fileID: -4064177444378859140, guid: 2764b762093d23644b9af08afcc5dd9b, type: 3}
   - {fileID: -239302050275881172, guid: 2764b762093d23644b9af08afcc5dd9b, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
@@ -1379,7 +1340,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -3802577036314081666, guid: 2764b762093d23644b9af08afcc5dd9b, type: 3}
+  - {fileID: -4064177444378859140, guid: 2764b762093d23644b9af08afcc5dd9b, type: 3}
   - {fileID: -239302050275881172, guid: 2764b762093d23644b9af08afcc5dd9b, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
@@ -1444,7 +1405,7 @@ GameObject:
   - component: {fileID: 7694653094209665171}
   - component: {fileID: 1540485839654002831}
   m_Layer: 0
-  m_Name: Button ON
+  m_Name: Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1462,7 +1423,7 @@ GameObject:
   - component: {fileID: 7564660835967927683}
   - component: {fileID: 1680708519941053855}
   m_Layer: 0
-  m_Name: Button ON
+  m_Name: Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1491,8 +1452,3 @@ SceneRoots:
   - {fileID: 1241944262}
   - {fileID: 389331713}
   - {fileID: 1850328131}
-  - {fileID: 402767248}
-  - {fileID: 256336247}
-  - {fileID: 1665932120}
-  - {fileID: 1253937640}
-  - {fileID: 2105780662}

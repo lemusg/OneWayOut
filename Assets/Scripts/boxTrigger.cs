@@ -31,6 +31,8 @@ public class boxTrigger : MonoBehaviour
             popup.GetComponent<Popup>().triggered = true;
             if (other.gameObject == box)
             {
+                GameObject light = transform.GetChild(0).gameObject;
+                light.SetActive(true);
                 boxesInTrigger++;
             }
         }
@@ -42,6 +44,8 @@ public class boxTrigger : MonoBehaviour
         {
             if (other.gameObject == box)
             {
+                GameObject light = transform.GetChild(0).gameObject;
+                light.SetActive(false);
                 boxesInTrigger--;
             }
         }

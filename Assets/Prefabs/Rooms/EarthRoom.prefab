@@ -74,7 +74,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 09e877f53cb30ff4399918308a52ff90, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.49803922, g: 0.49803922, b: 0.49803922, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -346,7 +346,7 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 0.8962264, g: 0.58560526, b: 0.07186722, a: 0.6039216}
-  m_Intensity: 5
+  m_Intensity: 3
   m_Range: 45
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -520,7 +520,6 @@ MonoBehaviour:
   isOpen: 0
   LevelName: 
   LevelEntryPoint: 2
-  audioSource: {fileID: 0}
   openDoorSound: {fileID: 0}
 --- !u!1 &963157434738036189
 GameObject:
@@ -650,7 +649,7 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 0.8962264, g: 0.58560526, b: 0.07186722, a: 0.6039216}
-  m_Intensity: 5
+  m_Intensity: 3
   m_Range: 45
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -1473,7 +1472,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 39e110481d3b94e8c89c20d9dda4052f, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.49803922, g: 0.49803922, b: 0.49803922, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -1767,7 +1766,7 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 0.8962264, g: 0.58560526, b: 0.07186722, a: 0.6039216}
-  m_Intensity: 5
+  m_Intensity: 3
   m_Range: 45
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -2027,7 +2026,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: ab2382a4eb3a79c418141ef35991f317, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.49803922, g: 0.49803922, b: 0.49803922, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -2195,7 +2194,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 39e110481d3b94e8c89c20d9dda4052f, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.49803922, g: 0.49803922, b: 0.49803922, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -2450,7 +2449,6 @@ MonoBehaviour:
   isOpen: 0
   LevelName: 
   LevelEntryPoint: 4
-  audioSource: {fileID: 0}
   openDoorSound: {fileID: 0}
 --- !u!1 &5688770921413764613
 GameObject:
@@ -2496,7 +2494,7 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 0.8962264, g: 0.58560526, b: 0.07186722, a: 0.6039216}
-  m_Intensity: 5
+  m_Intensity: 3
   m_Range: 45
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -2590,7 +2588,7 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 0.8962264, g: 0.58560526, b: 0.07186722, a: 0.6039216}
-  m_Intensity: 5
+  m_Intensity: 3
   m_Range: 45
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -2848,7 +2846,6 @@ MonoBehaviour:
   isOpen: 0
   LevelName: 
   LevelEntryPoint: 1
-  audioSource: {fileID: 0}
   openDoorSound: {fileID: 0}
 --- !u!1 &5930164653984850522
 GameObject:
@@ -3008,7 +3005,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: b6712cca9f8e2814a86a0aefc27e9eab, type: 3}
-  m_Color: {r: 0.6415094, g: 0.6415094, b: 0.6415094, a: 1}
+  m_Color: {r: 0.49803922, g: 0.49803922, b: 0.49803922, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -3448,7 +3445,7 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 0.8962264, g: 0.58560526, b: 0.07186722, a: 0.6039216}
-  m_Intensity: 5
+  m_Intensity: 3
   m_Range: 45
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -3656,7 +3653,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 93f82f7c968444f4cb740fe7298a6137, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.49803922, g: 0.49803922, b: 0.49803922, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -3789,7 +3786,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 39e110481d3b94e8c89c20d9dda4052f, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.49803922, g: 0.49803922, b: 0.49803922, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -3923,7 +3920,6 @@ MonoBehaviour:
   isOpen: 0
   LevelName: 
   LevelEntryPoint: 3
-  audioSource: {fileID: 0}
   openDoorSound: {fileID: 8300000, guid: f677351afc9770e42aee78010e4f2765, type: 3}
 --- !u!1 &7460191704149648503
 GameObject:
@@ -4422,7 +4418,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 39e110481d3b94e8c89c20d9dda4052f, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.49803922, g: 0.49803922, b: 0.49803922, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -4476,7 +4472,7 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 0.8962264, g: 0.58560526, b: 0.07186722, a: 0.6039216}
-  m_Intensity: 5
+  m_Intensity: 3
   m_Range: 45
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -4674,7 +4670,7 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 0.8962264, g: 0.58560526, b: 0.07186722, a: 0.6039216}
-  m_Intensity: 5
+  m_Intensity: 3
   m_Range: 45
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208

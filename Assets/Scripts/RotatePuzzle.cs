@@ -35,7 +35,8 @@ public class RotatePuzzle : MonoBehaviour
                     {
                         isCorrect = true;
                         correctRotations++;
-                        objectRenderer.material = correctMat;
+                        GameObject beam = transform.GetChild(1).gameObject;
+                        beam.SetActive(true);
                         if (correctRotations >= 4)
                         {
                             door.GetComponent<Door>().isOpen = true;
@@ -46,7 +47,8 @@ public class RotatePuzzle : MonoBehaviour
                 {
                     isCorrect = false;
                     correctRotations--;
-                    objectRenderer.material = incorrectMat;
+                    GameObject beam = transform.GetChild(1).gameObject;
+                    beam.SetActive(false);
                 }
             }
         }
