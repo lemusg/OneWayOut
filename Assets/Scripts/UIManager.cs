@@ -12,11 +12,12 @@ public class UIManager : MonoBehaviour
     public Button returnMenu;
     public Button cluesButton;
     public Button exitButton;
+    public Button SimonClue;
     public GameObject gameUI;
     public GameObject menuUI;
     public GameObject clues;
     public TextMeshProUGUI dialogue;
-    private float typingSpeed = 0.05f;
+    public TextMeshProUGUI skipText;
     private bool isTyping = false;
     private Coroutine typingCoroutine;
     private string fullText;
@@ -39,8 +40,8 @@ public class UIManager : MonoBehaviour
         menuUI.SetActive(false);
         menuButton.onClick.AddListener(Menu);
         returnMenu.onClick.AddListener(ReturnMenu);
-        cluesButton.onClick.AddListener(ShowClues);
         exitButton.onClick.AddListener(ExitToMainMenu);
+        SimonClue.onClick.AddListener(ShowSimonClue);
         soundSlider.onValueChanged.AddListener(HandleVolumeChange);
         soundSlider.value = AudioListener.volume;
     }
@@ -51,19 +52,6 @@ public class UIManager : MonoBehaviour
         if (Input.GetMouseButtonDown(0))
         {
             SkipTyping();
-        }
-
-        bool isMouseInPosition = Input.mousePosition.x > 45 && Input.mousePosition.x < 110 && 
-                               Input.mousePosition.y > 976 && Input.mousePosition.y < 1040;
-        if (isMouseInPosition && !tooltipShown && clues.activeSelf)
-        {
-            tooltip.SetActive(true);
-            tooltipShown = true;
-        }
-        else if (!isMouseInPosition && tooltipShown && clues.activeSelf)
-        {
-            tooltip.SetActive(false);
-            tooltipShown = false;
         }
     }
 
@@ -107,7 +95,7 @@ public class UIManager : MonoBehaviour
         gameUI.SetActive(true);
     }
 
-    void ShowClues() {
+    public void ShowClues() {
         if (clueCollected) {
             if (clues.activeSelf)
                 clues.SetActive(false);
@@ -116,42 +104,52 @@ public class UIManager : MonoBehaviour
         }
     }
 
+    public bool IsTyping()
+    {
+        return isTyping;
+    }
+
     public void ShowDialogue(string text)
     {
-        fullText = text;
-        // Stop any existing typing coroutine
         if (typingCoroutine != null)
+        {
             StopCoroutine(typingCoroutine);
-            
-        // Start new typing coroutine
+        }
         typingCoroutine = StartCoroutine(TypeText(text));
+    }
+
+    public void SkipTyping()
+    {
+        if (isTyping && typingCoroutine != null)
+        {
+            StopCoroutine(typingCoroutine);
+            TextMeshProUGUI dialogueText = transform.Find("Dialogue")?.GetComponent<TextMeshProUGUI>();
+            if (dialogueText != null)
+            {
+                dialogueText.text = fullText;
+                isTyping = false;
+                skipText.text = "Press E to Exit";
+            }
+        }
     }
 
     private IEnumerator TypeText(string text)
     {
-        isTyping = true;
-        dialogue.text = "";
-        
-        foreach (char c in text)
+        TextMeshProUGUI dialogueText = transform.Find("Dialogue")?.GetComponent<TextMeshProUGUI>();
+        if (dialogueText != null)
         {
-            dialogue.text += c;
-            yield return new WaitForSeconds(typingSpeed);
-        }
-        
-        isTyping = false;
-    }
-
-    // Optional: Skip to end of text if player clicks while typing
-    public void SkipTyping()
-    {
-        if (isTyping)
-        {
-            if (typingCoroutine != null)
-                StopCoroutine(typingCoroutine);
-                
-            dialogue.text = fullText;  // Show full text immediately
+            fullText = text;
+            isTyping = true;
+            dialogueText.text = "";
+            foreach (char c in text)
+            {
+                dialogueText.text += c;
+                yield return new WaitForSeconds(0.05f);
+            }
             isTyping = false;
+            skipText.text = "Press E to Exit";
         }
+        typingCoroutine = null;
     }
 
     void HandleVolumeChange(float value)
@@ -173,5 +171,14 @@ public class UIManager : MonoBehaviour
         }
         
         SceneManager.LoadScene("Scenes/Main Menu");
+    }
+
+    void ShowSimonClue() {
+        if (tooltip.activeSelf) {
+            tooltip.SetActive(false);
+        }
+        else if(clueCollected){
+            tooltip.SetActive(true);
+        }
     }
 }
