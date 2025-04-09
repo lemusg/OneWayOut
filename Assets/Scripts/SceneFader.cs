@@ -5,35 +5,26 @@ using UnityEngine.SceneManagement;
 public class SceneFader : MonoBehaviour
 {
     private CanvasGroup canvasGroup;
-    public bool fadeIn;
-    public float initialFadeInDelay;
-    public float initialFadeOutDelay;
+    private GameObject popup;
+    public GameObject door;
 
     void Awake()
     {
         canvasGroup = GetComponent<CanvasGroup>();
-        if (canvasGroup == null)
-            canvasGroup = gameObject.AddComponent<CanvasGroup>();
-        
-        if (fadeIn) {
-            canvasGroup.alpha = 1f;
-        } else {
-            canvasGroup.alpha = 0f;
+        Transform popupTransform = transform.parent.Find("Popup");
+        if (popupTransform != null) {
+            popup = popupTransform.gameObject;
         }
     }
 
     void Start()
     {
-        if (fadeIn) {
-            StartCoroutine(FadeIn());
-        } else {
-            StartCoroutine(FadeOut());
-        }
+        canvasGroup.alpha = 1f;
+        StartCoroutine(FadeIn());
     }
 
     private IEnumerator FadeIn()
     {
-        yield return new WaitForSeconds(initialFadeInDelay);
         float elapsedTime = 0f;
         
         while (elapsedTime < 3f)
@@ -44,11 +35,17 @@ public class SceneFader : MonoBehaviour
         }
         
         canvasGroup.alpha = 0f;
+
+        if (popup != null) {
+            popup.SetActive(true);
+        }
+        if (door != null) {
+            door.GetComponent<Door>().isOpen = true;
+        }
     }
 
     public IEnumerator FadeOut()
     {
-        yield return new WaitForSeconds(initialFadeOutDelay);
         float elapsedTime = 0f;
         
         while (elapsedTime < 3f)

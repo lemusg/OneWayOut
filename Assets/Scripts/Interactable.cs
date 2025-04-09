@@ -58,7 +58,9 @@ public class Interactable : MonoBehaviour
                     dialogueBox.SetActive(false);
                     dialogue.text = "";
                     skipText.text = "";
-                    
+                    interactIcon.SetActive(true);
+                    interactText.text = "Interact";
+
                     if (isPaper && spriteRenderer != null)
                     {
                         uiManager.AddClue(spriteRenderer.sprite, dialogueText);
@@ -104,6 +106,16 @@ public class Interactable : MonoBehaviour
                 Destroy(gameObject);
                 uiManager.ShowClues();
             }
+        }
+    }
+    // When interactable becomes inactive, if dialogue still open, close dialogue prompt
+    void OnDisable() {
+        if (dialogueBox.activeSelf == true) {
+            interactIcon.SetActive(false);
+            interactText.text = "";
+            dialogueBox.SetActive(false);
+            dialogue.text = "";
+            skipText.text = "";
         }
     }
 }

@@ -22,7 +22,7 @@ public class UIManager : MonoBehaviour
     private Coroutine typingCoroutine;
     private string fullText;
     public Slider soundSlider;
-    private bool tooltipShown = false;
+    //private bool tooltipShown = false;
     public GameObject tooltip;
     public bool clueCollected = false;
     

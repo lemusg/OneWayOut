@@ -43,8 +43,7 @@ public class Door : MonoBehaviour
         //TODO: When the player enter's the door's trigger, set the destination level/entry point ID in the manager, then load the level
         if (other.gameObject.CompareTag("Player"))
         {
-            PersistantGameManager.SetTargetLevel(LevelName, LevelEntryPoint);
-            SceneManager.LoadScene(LevelName);
+            StartCoroutine(ExitLevel());
         }
     }
 
@@ -74,5 +73,12 @@ public class Door : MonoBehaviour
         
         opened = true;
         opening = false;
+    }
+
+    IEnumerator ExitLevel() {
+        SceneFader fader = FindObjectOfType<SceneFader>();
+        yield return StartCoroutine(fader.FadeOut());
+        PersistantGameManager.SetTargetLevel(LevelName, LevelEntryPoint);
+        SceneManager.LoadScene(LevelName);
     }
 }

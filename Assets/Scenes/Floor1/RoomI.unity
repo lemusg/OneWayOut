@@ -467,6 +467,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4569132986873998387, guid: e640bee937613674388d75aa53bf8f2e, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4988027444741766776, guid: e640bee937613674388d75aa53bf8f2e, type: 3}
       propertyPath: dialogue
       value: 
@@ -497,6 +501,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5354337615534564584, guid: e640bee937613674388d75aa53bf8f2e, type: 3}
       propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5829223854354374424, guid: e640bee937613674388d75aa53bf8f2e, type: 3}
+      propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5907802326652795178, guid: e640bee937613674388d75aa53bf8f2e, type: 3}
@@ -1656,6 +1664,7 @@ GameObject:
   - component: {fileID: 2057540714690776392}
   - component: {fileID: 4281002575313828226}
   - component: {fileID: 4281002575313828227}
+  - component: {fileID: 4281002575313828228}
   m_Layer: 0
   m_Name: Ladder
   m_TagString: Untagged
@@ -1735,12 +1744,24 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.019498557, y: 0.10999999, z: 0.019999998}
-  m_Center: {x: 0, y: -0.044999998, z: 0}
+  m_Size: {x: 0.063787326, y: 0.16099411, z: 0.009547406}
+  m_Center: {x: 0.022144385, y: -0.04881955, z: -0.005226323}
+--- !u!114 &4281002575313828228
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2335628062734112855}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3fb11751f3873134db77fb07345b308a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

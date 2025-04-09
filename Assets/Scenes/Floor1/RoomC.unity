@@ -296,6 +296,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6307616410321448100, guid: a891dc2b9825fd54a84babe86d8f84fe, type: 3}
+      propertyPath: door
+      value: 
+      objectReference: {fileID: 1143592172}
     - target: {fileID: 7439798813027823288, guid: a891dc2b9825fd54a84babe86d8f84fe, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: 0
@@ -845,9 +849,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueText: This could be useful later...
   isPaper: 1
-  screenOffsetRight: 50
-  screenOffsetTop: 50
-  finalScale: 0.4
 --- !u!1001 &946566969
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1032,7 +1033,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1480195612742831443, guid: e640bee937613674388d75aa53bf8f2e, type: 3}
       propertyPath: isOpen
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1480195612742831443, guid: e640bee937613674388d75aa53bf8f2e, type: 3}
       propertyPath: LevelName
@@ -1131,6 +1132,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e640bee937613674388d75aa53bf8f2e, type: 3}
+--- !u!1 &1143592172 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7438324881285152945, guid: e640bee937613674388d75aa53bf8f2e, type: 3}
+  m_PrefabInstance: {fileID: 1143592171}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1207729753 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: f6d00d35eebb98240a9bbdbebdfee987, type: 3}
