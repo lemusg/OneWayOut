@@ -19,7 +19,6 @@ public class SimonSays : MonoBehaviour
     void Simon()
     {
         if (!done) {
-            //Shuffle order of switches
             switches = new List<int> {1, 2, 3, 4, 5};
             for (int i = switches.Count - 1; i > 0; i--)
             {

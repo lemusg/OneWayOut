@@ -15,11 +15,21 @@ public class RotatePuzzle : MonoBehaviour
     public Material correctMat;
     public Material incorrectMat;
     private MeshRenderer objectRenderer;
+    
+    [Header("Audio")]
+    public AudioClip rotateSound;
+    private AudioSource audioSource;
 
     void Start()
     {
         correctRotations = 0;  // Reset the counter when scene starts
         objectRenderer = transform.GetChild(0).GetComponent<MeshRenderer>();
+        
+        // Setup audio
+        audioSource = gameObject.AddComponent<AudioSource>();
+        audioSource.playOnAwake = false;
+        audioSource.spatialBlend = 1f; // 3D sound
+        audioSource.volume = 1.0f;
     }
 
     void Update()
@@ -28,6 +38,12 @@ public class RotatePuzzle : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.E))
             {
+                // Play rotation sound
+                if (rotateSound != null)
+                {
+                    audioSource.PlayOneShot(rotateSound);
+                }
+                
                 transform.Rotate(0, 45, 0);
                 if ((int) transform.rotation.eulerAngles.y == correctRotation)
                 {

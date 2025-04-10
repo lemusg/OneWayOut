@@ -300,6 +300,10 @@ PrefabInstance:
       propertyPath: LevelName
       value: RoomC
       objectReference: {fileID: 0}
+    - target: {fileID: 5477063165046462207, guid: e640bee937613674388d75aa53bf8f2e, type: 3}
+      propertyPath: openDoorSound
+      value: 
+      objectReference: {fileID: 8300000, guid: f677351afc9770e42aee78010e4f2765, type: 3}
     - target: {fileID: 5907802326652795178, guid: e640bee937613674388d75aa53bf8f2e, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -368,6 +372,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8792790521377614435, guid: e640bee937613674388d75aa53bf8f2e, type: 3}
+      propertyPath: openDoorSound
+      value: 
+      objectReference: {fileID: 8300000, guid: f677351afc9770e42aee78010e4f2765, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1682,6 +1690,7 @@ GameObject:
   - component: {fileID: 6613890930635665085}
   - component: {fileID: 7377532557574000696}
   - component: {fileID: 7377532557574000695}
+  - component: {fileID: 7377532557574000697}
   m_Layer: 0
   m_Name: GreenStone
   m_TagString: Box
@@ -1702,6 +1711,7 @@ GameObject:
   - component: {fileID: 2533669359291999946}
   - component: {fileID: 7606578150155100415}
   - component: {fileID: 7606578150155100414}
+  - component: {fileID: 7606578150155100416}
   m_Layer: 0
   m_Name: RedStone
   m_TagString: Box
@@ -1853,6 +1863,7 @@ GameObject:
   - component: {fileID: 3274608412753905386}
   - component: {fileID: 6412866388999411834}
   - component: {fileID: 6412866388999411833}
+  - component: {fileID: 6412866388999411835}
   m_Layer: 0
   m_Name: BlueStone
   m_TagString: Box
@@ -1916,6 +1927,20 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.02, y: 0.02, z: 0.02}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &6412866388999411835
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6218812907403038589}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7cea992da821544cb66e732d5f3c1c5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pushSound: {fileID: 8300000, guid: cc66971c19612ca44b9a391d0c4c043a, type: 3}
+  pushForce: 2.5
 --- !u!23 &6613890930635665085
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2015,6 +2040,20 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.02, y: 0.02, z: 0.02}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &7377532557574000697
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1144822922545529750}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7cea992da821544cb66e732d5f3c1c5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pushSound: {fileID: 8300000, guid: cc66971c19612ca44b9a391d0c4c043a, type: 3}
+  pushForce: 2.5
 --- !u!33 &7606578150155100413
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -2071,6 +2110,20 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.02, y: 0.02, z: 0.02}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &7606578150155100416
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1696213267305401427}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7cea992da821544cb66e732d5f3c1c5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pushSound: {fileID: 8300000, guid: cc66971c19612ca44b9a391d0c4c043a, type: 3}
+  pushForce: 2.5
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

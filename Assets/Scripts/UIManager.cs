@@ -6,13 +6,40 @@ using TMPro;
 using UnityEngine.SceneManagement;
 using UnityEngine.EventSystems;
 
+// Add this class at the top of the file, outside the UIManager class
+[System.Serializable]
+public class ClueData
+{
+    public Sprite sprite;
+    public string text;
+    
+    public ClueData(Sprite sprite, string text)
+    {
+        this.sprite = sprite;
+        this.text = text;
+    }
+}
+
+public static class ClueManager
+{
+    public static List<ClueData> collectedClues = new List<ClueData>();
+    
+    public static void AddClue(Sprite sprite, string text)
+    {
+        // Check if clue already exists
+        if (!collectedClues.Exists(c => c.text == text))
+        {
+            collectedClues.Add(new ClueData(sprite, text));
+        }
+    }
+}
+
 public class UIManager : MonoBehaviour
 {
     public Button menuButton;
     public Button returnMenu;
     public Button cluesButton;
     public Button exitButton;
-    public Button SimonClue;
     public GameObject gameUI;
     public GameObject menuUI;
     public GameObject clues;
@@ -26,24 +53,42 @@ public class UIManager : MonoBehaviour
     public GameObject tooltip;
     public bool clueCollected = false;
     
+    [Header("Clue System")]
+    public GameObject clueContainer; // Container for organizing clues vertically
+    public float clueSpacing = 60f; // Spacing between clues
+    private List<GameObject> collectedClues = new List<GameObject>();
+    private GameObject activeClue; // Track which clue is being hovered
     
     [Header("Audio")]
-    public AudioClip buttonClickSound;
+    public AudioClip typingSound; // Add this field for the typing sound effect
     private AudioSource audioSource;
+    private AudioSource typingAudioSource; // Separate audio source for typing sounds
     
     // Start is called before the first frame update
     void Start()
     {
         audioSource = gameObject.AddComponent<AudioSource>();
+        typingAudioSource = gameObject.AddComponent<AudioSource>();
+        typingAudioSource.volume = 0.3f;
         
         gameUI.SetActive(true);
         menuUI.SetActive(false);
-        menuButton.onClick.AddListener(Menu);
+        
+        // Add debug logs to check if button references are set
+        Debug.Log("Menu Button reference: " + (menuButton != null ? "Set" : "Not Set"));
+        Debug.Log("Return Menu Button reference: " + (returnMenu != null ? "Set" : "Not Set"));
+        
+        menuButton.onClick.AddListener(() => {
+            Debug.Log("Menu button clicked!");
+            Menu();
+        });
         returnMenu.onClick.AddListener(ReturnMenu);
         exitButton.onClick.AddListener(ExitToMainMenu);
-        SimonClue.onClick.AddListener(ShowSimonClue);
         soundSlider.onValueChanged.AddListener(HandleVolumeChange);
         soundSlider.value = AudioListener.volume;
+
+        // Restore previously collected clues
+        RestoreClues();
     }
 
     // Update is called once per frame
@@ -55,10 +100,33 @@ public class UIManager : MonoBehaviour
         }
     }
 
+    private void RestoreClues()
+    {
+        // Clear existing clue objects
+        foreach (GameObject clueObj in collectedClues)
+        {
+            if (clueObj != null)
+            {
+                Destroy(clueObj);
+            }
+        }
+        collectedClues.Clear();
+
+        // Restore clues from persistent storage
+        foreach (ClueData clueData in ClueManager.collectedClues)
+        {
+            AddClue(clueData.sprite, clueData.text);
+        }
+    }
+
     public void AddClue(Sprite clueSprite, string clueText)
     {
+        // Add to persistent storage
+        ClueManager.AddClue(clueSprite, clueText);
+
         // Create a new image object for the clue
         GameObject clueObj = new GameObject("Clue");
+        clueObj.transform.SetParent(clueContainer.transform, false);
         
         // Add Image component and set the sprite
         Image clueImage = clueObj.AddComponent<Image>();
@@ -69,28 +137,52 @@ public class UIManager : MonoBehaviour
         RectTransform rect = clueObj.GetComponent<RectTransform>();
         rect.sizeDelta = new Vector2(50, 50);
         
+        // Position the clue based on how many we already have
+        float yOffset = -collectedClues.Count * clueSpacing;
+        rect.anchoredPosition = new Vector2(0, yOffset);
+        
         // Add event trigger for hover effects
         EventTrigger trigger = clueObj.AddComponent<EventTrigger>();
         
         // Add pointer enter event
         EventTrigger.Entry enterEntry = new EventTrigger.Entry();
         enterEntry.eventID = EventTriggerType.PointerEnter;
+        enterEntry.callback.AddListener((data) => {
+            activeClue = clueObj;
+            tooltip.SetActive(true);
+            // Find and update the text component in the tooltip
+            TextMeshProUGUI tooltipText = tooltip.GetComponentInChildren<TextMeshProUGUI>();
+            if (tooltipText != null) {
+                tooltipText.text = clueText;
+            }
+        });
         trigger.triggers.Add(enterEntry);
         
         // Add pointer exit event
         EventTrigger.Entry exitEntry = new EventTrigger.Entry();
         exitEntry.eventID = EventTriggerType.PointerExit;
+        exitEntry.callback.AddListener((data) => {
+            if (activeClue == clueObj) {
+                tooltip.SetActive(false);
+                activeClue = null;
+            }
+        });
         trigger.triggers.Add(exitEntry);
+        
+        // Add to our list of collected clues
+        collectedClues.Add(clueObj);
     }
 
     void Menu()
     {
+        Debug.Log("Menu function called - Setting gameUI to false and menuUI to true");
         gameUI.SetActive(false);
         menuUI.SetActive(true);
     }
 
     void ReturnMenu()
     {
+        Debug.Log("ReturnMenu function called - Setting menuUI to false and gameUI to true");
         menuUI.SetActive(false);
         gameUI.SetActive(true);
     }
@@ -123,6 +215,10 @@ public class UIManager : MonoBehaviour
         if (isTyping && typingCoroutine != null)
         {
             StopCoroutine(typingCoroutine);
+            if (typingAudioSource != null)
+            {
+                typingAudioSource.Stop(); // Stop typing sound when dialogue is skipped
+            }
             TextMeshProUGUI dialogueText = transform.Find("Dialogue")?.GetComponent<TextMeshProUGUI>();
             if (dialogueText != null)
             {
@@ -144,7 +240,11 @@ public class UIManager : MonoBehaviour
             foreach (char c in text)
             {
                 dialogueText.text += c;
-                yield return new WaitForSeconds(0.05f);
+                if (typingSound != null && c != ' ') // Don't play sound for spaces
+                {
+                    typingAudioSource.PlayOneShot(typingSound, 0.3f);
+                }
+                yield return new WaitForSeconds(0.08f);
             }
             isTyping = false;
             skipText.text = "Press E to Exit";
@@ -159,11 +259,6 @@ public class UIManager : MonoBehaviour
 
     void ExitToMainMenu()
     {
-        if (buttonClickSound != null)
-        {
-            audioSource.PlayOneShot(buttonClickSound);
-        }
-        
         // Stop the background music
         if (PersistantGameManager.Instance != null)
         {

@@ -17,7 +17,6 @@ public class Interactable : MonoBehaviour
     private UIManager uiManager;
     private SpriteRenderer spriteRenderer;
     
-    // Start is called before the first frame update
     protected virtual void Start()
     {
         GameObject player = GameObject.FindGameObjectWithTag("Player");
@@ -31,14 +30,12 @@ public class Interactable : MonoBehaviour
         spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
-    // Update is called once per frame
     void Update()
     {
         if (isInteractable)
         {
             if (Input.GetKeyDown(KeyCode.E))
             {
-                // If dialogue box is not active, show it
                 if (!dialogueBox.activeSelf)
                 {
                     dialogueBox.SetActive(true);
@@ -52,7 +49,6 @@ public class Interactable : MonoBehaviour
                         uiManager.clueCollected = true;
                     }
                 }
-                // If dialogue box is active and text is fully displayed, close it
                 else if (!UI.GetComponent<UIManager>().IsTyping())
                 {
                     dialogueBox.SetActive(false);
@@ -70,7 +66,6 @@ public class Interactable : MonoBehaviour
                 }
             }
             
-            // Handle left click for skipping text animation
             if (dialogueBox.activeSelf && Input.GetMouseButtonDown(0) && UI.GetComponent<UIManager>().IsTyping())
             {
                 UI.GetComponent<UIManager>().SkipTyping();

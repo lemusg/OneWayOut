@@ -1112,6 +1112,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4556582163221736869, guid: e640bee937613674388d75aa53bf8f2e, type: 3}
+      propertyPath: openDoorSound
+      value: 
+      objectReference: {fileID: 8300000, guid: cc66971c19612ca44b9a391d0c4c043a, type: 3}
     - target: {fileID: 4908292728058258321, guid: e640bee937613674388d75aa53bf8f2e, type: 3}
       propertyPath: m_SortingLayer
       value: -1
@@ -1128,6 +1132,10 @@ PrefabInstance:
       propertyPath: LevelName
       value: RoomH
       objectReference: {fileID: 0}
+    - target: {fileID: 5477063165046462207, guid: e640bee937613674388d75aa53bf8f2e, type: 3}
+      propertyPath: openDoorSound
+      value: 
+      objectReference: {fileID: 8300000, guid: cc66971c19612ca44b9a391d0c4c043a, type: 3}
     - target: {fileID: 5907802326652795178, guid: e640bee937613674388d75aa53bf8f2e, type: 3}
       propertyPath: m_IsActive
       value: 1
