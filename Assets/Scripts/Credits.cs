@@ -14,6 +14,7 @@ public class Credits : MonoBehaviour
     public GameObject UI;
     public TextMeshProUGUI credits;
     public GameObject image;
+    private bool isQuit;
     
     [Header("Audio")]
     public AudioClip backgroundMusic;  // The music clip to play
@@ -57,6 +58,7 @@ public class Credits : MonoBehaviour
         {
             audioSource.PlayOneShot(buttonClickSound);
         }
+        isQuit = true;
         StartCoroutine(FadeOut());
     }
 
@@ -73,7 +75,8 @@ public class Credits : MonoBehaviour
     {
         fadeOut.SetActive(true);
         yield return new WaitForSeconds(6f);
-        Application.Quit();
+        if (isQuit)
+            Application.Quit();
     }
 
     private IEnumerator ScrollCredits()
@@ -137,16 +140,7 @@ public class Credits : MonoBehaviour
 
         yield return new WaitForSeconds(3f);
 
-        float imageFadeElapsedTime = 0f;
-        while (imageFadeElapsedTime < 2f)
-        {
-            imageFadeElapsedTime += Time.deltaTime;
-            float fadeT = Mathf.Clamp01(imageFadeElapsedTime / 2f);
-            imageCanvasGroup.alpha = Mathf.Lerp(1f, 0f, fadeT);
-            yield return null;
-        }
-
-        imageCanvasGroup.alpha = 0f;
+        StartCoroutine(FadeOut());
 
         SceneManager.LoadScene("Main Menu");
     }

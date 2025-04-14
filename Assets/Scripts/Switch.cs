@@ -15,10 +15,15 @@ public class Switch : MonoBehaviour
     public static int correctSwitches;
     public Material buttOn;
     public Material buttOff;
+    public static bool canFlip = false;
+    public static bool win = false;
+    private AudioSource audioSource;
+    public AudioClip winSound;
     
     // Start is called before the first frame update
     void Start()
     {
+        audioSource = gameObject.AddComponent<AudioSource>();
         GameObject player = GameObject.FindGameObjectWithTag("Player");
         UI = player.transform.Find("UI")?.gameObject;
         interactIcon = UI.transform.Find("Interact").gameObject;
@@ -37,6 +42,16 @@ public class Switch : MonoBehaviour
         }
 
         if (correctSwitches == 5) {
+            win = true;
+            audioSource.PlayOneShot(winSound);
+            interactIcon.SetActive(false);
+            interactText.text = "";
+            foreach (Transform child in transform.parent) {
+                isInteractable = false;
+                GameObject switchObj = child.GetChild(0).gameObject;
+                Renderer switchRend = switchObj.GetComponent<Renderer>();
+                switchRend.material = buttOn;
+            }
             Door d = door.GetComponent<Door>();
             d.isOpen = true;
         }
@@ -44,12 +59,27 @@ public class Switch : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.CompareTag("Player"))
+        if (other.gameObject.CompareTag("Player") && canFlip)
         {
-            
             interactIcon.SetActive(true);
             interactText.text = "Interact";
             isInteractable = true;
+        }
+    }
+
+    void OnTriggerStay(Collider other)
+    {
+        if (other.gameObject.CompareTag("Player"))
+        {
+            if (!interactIcon.activeSelf && canFlip) {
+                interactIcon.SetActive(true);
+                interactText.text = "Interact";
+                isInteractable = true;
+            } else if (interactIcon.activeSelf && !canFlip) {
+                interactIcon.SetActive(false);
+                interactText.text = "";
+                isInteractable = false;
+            }
         }
     }
 
@@ -65,6 +95,12 @@ public class Switch : MonoBehaviour
 
     public IEnumerator FlipSwitch()
     {
+        canFlip = false;
+        interactIcon.SetActive(false);
+        interactText.text = "";
+        foreach (Transform child in transform.parent) {
+            child.GetComponent<Switch>().isInteractable = false;
+        }
         GameObject switchObj = transform.GetChild(0).gameObject;
         Renderer switchRend = switchObj.GetComponent<Renderer>();
         switchRend.material = buttOn;

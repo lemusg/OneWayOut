@@ -74,10 +74,6 @@ public class UIManager : MonoBehaviour
         gameUI.SetActive(true);
         menuUI.SetActive(false);
         
-        // Add debug logs to check if button references are set
-        Debug.Log("Menu Button reference: " + (menuButton != null ? "Set" : "Not Set"));
-        Debug.Log("Return Menu Button reference: " + (returnMenu != null ? "Set" : "Not Set"));
-        
         menuButton.onClick.AddListener(() => {
             Debug.Log("Menu button clicked!");
             Menu();
