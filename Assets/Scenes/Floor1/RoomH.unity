@@ -441,6 +441,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 6307616410321448100, guid: a891dc2b9825fd54a84babe86d8f84fe, type: 3}
+      propertyPath: door
+      value: 
+      objectReference: {fileID: 1736498153}
     - target: {fileID: 7439798813027823288, guid: a891dc2b9825fd54a84babe86d8f84fe, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: 0
@@ -531,17 +535,9 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5477063165046462207, guid: e640bee937613674388d75aa53bf8f2e, type: 3}
-      propertyPath: isOpen
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5477063165046462207, guid: e640bee937613674388d75aa53bf8f2e, type: 3}
       propertyPath: LevelName
       value: RoomI
       objectReference: {fileID: 0}
-    - target: {fileID: 5477063165046462207, guid: e640bee937613674388d75aa53bf8f2e, type: 3}
-      propertyPath: openDoorSound
-      value: 
-      objectReference: {fileID: 8300000, guid: cc66971c19612ca44b9a391d0c4c043a, type: 3}
     - target: {fileID: 5907802326652795178, guid: e640bee937613674388d75aa53bf8f2e, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -586,15 +582,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8792790521377614435, guid: e640bee937613674388d75aa53bf8f2e, type: 3}
-      propertyPath: openDoorSound
-      value: 
-      objectReference: {fileID: 8300000, guid: cc66971c19612ca44b9a391d0c4c043a, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e640bee937613674388d75aa53bf8f2e, type: 3}
+--- !u!1 &1736498153 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 930055178448954070, guid: e640bee937613674388d75aa53bf8f2e, type: 3}
+  m_PrefabInstance: {fileID: 1736498152}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1966324670
 GameObject:
   m_ObjectHideFlags: 0

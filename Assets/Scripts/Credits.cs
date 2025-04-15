@@ -7,14 +7,14 @@ using TMPro;
 
 public class Credits : MonoBehaviour
 {
-    public GameObject fadeIn;
-    public GameObject fadeOut;
-    public bool fadeDone;
     public Button quit;
     public GameObject UI;
     public TextMeshProUGUI credits;
     public GameObject image;
-    private bool isQuit;
+    public GameObject fade;
+    private CanvasGroup canvasGroup;
+    public GameObject popup;
+    public GameObject quitConfirmation;
     
     [Header("Audio")]
     public AudioClip backgroundMusic;  // The music clip to play
@@ -24,13 +24,16 @@ public class Credits : MonoBehaviour
     [Range(0f, 1f)]
     public float musicVolume = 0.5f;  // Volume control
 
+    void Awake()
+    {
+        canvasGroup = fade.GetComponent<CanvasGroup>();
+        canvasGroup.alpha = 1f;
+        StartCoroutine(FadeIn());
+    }
     // Start is called before the first frame update
     void Start()
     {
-        StartCoroutine(FadeIn());
-        quit.interactable = false;
         quit.onClick.AddListener(Quit);
-
         // Setup and play background music
         audioSource = gameObject.AddComponent<AudioSource>();
         if (backgroundMusic != null)
@@ -45,10 +48,13 @@ public class Credits : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (fadeDone)
-        {
-            quit.gameObject.SetActive(true);
-            quit.interactable = true;
+        if (popup.activeSelf) {
+            if (Input.GetKeyDown(KeyCode.Y)) {
+                Application.Quit();
+            } else if (Input.GetKeyDown(KeyCode.N)) {
+                popup.SetActive(false);
+                quitConfirmation.SetActive(false);
+            }
         }
     }
 
@@ -58,29 +64,46 @@ public class Credits : MonoBehaviour
         {
             audioSource.PlayOneShot(buttonClickSound);
         }
-        isQuit = true;
-        StartCoroutine(FadeOut());
+        popup.SetActive(true);
+        quitConfirmation.SetActive(true);
     }
 
     private IEnumerator FadeIn()
     {
-        fadeIn.SetActive(true);
-        yield return new WaitForSeconds(6f);
-        fadeIn.SetActive(false);
-        fadeDone = true;
+        yield return new WaitForSeconds(2f);
+        float elapsedTime = 0f;
+        
+        while (elapsedTime < 3f)
+        {
+            elapsedTime += Time.deltaTime;
+            canvasGroup.alpha = Mathf.Lerp(1f, 0f, elapsedTime / 3f);
+            yield return null;
+        }
+        
+        canvasGroup.alpha = 0f;
+        fade.SetActive(false);
         StartCoroutine(ScrollCredits());
     }
 
-    private IEnumerator FadeOut()
+    public IEnumerator FadeOut()
     {
-        fadeOut.SetActive(true);
-        yield return new WaitForSeconds(6f);
-        if (isQuit)
-            Application.Quit();
+        fade.SetActive(true);
+        float elapsedTime = 0f;
+        
+        while (elapsedTime < 3f)
+        {
+            elapsedTime += Time.deltaTime;
+            canvasGroup.alpha = Mathf.Lerp(0f, 1f, elapsedTime / 3f);
+            yield return null;
+        }
+        
+        canvasGroup.alpha = 1f;
+        SceneManager.LoadScene("Main Menu");
     }
 
     private IEnumerator ScrollCredits()
     {
+        quit.gameObject.SetActive(true);
         credits.gameObject.SetActive(true);
         float elapsedTime = 0f;
         
@@ -141,7 +164,5 @@ public class Credits : MonoBehaviour
         yield return new WaitForSeconds(3f);
 
         StartCoroutine(FadeOut());
-
-        SceneManager.LoadScene("Main Menu");
     }
 }

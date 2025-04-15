@@ -1357,10 +1357,6 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4556582163221736869, guid: e640bee937613674388d75aa53bf8f2e, type: 3}
-      propertyPath: openDoorSound
-      value: 
-      objectReference: {fileID: 8300000, guid: f677351afc9770e42aee78010e4f2765, type: 3}
     - target: {fileID: 4569132986873998387, guid: e640bee937613674388d75aa53bf8f2e, type: 3}
       propertyPath: m_Enabled
       value: 0
@@ -1449,10 +1445,6 @@ PrefabInstance:
       propertyPath: LevelName
       value: RoomE
       objectReference: {fileID: 0}
-    - target: {fileID: 8792790521377614435, guid: e640bee937613674388d75aa53bf8f2e, type: 3}
-      propertyPath: openDoorSound
-      value: 
-      objectReference: {fileID: 8300000, guid: f677351afc9770e42aee78010e4f2765, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

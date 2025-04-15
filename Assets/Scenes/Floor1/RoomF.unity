@@ -657,10 +657,6 @@ PrefabInstance:
       value: The door seems to be locked...
       objectReference: {fileID: 0}
     - target: {fileID: 1480195612742831443, guid: e640bee937613674388d75aa53bf8f2e, type: 3}
-      propertyPath: isOpen
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1480195612742831443, guid: e640bee937613674388d75aa53bf8f2e, type: 3}
       propertyPath: LevelName
       value: RoomG
       objectReference: {fileID: 0}
@@ -853,6 +849,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 41646c9104768ce4e857272e863c0fdf, type: 2}
+    - target: {fileID: 6307616410321448100, guid: a891dc2b9825fd54a84babe86d8f84fe, type: 3}
+      propertyPath: door
+      value: 
+      objectReference: {fileID: 1643657961}
     - target: {fileID: 7439798813027823288, guid: a891dc2b9825fd54a84babe86d8f84fe, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: 0
@@ -1135,6 +1135,11 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 5.035321, y: 3.8846686, z: 4.678618}
   m_Center: {x: 0.4393607, y: 1.442331, z: 0.06547277}
+--- !u!1 &1643657961 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7438324881285152945, guid: e640bee937613674388d75aa53bf8f2e, type: 3}
+  m_PrefabInstance: {fileID: 637983598}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1667401015
 PrefabInstance:
   m_ObjectHideFlags: 0

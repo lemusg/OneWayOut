@@ -1,341 +1,316 @@
 { "cat":"", "pid":12345, "tid":0, "ts":0, "ph":"M", "name":"process_name", "args": { "name":"bee_backend" } }
-,{ "pid":12345, "tid":0, "ts":1744665660927403, "dur":34035, "ph":"X", "name": "DriverInitData",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1744665660961447, "dur":93, "ph":"X", "name": "RemoveStaleOutputs",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1744665660961603, "dur":551, "ph":"X", "name": "BuildQueueInit",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1744665660967770, "dur":57, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles C:/Users/swd71/Downloads/OneWayOut_Data/Managed/netstandard.dll" }}
-,{ "pid":12345, "tid":0, "ts":1744665660967969, "dur":161, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles C:/Users/swd71/Downloads/OneWayOut_Data/Managed/System.Data.dll" }}
-,{ "pid":12345, "tid":0, "ts":1744665660962199, "dur":7149, "ph":"X", "name": "EnqueueRequestedNodes",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1744665660969353, "dur":290249, "ph":"X", "name": "WaitForBuildFinished", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1744665661259603, "dur":404, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1744665661260007, "dur":75, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1744665661260317, "dur":2791, "ph":"X", "name": "Tundra",  "args": { "detail":"Write AllBuiltNodes" }}
-,{ "pid":12345, "tid":1, "ts":1744665660962660, "dur":6698, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1744665660969361, "dur":9880, "ph":"X", "name": "CheckDagSignatures",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1744665660991645, "dur":1077, "ph":"X", "name": "WriteText",  "args": { "detail":"Library/Bee/artifacts/csharpactions/boot.config_tyr4.info" }}
-,{ "pid":12345, "tid":1, "ts":1744665660992727, "dur":154, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\PlayerDataCache\\Win64\\Data\\boot.config" }}
-,{ "pid":12345, "tid":1, "ts":1744665660993169, "dur":228, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Users\\swd71\\Classes-2025\\CAP3020\\OneWayOut\\Library\\Bee\\PlayerScriptAssemblies\\Assembly-CSharp.dll" }}
-,{ "pid":12345, "tid":1, "ts":1744665660993399, "dur":161, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Users\\swd71\\Classes-2025\\CAP3020\\OneWayOut\\Library\\Bee\\PlayerScriptAssemblies\\Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll" }}
-,{ "pid":12345, "tid":1, "ts":1744665660993562, "dur":523, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Users\\swd71\\Classes-2025\\CAP3020\\OneWayOut\\Library\\Bee\\PlayerScriptAssemblies\\Unity.RenderPipelines.Core.Runtime.dll" }}
-,{ "pid":12345, "tid":1, "ts":1744665660994087, "dur":319, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Users\\swd71\\Classes-2025\\CAP3020\\OneWayOut\\Library\\Bee\\PlayerScriptAssemblies\\Unity.Postprocessing.Runtime.dll" }}
-,{ "pid":12345, "tid":1, "ts":1744665660994408, "dur":695, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Users\\swd71\\Classes-2025\\CAP3020\\OneWayOut\\Library\\Bee\\PlayerScriptAssemblies\\Unity.VisualScripting.Core.dll" }}
-,{ "pid":12345, "tid":1, "ts":1744665660995105, "dur":393, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Users\\swd71\\Classes-2025\\CAP3020\\OneWayOut\\Library\\Bee\\PlayerScriptAssemblies\\UnityEngine.UI.dll" }}
-,{ "pid":12345, "tid":1, "ts":1744665660995500, "dur":442, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Users\\swd71\\Classes-2025\\CAP3020\\OneWayOut\\Library\\Bee\\PlayerScriptAssemblies\\Unity.VisualScripting.Flow.dll" }}
-,{ "pid":12345, "tid":1, "ts":1744665660995945, "dur":260, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Users\\swd71\\Classes-2025\\CAP3020\\OneWayOut\\Library\\Bee\\PlayerScriptAssemblies\\Unity.Timeline.dll" }}
-,{ "pid":12345, "tid":1, "ts":1744665660996206, "dur":122, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Users\\swd71\\Classes-2025\\CAP3020\\OneWayOut\\Library\\Bee\\PlayerScriptAssemblies\\Unity.RenderPipelines.Core.ShaderLibrary.dll" }}
-,{ "pid":12345, "tid":1, "ts":1744665660996329, "dur":487, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Users\\swd71\\Classes-2025\\CAP3020\\OneWayOut\\Library\\Bee\\PlayerScriptAssemblies\\Unity.TextMeshPro.dll" }}
-,{ "pid":12345, "tid":1, "ts":1744665660996818, "dur":191, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Users\\swd71\\Classes-2025\\CAP3020\\OneWayOut\\Library\\Bee\\PlayerScriptAssemblies\\Unity.VisualScripting.State.dll" }}
-,{ "pid":12345, "tid":1, "ts":1744665660997099, "dur":161, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\Playerc4527c11-inputdata.json" }}
-,{ "pid":12345, "tid":1, "ts":1744665660992726, "dur":4745, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"AddBootConfigGUID Library/Bee/artifacts/WinPlayerBuildProgram/boot.config" }}
-,{ "pid":12345, "tid":1, "ts":1744665660998009, "dur":97, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1744665660998753, "dur":245432, "ph":"X", "name": "AddBootConfigGUID",  "args": { "detail":"Library/Bee/artifacts/WinPlayerBuildProgram/boot.config" }}
-,{ "pid":12345, "tid":1, "ts":1744665661256725, "dur":192, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\boot.config" }}
-,{ "pid":12345, "tid":1, "ts":1744665661256724, "dur":194, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/swd71/Downloads/OneWayOut_Data/boot.config" }}
-,{ "pid":12345, "tid":1, "ts":1744665661256943, "dur":2601, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/swd71/Downloads/OneWayOut_Data/boot.config" }}
-,{ "pid":12345, "tid":2, "ts":1744665660962708, "dur":6669, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1744665660969381, "dur":2647, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1744665660972029, "dur":7225, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1744665660979275, "dur":162, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.56f1\\Editor\\Data\\PlaybackEngines\\WindowsStandaloneSupport\\Variations\\win64_player_nondevelopment_mono\\UnityCrashHandler64.exe" }}
-,{ "pid":12345, "tid":2, "ts":1744665660979258, "dur":181, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/swd71/Downloads/UnityCrashHandler64.exe" }}
-,{ "pid":12345, "tid":2, "ts":1744665660980441, "dur":4257, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/swd71/Downloads/UnityCrashHandler64.exe" }}
-,{ "pid":12345, "tid":2, "ts":1744665660984786, "dur":160, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.56f1\\Editor\\Data\\PlaybackEngines\\WindowsStandaloneSupport\\Variations\\win64_player_nondevelopment_mono\\MonoBleedingEdge\\etc\\mono\\4.0\\machine.config" }}
-,{ "pid":12345, "tid":2, "ts":1744665660984785, "dur":162, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/swd71/Downloads/MonoBleedingEdge/etc/mono/4.0/machine.config" }}
-,{ "pid":12345, "tid":2, "ts":1744665660985299, "dur":1611, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/swd71/Downloads/MonoBleedingEdge/etc/mono/4.0/machine.config" }}
-,{ "pid":12345, "tid":2, "ts":1744665660986980, "dur":148, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/swd71/Downloads/MonoBleedingEdge/etc/mono/4.0/Browsers/Compat.browser" }}
-,{ "pid":12345, "tid":2, "ts":1744665660987425, "dur":1448, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/swd71/Downloads/MonoBleedingEdge/etc/mono/4.0/Browsers/Compat.browser" }}
-,{ "pid":12345, "tid":2, "ts":1744665660988963, "dur":147, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/swd71/Downloads/MonoBleedingEdge/etc/mono/2.0/settings.map" }}
-,{ "pid":12345, "tid":2, "ts":1744665660989401, "dur":2047, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/swd71/Downloads/MonoBleedingEdge/etc/mono/2.0/settings.map" }}
-,{ "pid":12345, "tid":2, "ts":1744665660991558, "dur":256, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/swd71/Downloads/MonoBleedingEdge/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx" }}
-,{ "pid":12345, "tid":2, "ts":1744665660991953, "dur":2252, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/swd71/Downloads/MonoBleedingEdge/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx" }}
-,{ "pid":12345, "tid":2, "ts":1744665660994326, "dur":264, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.56f1\\Editor\\Data\\PlaybackEngines\\WindowsStandaloneSupport\\Variations\\win64_player_nondevelopment_mono\\MonoBleedingEdge\\EmbedRuntime\\MonoPosixHelper.dll" }}
-,{ "pid":12345, "tid":2, "ts":1744665660994323, "dur":268, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/swd71/Downloads/MonoBleedingEdge/EmbedRuntime/MonoPosixHelper.dll" }}
-,{ "pid":12345, "tid":2, "ts":1744665660994961, "dur":2098, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/swd71/Downloads/MonoBleedingEdge/EmbedRuntime/MonoPosixHelper.dll" }}
-,{ "pid":12345, "tid":2, "ts":1744665660997167, "dur":195, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/swd71/Downloads/OneWayOut_Data/Resources/unity default resources" }}
-,{ "pid":12345, "tid":2, "ts":1744665660998146, "dur":4456, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/swd71/Downloads/OneWayOut_Data/Resources/unity default resources" }}
-,{ "pid":12345, "tid":2, "ts":1744665661002833, "dur":4767, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/swd71/Downloads/OneWayOut_Data/Managed/System.dll" }}
-,{ "pid":12345, "tid":2, "ts":1744665661007764, "dur":3227, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/swd71/Downloads/OneWayOut_Data/Managed/System.ServiceModel.Internals.dll" }}
-,{ "pid":12345, "tid":2, "ts":1744665661011129, "dur":2692, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/swd71/Downloads/OneWayOut_Data/Managed/System.Net.Http.dll" }}
-,{ "pid":12345, "tid":2, "ts":1744665661013944, "dur":5314, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/swd71/Downloads/OneWayOut_Data/Managed/System.Core.dll" }}
-,{ "pid":12345, "tid":2, "ts":1744665661019391, "dur":4462, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/swd71/Downloads/OneWayOut_Data/Managed/Unity.VisualScripting.Antlr3.Runtime.dll" }}
-,{ "pid":12345, "tid":2, "ts":1744665661023980, "dur":5140, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/swd71/Downloads/OneWayOut_Data/Managed/Unity.Postprocessing.Runtime.dll" }}
-,{ "pid":12345, "tid":2, "ts":1744665661029316, "dur":4179, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/swd71/Downloads/OneWayOut_Data/Managed/UnityEngine.VideoModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1744665661033693, "dur":4952, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/swd71/Downloads/OneWayOut_Data/Managed/UnityEngine.UnityWebRequestAssetBundleModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1744665661038754, "dur":6627, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/swd71/Downloads/OneWayOut_Data/Managed/UnityEngine.TilemapModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1744665661045519, "dur":5387, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/swd71/Downloads/OneWayOut_Data/Managed/UnityEngine.SpriteShapeModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1744665661051026, "dur":6575, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/swd71/Downloads/OneWayOut_Data/Managed/UnityEngine.NVIDIAModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1744665661057753, "dur":5199, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/swd71/Downloads/OneWayOut_Data/Managed/UnityEngine.GIModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1744665661063156, "dur":9295, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/swd71/Downloads/OneWayOut_Data/Managed/UnityEngine.ClothModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1744665661072611, "dur":7335, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/swd71/Downloads/OneWayOut_Data/sharedassets9.assets" }}
-,{ "pid":12345, "tid":2, "ts":1744665661080140, "dur":10993, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/swd71/Downloads/OneWayOut_Data/sharedassets7.assets" }}
-,{ "pid":12345, "tid":2, "ts":1744665661091248, "dur":9107, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/swd71/Downloads/OneWayOut_Data/sharedassets3.assets" }}
-,{ "pid":12345, "tid":2, "ts":1744665661100462, "dur":24302, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/swd71/Downloads/OneWayOut_Data/sharedassets2.assets.resS" }}
-,{ "pid":12345, "tid":2, "ts":1744665661125222, "dur":8260, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/swd71/Downloads/OneWayOut_Data/sharedassets12.assets.resS" }}
-,{ "pid":12345, "tid":2, "ts":1744665661133685, "dur":8088, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/swd71/Downloads/OneWayOut_Data/sharedassets10.assets" }}
-,{ "pid":12345, "tid":2, "ts":1744665661142046, "dur":185, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/swd71/Downloads/OneWayOut_Data/sharedassets0.assets" }}
-,{ "pid":12345, "tid":2, "ts":1744665661142252, "dur":7651, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/swd71/Downloads/OneWayOut_Data/sharedassets0.assets" }}
-,{ "pid":12345, "tid":2, "ts":1744665661150050, "dur":6687, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/swd71/Downloads/OneWayOut_Data/resources.assets.resS" }}
-,{ "pid":12345, "tid":2, "ts":1744665661157097, "dur":55, "ph":"X", "name": "EmitNodeStart",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1744665661162592, "dur":52, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1744665661157156, "dur":5508, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/swd71/Downloads/OneWayOut_Data/level20.resS" }}
-,{ "pid":12345, "tid":2, "ts":1744665661162850, "dur":5344, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/swd71/Downloads/OneWayOut_Data/level18" }}
-,{ "pid":12345, "tid":2, "ts":1744665661168318, "dur":8274, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/swd71/Downloads/OneWayOut_Data/level13.resS" }}
-,{ "pid":12345, "tid":2, "ts":1744665661176724, "dur":7816, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/swd71/Downloads/OneWayOut_Data/globalgamemanagers" }}
-,{ "pid":12345, "tid":2, "ts":1744665661184663, "dur":74942, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1744665660962699, "dur":6666, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1744665660969370, "dur":2710, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1744665660972081, "dur":7302, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1744665660979386, "dur":287, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/swd71/Downloads/MonoBleedingEdge/etc/mono/4.5/Browsers/Compat.browser" }}
-,{ "pid":12345, "tid":3, "ts":1744665661041429, "dur":2178, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/swd71/Downloads/MonoBleedingEdge/etc/mono/4.5/Browsers/Compat.browser" }}
-,{ "pid":12345, "tid":3, "ts":1744665661043746, "dur":5359, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/swd71/Downloads/OneWayOut_Data/Managed/UnityEngine.SubstanceModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1744665661049233, "dur":6643, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/swd71/Downloads/OneWayOut_Data/Managed/UnityEngine.Physics2DModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1744665661056093, "dur":7347, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/swd71/Downloads/OneWayOut_Data/Managed/UnityEngine.HotReloadModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1744665661063846, "dur":21978, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/swd71/Downloads/OneWayOut_Data/Managed/UnityEngine.AudioModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1744665661085948, "dur":13937, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/swd71/Downloads/OneWayOut_Data/sharedassets5.assets" }}
-,{ "pid":12345, "tid":3, "ts":1744665661100032, "dur":66450, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/swd71/Downloads/OneWayOut_Data/sharedassets20.assets" }}
-,{ "pid":12345, "tid":3, "ts":1744665661166755, "dur":8642, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/swd71/Downloads/OneWayOut_Data/level15.resS" }}
-,{ "pid":12345, "tid":3, "ts":1744665661175523, "dur":9075, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/swd71/Downloads/OneWayOut_Data/globalgamemanagers.assets.resS" }}
-,{ "pid":12345, "tid":3, "ts":1744665661184721, "dur":74897, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1744665660962738, "dur":6647, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1744665660969387, "dur":2640, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1744665660972028, "dur":7341, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1744665660979371, "dur":308, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/swd71/Downloads/MonoBleedingEdge/etc/mono/4.5/settings.map" }}
-,{ "pid":12345, "tid":4, "ts":1744665661006805, "dur":2309, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/swd71/Downloads/MonoBleedingEdge/etc/mono/4.5/settings.map" }}
-,{ "pid":12345, "tid":4, "ts":1744665661009230, "dur":4208, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/swd71/Downloads/OneWayOut_Data/Managed/System.Numerics.dll" }}
-,{ "pid":12345, "tid":4, "ts":1744665661013606, "dur":6161, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/swd71/Downloads/OneWayOut_Data/Managed/System.Data.DataSetExtensions.dll" }}
-,{ "pid":12345, "tid":4, "ts":1744665661024031, "dur":143, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1744665661019885, "dur":4301, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/swd71/Downloads/OneWayOut_Data/Managed/Unity.TextMeshPro.dll" }}
-,{ "pid":12345, "tid":4, "ts":1744665661024319, "dur":7036, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/swd71/Downloads/OneWayOut_Data/Managed/Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll" }}
-,{ "pid":12345, "tid":4, "ts":1744665661031699, "dur":4651, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/swd71/Downloads/OneWayOut_Data/Managed/UnityEngine.UnityWebRequestWWWModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1744665661036478, "dur":5670, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/swd71/Downloads/OneWayOut_Data/Managed/UnityEngine.UnityAnalyticsModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1744665661042282, "dur":6390, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/swd71/Downloads/OneWayOut_Data/Managed/UnityEngine.TerrainModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1744665661048986, "dur":9143, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/swd71/Downloads/OneWayOut_Data/Managed/UnityEngine.ProfilerModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1744665661067143, "dur":78, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1744665661058296, "dur":8946, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/swd71/Downloads/OneWayOut_Data/Managed/UnityEngine.DirectorModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1744665661067386, "dur":12571, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/swd71/Downloads/OneWayOut_Data/Managed/UnityEngine.AndroidJNIModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1744665661080355, "dur":18294, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/swd71/Downloads/OneWayOut_Data/sharedassets6.assets.resS" }}
-,{ "pid":12345, "tid":4, "ts":1744665661098777, "dur":56308, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/swd71/Downloads/OneWayOut_Data/sharedassets21.assets" }}
-,{ "pid":12345, "tid":4, "ts":1744665661155606, "dur":14933, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/swd71/Downloads/OneWayOut_Data/level5" }}
-,{ "pid":12345, "tid":4, "ts":1744665661170653, "dur":133, "ph":"X", "name": "CheckPristineOutputSignature",  "args": { "detail":"CopyFiles C:/Users/swd71/Downloads/OneWayOut_Data/level12.resS" }}
-,{ "pid":12345, "tid":4, "ts":1744665661170808, "dur":6933, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/swd71/Downloads/OneWayOut_Data/level12.resS" }}
-,{ "pid":12345, "tid":4, "ts":1744665661177828, "dur":81756, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1744665660962785, "dur":6606, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1744665660969395, "dur":2612, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1744665660972008, "dur":7358, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1744665660979367, "dur":290, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/swd71/Downloads/MonoBleedingEdge/etc/mono/browscap.ini" }}
-,{ "pid":12345, "tid":5, "ts":1744665661024130, "dur":3083, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/swd71/Downloads/MonoBleedingEdge/etc/mono/browscap.ini" }}
-,{ "pid":12345, "tid":5, "ts":1744665661027474, "dur":5026, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/swd71/Downloads/OneWayOut_Data/Managed/UnityEngine.XRModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1744665661032643, "dur":4384, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/swd71/Downloads/OneWayOut_Data/Managed/UnityEngine.UnityWebRequestModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1744665661037158, "dur":5502, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/swd71/Downloads/OneWayOut_Data/Managed/UnityEngine.UmbraModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1744665661042802, "dur":6271, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/swd71/Downloads/OneWayOut_Data/Managed/UnityEngine.SubsystemsModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1744665661049192, "dur":5898, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/swd71/Downloads/OneWayOut_Data/Managed/UnityEngine.PhysicsModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1744665661055276, "dur":6904, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/swd71/Downloads/OneWayOut_Data/Managed/UnityEngine.IMGUIModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1744665661062317, "dur":9177, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/swd71/Downloads/OneWayOut_Data/Managed/UnityEngine.ClusterInputModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1744665661071679, "dur":4971, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/swd71/Downloads/OneWayOut_Data/sharedassets9.assets.resS" }}
-,{ "pid":12345, "tid":5, "ts":1744665661076807, "dur":9973, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/swd71/Downloads/OneWayOut_Data/sharedassets8.assets.resS" }}
-,{ "pid":12345, "tid":5, "ts":1744665661086905, "dur":17085, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/swd71/Downloads/OneWayOut_Data/sharedassets4.assets" }}
-,{ "pid":12345, "tid":5, "ts":1744665661104105, "dur":12898, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/swd71/Downloads/OneWayOut_Data/sharedassets18.assets" }}
-,{ "pid":12345, "tid":5, "ts":1744665661117124, "dur":8184, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/swd71/Downloads/OneWayOut_Data/sharedassets15.assets.resS" }}
-,{ "pid":12345, "tid":5, "ts":1744665661125457, "dur":9647, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/swd71/Downloads/OneWayOut_Data/sharedassets11.assets.resS" }}
-,{ "pid":12345, "tid":5, "ts":1744665661135232, "dur":18007, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/swd71/Downloads/OneWayOut_Data/sharedassets1.assets.resS" }}
-,{ "pid":12345, "tid":5, "ts":1744665661153359, "dur":7402, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/swd71/Downloads/OneWayOut_Data/level7" }}
-,{ "pid":12345, "tid":5, "ts":1744665661161024, "dur":5553, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/swd71/Downloads/OneWayOut_Data/level19.resS" }}
-,{ "pid":12345, "tid":5, "ts":1744665661166940, "dur":4563, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/swd71/Downloads/OneWayOut_Data/level14.resS" }}
-,{ "pid":12345, "tid":5, "ts":1744665661171615, "dur":5697, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/swd71/Downloads/OneWayOut_Data/level11" }}
-,{ "pid":12345, "tid":5, "ts":1744665661177407, "dur":82180, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1744665660962818, "dur":6580, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1744665660969402, "dur":2632, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1744665660972035, "dur":7336, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1744665660979391, "dur":291, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.56f1\\Editor\\Data\\PlaybackEngines\\WindowsStandaloneSupport\\Variations\\win64_player_nondevelopment_mono\\MonoBleedingEdge\\etc\\mono\\4.5\\machine.config" }}
-,{ "pid":12345, "tid":6, "ts":1744665660979374, "dur":310, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/swd71/Downloads/MonoBleedingEdge/etc/mono/4.5/machine.config" }}
-,{ "pid":12345, "tid":6, "ts":1744665661008655, "dur":4016, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/swd71/Downloads/MonoBleedingEdge/etc/mono/4.5/machine.config" }}
-,{ "pid":12345, "tid":6, "ts":1744665661012974, "dur":4982, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/swd71/Downloads/OneWayOut_Data/Managed/System.Drawing.dll" }}
-,{ "pid":12345, "tid":6, "ts":1744665661018121, "dur":3469, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/swd71/Downloads/OneWayOut_Data/Managed/netstandard.dll" }}
-,{ "pid":12345, "tid":6, "ts":1744665661021754, "dur":4684, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/swd71/Downloads/OneWayOut_Data/Managed/UnityEngine.UI.dll" }}
-,{ "pid":12345, "tid":6, "ts":1744665661026569, "dur":6528, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/swd71/Downloads/OneWayOut_Data/Managed/UnityEngine.dll" }}
-,{ "pid":12345, "tid":6, "ts":1744665661033254, "dur":5609, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/swd71/Downloads/OneWayOut_Data/Managed/UnityEngine.UnityWebRequestAudioModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1744665661039032, "dur":7929, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/swd71/Downloads/OneWayOut_Data/Managed/UnityEngine.TextRenderingModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1744665661047161, "dur":6027, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/swd71/Downloads/OneWayOut_Data/Managed/UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1744665661053336, "dur":6169, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/swd71/Downloads/OneWayOut_Data/Managed/UnityEngine.InputLegacyModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1744665661059757, "dur":13616, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/swd71/Downloads/OneWayOut_Data/Managed/UnityEngine.CoreModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1744665661073533, "dur":12582, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/swd71/Downloads/OneWayOut_Data/sharedassets8.resource" }}
-,{ "pid":12345, "tid":6, "ts":1744665661086224, "dur":37787, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/swd71/Downloads/OneWayOut_Data/sharedassets4.assets.resS" }}
-,{ "pid":12345, "tid":6, "ts":1744665661124274, "dur":11328, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/swd71/Downloads/OneWayOut_Data/sharedassets14.assets" }}
-,{ "pid":12345, "tid":6, "ts":1744665661136200, "dur":15496, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/swd71/Downloads/OneWayOut_Data/sharedassets1.assets" }}
-,{ "pid":12345, "tid":6, "ts":1744665661151874, "dur":4960, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/swd71/Downloads/OneWayOut_Data/level9" }}
-,{ "pid":12345, "tid":6, "ts":1744665661156958, "dur":5615, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/swd71/Downloads/OneWayOut_Data/level3" }}
-,{ "pid":12345, "tid":6, "ts":1744665661162691, "dur":5916, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/swd71/Downloads/OneWayOut_Data/level18.resS" }}
-,{ "pid":12345, "tid":6, "ts":1744665661168755, "dur":7665, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/swd71/Downloads/OneWayOut_Data/level13" }}
-,{ "pid":12345, "tid":6, "ts":1744665661176565, "dur":9689, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/swd71/Downloads/OneWayOut_Data/globalgamemanagers.assets" }}
-,{ "pid":12345, "tid":6, "ts":1744665661186362, "dur":73246, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1744665660962861, "dur":6544, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1744665660969409, "dur":2556, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1744665660971966, "dur":7423, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1744665660979402, "dur":262, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.56f1\\Editor\\Data\\PlaybackEngines\\WindowsStandaloneSupport\\Variations\\win64_player_nondevelopment_mono\\MonoBleedingEdge\\etc\\mono\\4.0\\web.config" }}
-,{ "pid":12345, "tid":7, "ts":1744665660979389, "dur":276, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/swd71/Downloads/MonoBleedingEdge/etc/mono/4.0/web.config" }}
-,{ "pid":12345, "tid":7, "ts":1744665661029723, "dur":875, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1744665661025600, "dur":5228, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/swd71/Downloads/MonoBleedingEdge/etc/mono/4.0/web.config" }}
-,{ "pid":12345, "tid":7, "ts":1744665661031023, "dur":6712, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/swd71/Downloads/OneWayOut_Data/Managed/UnityEngine.VFXModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1744665661038161, "dur":7825, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/swd71/Downloads/OneWayOut_Data/Managed/UnityEngine.UIElementsModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1744665661052302, "dur":62, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1744665661046417, "dur":6009, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/swd71/Downloads/OneWayOut_Data/Managed/UnityEngine.SpriteMaskModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1744665661052664, "dur":6504, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/swd71/Downloads/OneWayOut_Data/Managed/UnityEngine.LocalizationModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1744665661059322, "dur":7996, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/swd71/Downloads/OneWayOut_Data/Managed/UnityEngine.DSPGraphModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1744665661067444, "dur":14188, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/swd71/Downloads/OneWayOut_Data/Managed/UnityEngine.AccessibilityModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1744665661081817, "dur":13510, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/swd71/Downloads/OneWayOut_Data/sharedassets6.assets" }}
-,{ "pid":12345, "tid":7, "ts":1744665661095471, "dur":12039, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/swd71/Downloads/OneWayOut_Data/sharedassets21.resource" }}
-,{ "pid":12345, "tid":7, "ts":1744665661128665, "dur":282, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1744665661107649, "dur":21335, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/swd71/Downloads/OneWayOut_Data/sharedassets17.assets" }}
-,{ "pid":12345, "tid":7, "ts":1744665661129264, "dur":8752, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/swd71/Downloads/OneWayOut_Data/sharedassets11.assets" }}
-,{ "pid":12345, "tid":7, "ts":1744665661154299, "dur":234, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1744665661138384, "dur":16172, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/swd71/Downloads/OneWayOut_Data/sharedassets0.assets.resS" }}
-,{ "pid":12345, "tid":7, "ts":1744665661154685, "dur":11963, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/swd71/Downloads/OneWayOut_Data/level6" }}
-,{ "pid":12345, "tid":7, "ts":1744665661166925, "dur":14461, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/swd71/Downloads/OneWayOut_Data/level15" }}
-,{ "pid":12345, "tid":7, "ts":1744665661181486, "dur":78104, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1744665660962902, "dur":6514, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1744665660969420, "dur":2604, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1744665660972025, "dur":7234, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1744665660979278, "dur":195, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.56f1\\Editor\\Data\\PlaybackEngines\\WindowsStandaloneSupport\\Variations\\win64_player_nondevelopment_mono\\MonoBleedingEdge\\etc\\mono\\mconfig\\config.xml" }}
-,{ "pid":12345, "tid":8, "ts":1744665660979259, "dur":216, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/swd71/Downloads/MonoBleedingEdge/etc/mono/mconfig/config.xml" }}
-,{ "pid":12345, "tid":8, "ts":1744665660990352, "dur":1811, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/swd71/Downloads/MonoBleedingEdge/etc/mono/mconfig/config.xml" }}
-,{ "pid":12345, "tid":8, "ts":1744665660992254, "dur":164, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/swd71/Downloads/MonoBleedingEdge/etc/mono/2.0/Browsers/Compat.browser" }}
-,{ "pid":12345, "tid":8, "ts":1744665660992917, "dur":1678, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/swd71/Downloads/MonoBleedingEdge/etc/mono/2.0/Browsers/Compat.browser" }}
-,{ "pid":12345, "tid":8, "ts":1744665660994684, "dur":62, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Temp\\StagingArea\\WindowsPlayer.exe" }}
-,{ "pid":12345, "tid":8, "ts":1744665660994683, "dur":64, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/swd71/Downloads/OneWayOut.exe" }}
-,{ "pid":12345, "tid":8, "ts":1744665660994761, "dur":2590, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/swd71/Downloads/OneWayOut.exe" }}
-,{ "pid":12345, "tid":8, "ts":1744665660998194, "dur":5346, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/swd71/Downloads/OneWayOut_Data/Managed/mscorlib.dll" }}
-,{ "pid":12345, "tid":8, "ts":1744665661003659, "dur":2089, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/swd71/Downloads/OneWayOut_Data/Managed/System.Xml.Linq.dll" }}
-,{ "pid":12345, "tid":8, "ts":1744665661005899, "dur":2813, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/swd71/Downloads/OneWayOut_Data/Managed/System.Transactions.dll" }}
-,{ "pid":12345, "tid":8, "ts":1744665661008865, "dur":3956, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/swd71/Downloads/OneWayOut_Data/Managed/System.Runtime.Serialization.dll" }}
-,{ "pid":12345, "tid":8, "ts":1744665661012993, "dur":6427, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/swd71/Downloads/OneWayOut_Data/Managed/System.Data.dll" }}
-,{ "pid":12345, "tid":8, "ts":1744665661019531, "dur":3885, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/swd71/Downloads/OneWayOut_Data/Managed/Unity.VisualScripting.State.dll" }}
-,{ "pid":12345, "tid":8, "ts":1744665661023561, "dur":5038, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/swd71/Downloads/OneWayOut_Data/Managed/Unity.VisualScripting.Core.dll" }}
-,{ "pid":12345, "tid":8, "ts":1744665661029136, "dur":4504, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/swd71/Downloads/OneWayOut_Data/Managed/UnityEngine.VirtualTexturingModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1744665661033919, "dur":5594, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/swd71/Downloads/OneWayOut_Data/Managed/UnityEngine.UnityTestProtocolModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1744665661039662, "dur":7045, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/swd71/Downloads/OneWayOut_Data/Managed/UnityEngine.TextCoreTextEngineModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1744665661046978, "dur":6002, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/swd71/Downloads/OneWayOut_Data/Managed/UnityEngine.ScreenCaptureModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1744665661053109, "dur":7603, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/swd71/Downloads/OneWayOut_Data/Managed/UnityEngine.InputModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1744665661060911, "dur":8998, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/swd71/Downloads/OneWayOut_Data/Managed/UnityEngine.ContentLoadModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1744665661070224, "dur":8442, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/swd71/Downloads/OneWayOut_Data/Managed/UnityEngine.AIModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1744665661078858, "dur":8327, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/swd71/Downloads/OneWayOut_Data/sharedassets7.assets.resS" }}
-,{ "pid":12345, "tid":8, "ts":1744665661087322, "dur":16260, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/swd71/Downloads/OneWayOut_Data/sharedassets3.resource" }}
-,{ "pid":12345, "tid":8, "ts":1744665661103767, "dur":6595, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/swd71/Downloads/OneWayOut_Data/sharedassets19.assets" }}
-,{ "pid":12345, "tid":8, "ts":1744665661110549, "dur":14653, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/swd71/Downloads/OneWayOut_Data/sharedassets16.assets" }}
-,{ "pid":12345, "tid":8, "ts":1744665661125293, "dur":8351, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/swd71/Downloads/OneWayOut_Data/sharedassets12.assets" }}
-,{ "pid":12345, "tid":8, "ts":1744665661133791, "dur":9109, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/swd71/Downloads/OneWayOut_Data/sharedassets1.resource" }}
-,{ "pid":12345, "tid":8, "ts":1744665661149868, "dur":174, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1744665661143217, "dur":6839, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/swd71/Downloads/OneWayOut_Data/RuntimeInitializeOnLoads.json" }}
-,{ "pid":12345, "tid":8, "ts":1744665661150176, "dur":6713, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/swd71/Downloads/OneWayOut_Data/resources.assets" }}
-,{ "pid":12345, "tid":8, "ts":1744665661157058, "dur":8806, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/swd71/Downloads/OneWayOut_Data/level21" }}
-,{ "pid":12345, "tid":8, "ts":1744665661166046, "dur":7703, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/swd71/Downloads/OneWayOut_Data/level16" }}
-,{ "pid":12345, "tid":8, "ts":1744665661174026, "dur":9747, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/swd71/Downloads/OneWayOut_Data/level1" }}
-,{ "pid":12345, "tid":8, "ts":1744665661183959, "dur":75647, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":9, "ts":1744665660962940, "dur":6483, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":9, "ts":1744665660969426, "dur":2574, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":9, "ts":1744665660972001, "dur":7375, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":9, "ts":1744665660979381, "dur":298, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/swd71/Downloads/MonoBleedingEdge/etc/mono/4.5/DefaultWsdlHelpGenerator.aspx" }}
-,{ "pid":12345, "tid":9, "ts":1744665661007949, "dur":3180, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/swd71/Downloads/MonoBleedingEdge/etc/mono/4.5/DefaultWsdlHelpGenerator.aspx" }}
-,{ "pid":12345, "tid":9, "ts":1744665661011317, "dur":3848, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/swd71/Downloads/OneWayOut_Data/Managed/System.IO.Compression.dll" }}
-,{ "pid":12345, "tid":9, "ts":1744665661015380, "dur":4530, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/swd71/Downloads/OneWayOut_Data/Managed/System.Configuration.dll" }}
-,{ "pid":12345, "tid":9, "ts":1744665661020012, "dur":4052, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/swd71/Downloads/OneWayOut_Data/Managed/Unity.RenderPipelines.Core.ShaderLibrary.dll" }}
-,{ "pid":12345, "tid":9, "ts":1744665661030323, "dur":1158, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":9, "ts":1744665661024194, "dur":7441, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/swd71/Downloads/OneWayOut_Data/Managed/Unity.RenderPipelines.Core.Runtime.dll" }}
-,{ "pid":12345, "tid":9, "ts":1744665661031864, "dur":5863, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/swd71/Downloads/OneWayOut_Data/Managed/UnityEngine.UnityWebRequestTextureModule.dll" }}
-,{ "pid":12345, "tid":9, "ts":1744665661037851, "dur":5899, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/swd71/Downloads/OneWayOut_Data/Managed/UnityEngine.UIModule.dll" }}
-,{ "pid":12345, "tid":9, "ts":1744665661043885, "dur":64, "ph":"X", "name": "EmitNodeStart",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":9, "ts":1744665661043953, "dur":5673, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/swd71/Downloads/OneWayOut_Data/Managed/UnityEngine.StreamingModule.dll" }}
-,{ "pid":12345, "tid":9, "ts":1744665661049767, "dur":6867, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/swd71/Downloads/OneWayOut_Data/Managed/UnityEngine.PerformanceReportingModule.dll" }}
-,{ "pid":12345, "tid":9, "ts":1744665661056767, "dur":7534, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/swd71/Downloads/OneWayOut_Data/Managed/UnityEngine.GridModule.dll" }}
-,{ "pid":12345, "tid":9, "ts":1744665661064468, "dur":38225, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/swd71/Downloads/OneWayOut_Data/Managed/UnityEngine.AssetBundleModule.dll" }}
-,{ "pid":12345, "tid":9, "ts":1744665661103034, "dur":56211, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/swd71/Downloads/OneWayOut_Data/sharedassets2.assets" }}
-,{ "pid":12345, "tid":9, "ts":1744665661159540, "dur":5801, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/swd71/Downloads/OneWayOut_Data/level2" }}
-,{ "pid":12345, "tid":9, "ts":1744665661165468, "dur":6268, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/swd71/Downloads/OneWayOut_Data/level16.resS" }}
-,{ "pid":12345, "tid":9, "ts":1744665661172330, "dur":14349, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/swd71/Downloads/OneWayOut_Data/level10" }}
-,{ "pid":12345, "tid":9, "ts":1744665661186781, "dur":72830, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":10, "ts":1744665660962969, "dur":6462, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":10, "ts":1744665660969435, "dur":2634, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":10, "ts":1744665660972070, "dur":7298, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":10, "ts":1744665660979388, "dur":280, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.56f1\\Editor\\Data\\PlaybackEngines\\WindowsStandaloneSupport\\Variations\\win64_player_nondevelopment_mono\\MonoBleedingEdge\\etc\\mono\\4.5\\web.config" }}
-,{ "pid":12345, "tid":10, "ts":1744665660979368, "dur":301, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/swd71/Downloads/MonoBleedingEdge/etc/mono/4.5/web.config" }}
-,{ "pid":12345, "tid":10, "ts":1744665661026969, "dur":3670, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/swd71/Downloads/MonoBleedingEdge/etc/mono/4.5/web.config" }}
-,{ "pid":12345, "tid":10, "ts":1744665661030870, "dur":5869, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/swd71/Downloads/OneWayOut_Data/Managed/UnityEngine.VehiclesModule.dll" }}
-,{ "pid":12345, "tid":10, "ts":1744665661036902, "dur":5604, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/swd71/Downloads/OneWayOut_Data/Managed/UnityEngine.UnityAnalyticsCommonModule.dll" }}
-,{ "pid":12345, "tid":10, "ts":1744665661042661, "dur":7183, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/swd71/Downloads/OneWayOut_Data/Managed/UnityEngine.TLSModule.dll" }}
-,{ "pid":12345, "tid":10, "ts":1744665661050019, "dur":6884, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/swd71/Downloads/OneWayOut_Data/Managed/UnityEngine.ParticleSystemModule.dll" }}
-,{ "pid":12345, "tid":10, "ts":1744665661057029, "dur":12024, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/swd71/Downloads/OneWayOut_Data/Managed/UnityEngine.GameCenterModule.dll" }}
-,{ "pid":12345, "tid":10, "ts":1744665661088187, "dur":124, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":10, "ts":1744665661069599, "dur":18825, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/swd71/Downloads/OneWayOut_Data/Managed/UnityEngine.ARModule.dll" }}
-,{ "pid":12345, "tid":10, "ts":1744665661088636, "dur":33405, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/swd71/Downloads/OneWayOut_Data/sharedassets3.assets.resS" }}
-,{ "pid":12345, "tid":10, "ts":1744665661122179, "dur":38672, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/swd71/Downloads/OneWayOut_Data/sharedassets15.assets" }}
-,{ "pid":12345, "tid":10, "ts":1744665661160992, "dur":6219, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/swd71/Downloads/OneWayOut_Data/level19" }}
-,{ "pid":12345, "tid":10, "ts":1744665661167339, "dur":14651, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/swd71/Downloads/OneWayOut_Data/level14" }}
-,{ "pid":12345, "tid":10, "ts":1744665661182148, "dur":77446, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":11, "ts":1744665660962999, "dur":6439, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":11, "ts":1744665660969442, "dur":2463, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":11, "ts":1744665660971906, "dur":7458, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":11, "ts":1744665660979365, "dur":235, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/swd71/Downloads/MonoBleedingEdge/etc/mono/config" }}
-,{ "pid":12345, "tid":11, "ts":1744665661009600, "dur":2770, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/swd71/Downloads/MonoBleedingEdge/etc/mono/config" }}
-,{ "pid":12345, "tid":11, "ts":1744665661012521, "dur":3440, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/swd71/Downloads/OneWayOut_Data/Managed/System.IO.Compression.FileSystem.dll" }}
-,{ "pid":12345, "tid":11, "ts":1744665661016089, "dur":5050, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/swd71/Downloads/OneWayOut_Data/Managed/System.ComponentModel.Composition.dll" }}
-,{ "pid":12345, "tid":11, "ts":1744665661025547, "dur":70, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":11, "ts":1744665661021271, "dur":4384, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/swd71/Downloads/OneWayOut_Data/Managed/Unity.Timeline.dll" }}
-,{ "pid":12345, "tid":11, "ts":1744665661030114, "dur":478, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":11, "ts":1744665661025827, "dur":4784, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/swd71/Downloads/OneWayOut_Data/Managed/Assembly-CSharp.dll" }}
-,{ "pid":12345, "tid":11, "ts":1744665661030875, "dur":4743, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/swd71/Downloads/OneWayOut_Data/Managed/UnityEngine.VRModule.dll" }}
-,{ "pid":12345, "tid":11, "ts":1744665661035740, "dur":5006, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/swd71/Downloads/OneWayOut_Data/Managed/UnityEngine.UnityConnectModule.dll" }}
-,{ "pid":12345, "tid":11, "ts":1744665661040902, "dur":6564, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/swd71/Downloads/OneWayOut_Data/Managed/UnityEngine.TerrainPhysicsModule.dll" }}
-,{ "pid":12345, "tid":11, "ts":1744665661047564, "dur":5105, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/swd71/Downloads/OneWayOut_Data/Managed/UnityEngine.PropertiesModule.dll" }}
-,{ "pid":12345, "tid":11, "ts":1744665661059128, "dur":65, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":11, "ts":1744665661052799, "dur":6414, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/swd71/Downloads/OneWayOut_Data/Managed/UnityEngine.JSONSerializeModule.dll" }}
-,{ "pid":12345, "tid":11, "ts":1744665661059368, "dur":5745, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/swd71/Downloads/OneWayOut_Data/Managed/UnityEngine.CrashReportingModule.dll" }}
-,{ "pid":12345, "tid":11, "ts":1744665661065332, "dur":12431, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/swd71/Downloads/OneWayOut_Data/Managed/UnityEngine.AnimationModule.dll" }}
-,{ "pid":12345, "tid":11, "ts":1744665661078084, "dur":70, "ph":"X", "name": "EmitNodeStart",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":11, "ts":1744665661078159, "dur":7644, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/swd71/Downloads/OneWayOut_Data/sharedassets8.assets" }}
-,{ "pid":12345, "tid":11, "ts":1744665661099707, "dur":145, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":11, "ts":1744665661085937, "dur":13938, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/swd71/Downloads/OneWayOut_Data/sharedassets5.assets.resS" }}
-,{ "pid":12345, "tid":11, "ts":1744665661100152, "dur":24878, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/swd71/Downloads/OneWayOut_Data/sharedassets2.resource" }}
-,{ "pid":12345, "tid":11, "ts":1744665661125154, "dur":6549, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/swd71/Downloads/OneWayOut_Data/sharedassets13.assets" }}
-,{ "pid":12345, "tid":11, "ts":1744665661131814, "dur":10654, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/swd71/Downloads/OneWayOut_Data/sharedassets10.assets.resS" }}
-,{ "pid":12345, "tid":11, "ts":1744665661142584, "dur":6601, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/swd71/Downloads/OneWayOut_Data/ScriptingAssemblies.json" }}
-,{ "pid":12345, "tid":11, "ts":1744665661149477, "dur":3536, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/swd71/Downloads/OneWayOut_Data/Resources/unity_builtin_extra" }}
-,{ "pid":12345, "tid":11, "ts":1744665661153136, "dur":5917, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/swd71/Downloads/OneWayOut_Data/level8" }}
-,{ "pid":12345, "tid":11, "ts":1744665661159256, "dur":5677, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/swd71/Downloads/OneWayOut_Data/level20" }}
-,{ "pid":12345, "tid":11, "ts":1744665661165060, "dur":6177, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/swd71/Downloads/OneWayOut_Data/level17" }}
-,{ "pid":12345, "tid":11, "ts":1744665661171367, "dur":7706, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/swd71/Downloads/OneWayOut_Data/level12" }}
-,{ "pid":12345, "tid":11, "ts":1744665661179275, "dur":80316, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":12, "ts":1744665660963032, "dur":6416, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":12, "ts":1744665660969449, "dur":2287, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":12, "ts":1744665660971737, "dur":7514, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":12, "ts":1744665660979271, "dur":157, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":12, "ts":1744665660982022, "dur":1786, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/swd71/Downloads/OneWayOut_Data/app.info" }}
-,{ "pid":12345, "tid":12, "ts":1744665660983811, "dur":150, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/swd71/Downloads/MonoBleedingEdge/etc/mono/4.0/settings.map" }}
-,{ "pid":12345, "tid":12, "ts":1744665660985153, "dur":1586, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/swd71/Downloads/MonoBleedingEdge/etc/mono/4.0/settings.map" }}
-,{ "pid":12345, "tid":12, "ts":1744665660986822, "dur":158, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/swd71/Downloads/MonoBleedingEdge/etc/mono/4.0/DefaultWsdlHelpGenerator.aspx" }}
-,{ "pid":12345, "tid":12, "ts":1744665660986997, "dur":1795, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/swd71/Downloads/MonoBleedingEdge/etc/mono/4.0/DefaultWsdlHelpGenerator.aspx" }}
-,{ "pid":12345, "tid":12, "ts":1744665660988878, "dur":162, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.56f1\\Editor\\Data\\PlaybackEngines\\WindowsStandaloneSupport\\Variations\\win64_player_nondevelopment_mono\\MonoBleedingEdge\\etc\\mono\\2.0\\web.config" }}
-,{ "pid":12345, "tid":12, "ts":1744665660988876, "dur":165, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/swd71/Downloads/MonoBleedingEdge/etc/mono/2.0/web.config" }}
-,{ "pid":12345, "tid":12, "ts":1744665660989369, "dur":1845, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/swd71/Downloads/MonoBleedingEdge/etc/mono/2.0/web.config" }}
-,{ "pid":12345, "tid":12, "ts":1744665660991417, "dur":307, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.56f1\\Editor\\Data\\PlaybackEngines\\WindowsStandaloneSupport\\Variations\\win64_player_nondevelopment_mono\\MonoBleedingEdge\\etc\\mono\\2.0\\machine.config" }}
-,{ "pid":12345, "tid":12, "ts":1744665660991407, "dur":319, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/swd71/Downloads/MonoBleedingEdge/etc/mono/2.0/machine.config" }}
-,{ "pid":12345, "tid":12, "ts":1744665660991926, "dur":2534, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/swd71/Downloads/MonoBleedingEdge/etc/mono/2.0/machine.config" }}
-,{ "pid":12345, "tid":12, "ts":1744665660994654, "dur":200, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.56f1\\Editor\\Data\\PlaybackEngines\\WindowsStandaloneSupport\\Variations\\win64_player_nondevelopment_mono\\MonoBleedingEdge\\EmbedRuntime\\mono-2.0-bdwgc.dll" }}
-,{ "pid":12345, "tid":12, "ts":1744665660994651, "dur":204, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/swd71/Downloads/MonoBleedingEdge/EmbedRuntime/mono-2.0-bdwgc.dll" }}
-,{ "pid":12345, "tid":12, "ts":1744665660995075, "dur":7573, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/swd71/Downloads/MonoBleedingEdge/EmbedRuntime/mono-2.0-bdwgc.dll" }}
-,{ "pid":12345, "tid":12, "ts":1744665661002849, "dur":4914, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/swd71/Downloads/OneWayOut_Data/Managed/System.Xml.dll" }}
-,{ "pid":12345, "tid":12, "ts":1744665661007904, "dur":4607, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/swd71/Downloads/OneWayOut_Data/Managed/System.Security.dll" }}
-,{ "pid":12345, "tid":12, "ts":1744665661012953, "dur":4394, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/swd71/Downloads/OneWayOut_Data/Managed/System.EnterpriseServices.dll" }}
-,{ "pid":12345, "tid":12, "ts":1744665661017475, "dur":4048, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/swd71/Downloads/OneWayOut_Data/Managed/Mono.Security.dll" }}
-,{ "pid":12345, "tid":12, "ts":1744665661021707, "dur":6060, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/swd71/Downloads/OneWayOut_Data/Managed/Unity.VisualScripting.Flow.dll" }}
-,{ "pid":12345, "tid":12, "ts":1744665661027949, "dur":6781, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/swd71/Downloads/OneWayOut_Data/Managed/UnityEngine.WindModule.dll" }}
-,{ "pid":12345, "tid":12, "ts":1744665661034867, "dur":5240, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/swd71/Downloads/OneWayOut_Data/Managed/UnityEngine.UnityCurlModule.dll" }}
-,{ "pid":12345, "tid":12, "ts":1744665661040246, "dur":6418, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/swd71/Downloads/OneWayOut_Data/Managed/UnityEngine.TextCoreFontEngineModule.dll" }}
-,{ "pid":12345, "tid":12, "ts":1744665661046872, "dur":7663, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/swd71/Downloads/OneWayOut_Data/Managed/UnityEngine.SharedInternalsModule.dll" }}
-,{ "pid":12345, "tid":12, "ts":1744665661054687, "dur":7331, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/swd71/Downloads/OneWayOut_Data/Managed/UnityEngine.ImageConversionModule.dll" }}
-,{ "pid":12345, "tid":12, "ts":1744665661062128, "dur":8908, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/swd71/Downloads/OneWayOut_Data/Managed/UnityEngine.ClusterRendererModule.dll" }}
-,{ "pid":12345, "tid":12, "ts":1744665661071285, "dur":282, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.56f1\\Editor\\Data\\PlaybackEngines\\WindowsStandaloneSupport\\Variations\\win64_player_nondevelopment_mono\\UnityPlayer.dll" }}
-,{ "pid":12345, "tid":12, "ts":1744665661071274, "dur":296, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/swd71/Downloads/UnityPlayer.dll" }}
-,{ "pid":12345, "tid":12, "ts":1744665661071667, "dur":84538, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/swd71/Downloads/UnityPlayer.dll" }}
-,{ "pid":12345, "tid":12, "ts":1744665661156472, "dur":5978, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/swd71/Downloads/OneWayOut_Data/level4" }}
-,{ "pid":12345, "tid":12, "ts":1744665661163773, "dur":10720, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/swd71/Downloads/OneWayOut_Data/level17.resS" }}
-,{ "pid":12345, "tid":12, "ts":1744665661174627, "dur":10159, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/swd71/Downloads/OneWayOut_Data/level0" }}
-,{ "pid":12345, "tid":12, "ts":1744665661184882, "dur":74725, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1744665661267278, "dur":1758, "ph":"X", "name": "ProfilerWriteOutput" }
+,{ "pid":12345, "tid":0, "ts":1744739958339992, "dur":65, "ph":"X", "name": "IPC_Client_InitializeAndConnectToParent",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1744739958340194, "dur":10347, "ph":"X", "name": "DriverInitData",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1744739958350553, "dur":103, "ph":"X", "name": "RemoveStaleOutputs",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1744739958350710, "dur":197, "ph":"X", "name": "BuildQueueInit",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1744739958351059, "dur":112, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles C:/Users/gabri/Documents/OneWayOut/OneWayOut_Data/level10" }}
+,{ "pid":12345, "tid":0, "ts":1744739958351276, "dur":93, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles C:/Users/gabri/Documents/OneWayOut/OneWayOut_Data/level6" }}
+,{ "pid":12345, "tid":0, "ts":1744739958351719, "dur":125, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles C:/Users/gabri/Documents/OneWayOut/OneWayOut_Data/sharedassets1.assets.resS" }}
+,{ "pid":12345, "tid":0, "ts":1744739958351895, "dur":95, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles C:/Users/gabri/Documents/OneWayOut/OneWayOut_Data/sharedassets11.resource" }}
+,{ "pid":12345, "tid":0, "ts":1744739958352284, "dur":93, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles C:/Users/gabri/Documents/OneWayOut/OneWayOut_Data/sharedassets8.resource" }}
+,{ "pid":12345, "tid":0, "ts":1744739958352552, "dur":126, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles C:/Users/gabri/Documents/OneWayOut/OneWayOut_Data/Managed/UnityEngine.AnimationModule.dll" }}
+,{ "pid":12345, "tid":0, "ts":1744739958352779, "dur":65, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles C:/Users/gabri/Documents/OneWayOut/OneWayOut_Data/Managed/UnityEngine.ClusterRendererModule.dll" }}
+,{ "pid":12345, "tid":0, "ts":1744739958353980, "dur":87, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles C:/Users/gabri/Documents/OneWayOut/OneWayOut_Data/Managed/Unity.Postprocessing.Runtime.dll" }}
+,{ "pid":12345, "tid":0, "ts":1744739958354155, "dur":87, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles C:/Users/gabri/Documents/OneWayOut/OneWayOut_Data/Managed/Unity.VisualScripting.State.dll" }}
+,{ "pid":12345, "tid":0, "ts":1744739958354600, "dur":102, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles C:/Users/gabri/Documents/OneWayOut/OneWayOut_Data/Managed/System.dll" }}
+,{ "pid":12345, "tid":0, "ts":1744739958354778, "dur":102, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles C:/Users/gabri/Documents/OneWayOut/MonoBleedingEdge/etc/mono/2.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":0, "ts":1744739958355048, "dur":94, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles C:/Users/gabri/Documents/OneWayOut/MonoBleedingEdge/etc/mono/4.5/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":0, "ts":1744739958350941, "dur":4325, "ph":"X", "name": "EnqueueRequestedNodes",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1744739958355268, "dur":765470, "ph":"X", "name": "WaitForBuildFinished", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1744739959120741, "dur":529, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1744739959121476, "dur":29246, "ph":"X", "name": "Tundra",  "args": { "detail":"Write AllBuiltNodes" }}
+,{ "pid":12345, "tid":1, "ts":1744739958351532, "dur":3771, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1744739958355321, "dur":1000, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1744739958356678, "dur":793, "ph":"X", "name": "File",  "args": { "detail":"C:\\Users\\gabri\\Documents\\GitHub\\OneWayOut\\Library\\Bee\\PlayerScriptAssemblies\\Assembly-CSharp.dll" }}
+,{ "pid":12345, "tid":1, "ts":1744739958356321, "dur":1884, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1744739958358206, "dur":805, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1744739958359011, "dur":2571, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1744739958361604, "dur":7234, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.56f1\\Editor\\Data\\PlaybackEngines\\WindowsStandaloneSupport\\Variations\\win64_player_nondevelopment_mono\\UnityCrashHandler64.exe" }}
+,{ "pid":12345, "tid":1, "ts":1744739958361584, "dur":7257, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/gabri/Documents/OneWayOut/UnityCrashHandler64.exe" }}
+,{ "pid":12345, "tid":1, "ts":1744739958368879, "dur":10804, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/gabri/Documents/OneWayOut/UnityCrashHandler64.exe" }}
+,{ "pid":12345, "tid":1, "ts":1744739958379774, "dur":131, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/gabri/Documents/OneWayOut/MonoBleedingEdge/etc/mono/4.5/settings.map" }}
+,{ "pid":12345, "tid":1, "ts":1744739958380558, "dur":1800, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/gabri/Documents/OneWayOut/MonoBleedingEdge/etc/mono/4.5/settings.map" }}
+,{ "pid":12345, "tid":1, "ts":1744739958382422, "dur":198, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/gabri/Documents/OneWayOut/MonoBleedingEdge/etc/mono/4.5/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":1, "ts":1744739958382640, "dur":3224, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/gabri/Documents/OneWayOut/MonoBleedingEdge/etc/mono/4.5/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":1, "ts":1744739958385929, "dur":121, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.56f1\\Editor\\Data\\PlaybackEngines\\WindowsStandaloneSupport\\Variations\\win64_player_nondevelopment_mono\\MonoBleedingEdge\\etc\\mono\\4.0\\machine.config" }}
+,{ "pid":12345, "tid":1, "ts":1744739958385927, "dur":124, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/gabri/Documents/OneWayOut/MonoBleedingEdge/etc/mono/4.0/machine.config" }}
+,{ "pid":12345, "tid":1, "ts":1744739958386155, "dur":1954, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/gabri/Documents/OneWayOut/MonoBleedingEdge/etc/mono/4.0/machine.config" }}
+,{ "pid":12345, "tid":1, "ts":1744739958388157, "dur":151, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/gabri/Documents/OneWayOut/MonoBleedingEdge/etc/mono/4.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":1, "ts":1744739958388329, "dur":1644, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/gabri/Documents/OneWayOut/MonoBleedingEdge/etc/mono/4.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":1, "ts":1744739958390042, "dur":161, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/gabri/Documents/OneWayOut/MonoBleedingEdge/etc/mono/2.0/settings.map" }}
+,{ "pid":12345, "tid":1, "ts":1744739958390302, "dur":1955, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/gabri/Documents/OneWayOut/MonoBleedingEdge/etc/mono/2.0/settings.map" }}
+,{ "pid":12345, "tid":1, "ts":1744739958392349, "dur":118, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.56f1\\Editor\\Data\\PlaybackEngines\\WindowsStandaloneSupport\\Variations\\win64_player_nondevelopment_mono\\MonoBleedingEdge\\EmbedRuntime\\MonoPosixHelper.dll" }}
+,{ "pid":12345, "tid":1, "ts":1744739958392347, "dur":121, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/gabri/Documents/OneWayOut/MonoBleedingEdge/EmbedRuntime/MonoPosixHelper.dll" }}
+,{ "pid":12345, "tid":1, "ts":1744739958396087, "dur":82, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1744739958393118, "dur":3066, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/gabri/Documents/OneWayOut/MonoBleedingEdge/EmbedRuntime/MonoPosixHelper.dll" }}
+,{ "pid":12345, "tid":1, "ts":1744739958396282, "dur":180, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/gabri/Documents/OneWayOut/OneWayOut_Data/Resources/unity default resources" }}
+,{ "pid":12345, "tid":1, "ts":1744739958398353, "dur":5097, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/gabri/Documents/OneWayOut/OneWayOut_Data/Resources/unity default resources" }}
+,{ "pid":12345, "tid":1, "ts":1744739958403589, "dur":5181, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/gabri/Documents/OneWayOut/OneWayOut_Data/Managed/System.Xml.dll" }}
+,{ "pid":12345, "tid":1, "ts":1744739958408879, "dur":3632, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/gabri/Documents/OneWayOut/OneWayOut_Data/Managed/System.ServiceModel.Internals.dll" }}
+,{ "pid":12345, "tid":1, "ts":1744739958412589, "dur":2212, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/gabri/Documents/OneWayOut/OneWayOut_Data/Managed/System.Net.Http.dll" }}
+,{ "pid":12345, "tid":1, "ts":1744739958414934, "dur":2362, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/gabri/Documents/OneWayOut/OneWayOut_Data/Managed/System.EnterpriseServices.dll" }}
+,{ "pid":12345, "tid":1, "ts":1744739958417390, "dur":1630, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/gabri/Documents/OneWayOut/OneWayOut_Data/Managed/System.Data.DataSetExtensions.dll" }}
+,{ "pid":12345, "tid":1, "ts":1744739958419117, "dur":2505, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/gabri/Documents/OneWayOut/OneWayOut_Data/Managed/System.Configuration.dll" }}
+,{ "pid":12345, "tid":1, "ts":1744739958423880, "dur":69, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1744739958421718, "dur":2241, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/gabri/Documents/OneWayOut/OneWayOut_Data/Managed/netstandard.dll" }}
+,{ "pid":12345, "tid":1, "ts":1744739958424148, "dur":2247, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/gabri/Documents/OneWayOut/OneWayOut_Data/Managed/Unity.RenderPipelines.Core.ShaderLibrary.dll" }}
+,{ "pid":12345, "tid":1, "ts":1744739958426462, "dur":2447, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/gabri/Documents/OneWayOut/OneWayOut_Data/Managed/Unity.VisualScripting.Flow.dll" }}
+,{ "pid":12345, "tid":1, "ts":1744739958432101, "dur":51, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1744739958429021, "dur":3177, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/gabri/Documents/OneWayOut/OneWayOut_Data/Managed/Unity.RenderPipelines.Core.Runtime.dll" }}
+,{ "pid":12345, "tid":1, "ts":1744739958432304, "dur":2480, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/gabri/Documents/OneWayOut/OneWayOut_Data/Managed/UnityEngine.dll" }}
+,{ "pid":12345, "tid":1, "ts":1744739958434883, "dur":2246, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/gabri/Documents/OneWayOut/OneWayOut_Data/Managed/UnityEngine.VirtualTexturingModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1744739958437226, "dur":2134, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/gabri/Documents/OneWayOut/OneWayOut_Data/Managed/UnityEngine.VRModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1744739958439449, "dur":2200, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/gabri/Documents/OneWayOut/OneWayOut_Data/Managed/UnityEngine.UnityWebRequestTextureModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1744739958441806, "dur":5435, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/gabri/Documents/OneWayOut/OneWayOut_Data/Managed/UnityEngine.UnityWebRequestAssetBundleModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1744739958449940, "dur":58, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1744739958447380, "dur":2657, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/gabri/Documents/OneWayOut/OneWayOut_Data/Managed/UnityEngine.UmbraModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1744739958454808, "dur":62, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1744739958450173, "dur":4717, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/gabri/Documents/OneWayOut/OneWayOut_Data/Managed/UnityEngine.UIElementsModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1744739958454989, "dur":1812, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/gabri/Documents/OneWayOut/OneWayOut_Data/Managed/UnityEngine.TerrainPhysicsModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1744739958456944, "dur":2049, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/gabri/Documents/OneWayOut/OneWayOut_Data/Managed/UnityEngine.TLSModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1744739958459091, "dur":60, "ph":"X", "name": "EmitNodeStart",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1744739958459155, "dur":1681, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/gabri/Documents/OneWayOut/OneWayOut_Data/Managed/UnityEngine.StreamingModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1744739958461033, "dur":1891, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/gabri/Documents/OneWayOut/OneWayOut_Data/Managed/UnityEngine.SharedInternalsModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1744739958463024, "dur":2552, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/gabri/Documents/OneWayOut/OneWayOut_Data/Managed/UnityEngine.PropertiesModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1744739958465757, "dur":1359, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/gabri/Documents/OneWayOut/OneWayOut_Data/Managed/UnityEngine.PerformanceReportingModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1744739958467214, "dur":1186, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/gabri/Documents/OneWayOut/OneWayOut_Data/Managed/UnityEngine.LocalizationModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1744739958468480, "dur":1118, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/gabri/Documents/OneWayOut/OneWayOut_Data/Managed/UnityEngine.InputLegacyModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1744739958469687, "dur":63, "ph":"X", "name": "EmitNodeStart",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1744739958469753, "dur":1081, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/gabri/Documents/OneWayOut/OneWayOut_Data/Managed/UnityEngine.HotReloadModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1744739958470914, "dur":952, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/gabri/Documents/OneWayOut/OneWayOut_Data/Managed/UnityEngine.GIModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1744739958471946, "dur":1039, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/gabri/Documents/OneWayOut/OneWayOut_Data/Managed/UnityEngine.CrashReportingModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1744739958473068, "dur":1195, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/gabri/Documents/OneWayOut/OneWayOut_Data/Managed/UnityEngine.ClusterRendererModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1744739958474357, "dur":1244, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/gabri/Documents/OneWayOut/OneWayOut_Data/Managed/UnityEngine.ClothModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1744739958475683, "dur":2588, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/gabri/Documents/OneWayOut/OneWayOut_Data/Managed/UnityEngine.AnimationModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1744739958478341, "dur":1271, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/gabri/Documents/OneWayOut/OneWayOut_Data/Managed/UnityEngine.AIModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1744739958479752, "dur":4644, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/gabri/Documents/OneWayOut/OneWayOut_Data/sharedassets9.assets.resS" }}
+,{ "pid":12345, "tid":1, "ts":1744739958484464, "dur":3848, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/gabri/Documents/OneWayOut/OneWayOut_Data/sharedassets8.assets.resS" }}
+,{ "pid":12345, "tid":1, "ts":1744739958488426, "dur":2423, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/gabri/Documents/OneWayOut/OneWayOut_Data/sharedassets7.assets" }}
+,{ "pid":12345, "tid":1, "ts":1744739958491087, "dur":4299, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/gabri/Documents/OneWayOut/OneWayOut_Data/sharedassets6.assets.resS" }}
+,{ "pid":12345, "tid":1, "ts":1744739958495456, "dur":4172, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/gabri/Documents/OneWayOut/OneWayOut_Data/sharedassets5.assets.resS" }}
+,{ "pid":12345, "tid":1, "ts":1744739958499731, "dur":2511, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/gabri/Documents/OneWayOut/OneWayOut_Data/sharedassets4.assets" }}
+,{ "pid":12345, "tid":1, "ts":1744739958502343, "dur":10465, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/gabri/Documents/OneWayOut/OneWayOut_Data/sharedassets3.assets.resS" }}
+,{ "pid":12345, "tid":1, "ts":1744739958512939, "dur":3656, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/gabri/Documents/OneWayOut/OneWayOut_Data/sharedassets2.assets" }}
+,{ "pid":12345, "tid":1, "ts":1744739958518364, "dur":127, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1744739958516723, "dur":1813, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/gabri/Documents/OneWayOut/OneWayOut_Data/sharedassets11.assets" }}
+,{ "pid":12345, "tid":1, "ts":1744739958535982, "dur":53, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1744739958518646, "dur":17417, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/gabri/Documents/OneWayOut/OneWayOut_Data/sharedassets10.assets" }}
+,{ "pid":12345, "tid":1, "ts":1744739958536141, "dur":20000, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/gabri/Documents/OneWayOut/OneWayOut_Data/sharedassets1.assets" }}
+,{ "pid":12345, "tid":1, "ts":1744739958556412, "dur":1485, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/gabri/Documents/OneWayOut/OneWayOut_Data/sharedassets0.assets.resS" }}
+,{ "pid":12345, "tid":1, "ts":1744739958583378, "dur":3082, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/gabri/Documents/OneWayOut/OneWayOut_Data/sharedassets0.assets" }}
+,{ "pid":12345, "tid":1, "ts":1744739958586534, "dur":1851, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/gabri/Documents/OneWayOut/OneWayOut_Data/ScriptingAssemblies.json" }}
+,{ "pid":12345, "tid":1, "ts":1744739958588457, "dur":1444, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/gabri/Documents/OneWayOut/OneWayOut_Data/RuntimeInitializeOnLoads.json" }}
+,{ "pid":12345, "tid":1, "ts":1744739958590075, "dur":2414, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/gabri/Documents/OneWayOut/OneWayOut_Data/Resources/unity_builtin_extra" }}
+,{ "pid":12345, "tid":1, "ts":1744739958708364, "dur":103, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1744739958592559, "dur":115996, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/gabri/Documents/OneWayOut/OneWayOut_Data/resources.assets.resS" }}
+,{ "pid":12345, "tid":1, "ts":1744739958902972, "dur":80, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1744739958708858, "dur":194360, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/gabri/Documents/OneWayOut/OneWayOut_Data/level5" }}
+,{ "pid":12345, "tid":1, "ts":1744739958903533, "dur":142965, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/gabri/Documents/OneWayOut/OneWayOut_Data/level2" }}
+,{ "pid":12345, "tid":1, "ts":1744739959046759, "dur":85, "ph":"X", "name": "EmitNodeStart",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1744739959117252, "dur":87, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1744739959046882, "dur":70805, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/gabri/Documents/OneWayOut/OneWayOut_Data/globalgamemanagers.assets.resS" }}
+,{ "pid":12345, "tid":1, "ts":1744739959117888, "dur":2829, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1744739958351518, "dur":3765, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1744739958355290, "dur":6197, "ph":"X", "name": "CheckDagSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1744739958368819, "dur":1276, "ph":"X", "name": "WriteText",  "args": { "detail":"Library/Bee/artifacts/csharpactions/boot.config_tyr4.info" }}
+,{ "pid":12345, "tid":2, "ts":1744739958370102, "dur":89, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\PlayerDataCache\\Win64\\Data\\boot.config" }}
+,{ "pid":12345, "tid":2, "ts":1744739958370209, "dur":57, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\PlayerDataCache\\Win64\\Data\\RuntimeInitializeOnLoads.json" }}
+,{ "pid":12345, "tid":2, "ts":1744739958370518, "dur":114, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Users\\gabri\\Documents\\GitHub\\OneWayOut\\Library\\Bee\\PlayerScriptAssemblies\\Assembly-CSharp.dll" }}
+,{ "pid":12345, "tid":2, "ts":1744739958370633, "dur":51, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Users\\gabri\\Documents\\GitHub\\OneWayOut\\Library\\Bee\\PlayerScriptAssemblies\\Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll" }}
+,{ "pid":12345, "tid":2, "ts":1744739958370685, "dur":475, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Users\\gabri\\Documents\\GitHub\\OneWayOut\\Library\\Bee\\PlayerScriptAssemblies\\Unity.RenderPipelines.Core.Runtime.dll" }}
+,{ "pid":12345, "tid":2, "ts":1744739958371162, "dur":300, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Users\\gabri\\Documents\\GitHub\\OneWayOut\\Library\\Bee\\PlayerScriptAssemblies\\Unity.Postprocessing.Runtime.dll" }}
+,{ "pid":12345, "tid":2, "ts":1744739958371463, "dur":595, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Users\\gabri\\Documents\\GitHub\\OneWayOut\\Library\\Bee\\PlayerScriptAssemblies\\Unity.VisualScripting.Core.dll" }}
+,{ "pid":12345, "tid":2, "ts":1744739958372060, "dur":222, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Users\\gabri\\Documents\\GitHub\\OneWayOut\\Library\\Bee\\PlayerScriptAssemblies\\UnityEngine.UI.dll" }}
+,{ "pid":12345, "tid":2, "ts":1744739958372283, "dur":260, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Users\\gabri\\Documents\\GitHub\\OneWayOut\\Library\\Bee\\PlayerScriptAssemblies\\Unity.VisualScripting.Flow.dll" }}
+,{ "pid":12345, "tid":2, "ts":1744739958372544, "dur":116, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Users\\gabri\\Documents\\GitHub\\OneWayOut\\Library\\Bee\\PlayerScriptAssemblies\\Unity.Timeline.dll" }}
+,{ "pid":12345, "tid":2, "ts":1744739958372705, "dur":240, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Users\\gabri\\Documents\\GitHub\\OneWayOut\\Library\\Bee\\PlayerScriptAssemblies\\Unity.TextMeshPro.dll" }}
+,{ "pid":12345, "tid":2, "ts":1744739958372946, "dur":57, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Users\\gabri\\Documents\\GitHub\\OneWayOut\\Library\\Bee\\PlayerScriptAssemblies\\Unity.VisualScripting.State.dll" }}
+,{ "pid":12345, "tid":2, "ts":1744739958373004, "dur":87, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Users\\gabri\\Documents\\GitHub\\OneWayOut\\Library\\PackageCache\\com.unity.visualscripting@1.9.4\\Runtime\\VisualScripting.Flow\\Dependencies\\NCalc\\Unity.VisualScripting.Antlr3.Runtime.dll" }}
+,{ "pid":12345, "tid":2, "ts":1744739958370100, "dur":3168, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"AddBootConfigGUID Library/Bee/artifacts/WinPlayerBuildProgram/boot.config" }}
+,{ "pid":12345, "tid":2, "ts":1744739958373821, "dur":56, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1744739958373995, "dur":225512, "ph":"X", "name": "AddBootConfigGUID",  "args": { "detail":"Library/Bee/artifacts/WinPlayerBuildProgram/boot.config" }}
+,{ "pid":12345, "tid":2, "ts":1744739958606231, "dur":93, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\boot.config" }}
+,{ "pid":12345, "tid":2, "ts":1744739958606230, "dur":95, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/gabri/Documents/OneWayOut/OneWayOut_Data/boot.config" }}
+,{ "pid":12345, "tid":2, "ts":1744739958606346, "dur":16676, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/gabri/Documents/OneWayOut/OneWayOut_Data/boot.config" }}
+,{ "pid":12345, "tid":2, "ts":1744739958623055, "dur":37741, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/gabri/Documents/OneWayOut/OneWayOut_Data/level9" }}
+,{ "pid":12345, "tid":2, "ts":1744739958660865, "dur":1285, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/gabri/Documents/OneWayOut/OneWayOut_Data/level8" }}
+,{ "pid":12345, "tid":2, "ts":1744739958662234, "dur":47303, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/gabri/Documents/OneWayOut/OneWayOut_Data/level7" }}
+,{ "pid":12345, "tid":2, "ts":1744739958709825, "dur":193429, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/gabri/Documents/OneWayOut/OneWayOut_Data/level4" }}
+,{ "pid":12345, "tid":2, "ts":1744739959045911, "dur":73, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1744739958903543, "dur":142464, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/gabri/Documents/OneWayOut/OneWayOut_Data/level11" }}
+,{ "pid":12345, "tid":2, "ts":1744739959046274, "dur":69265, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/gabri/Documents/OneWayOut/OneWayOut_Data/level1" }}
+,{ "pid":12345, "tid":2, "ts":1744739959115751, "dur":4720, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/gabri/Documents/OneWayOut/OneWayOut_Data/globalgamemanagers" }}
+,{ "pid":12345, "tid":3, "ts":1744739958351520, "dur":3773, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1744739958355298, "dur":1033, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1744739958356331, "dur":935, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1744739958357267, "dur":1357, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1744739958358624, "dur":2960, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1744739958361603, "dur":221, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.56f1\\Editor\\Data\\PlaybackEngines\\WindowsStandaloneSupport\\Variations\\win64_player_nondevelopment_mono\\MonoBleedingEdge\\etc\\mono\\mconfig\\config.xml" }}
+,{ "pid":12345, "tid":3, "ts":1744739958361585, "dur":241, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/gabri/Documents/OneWayOut/MonoBleedingEdge/etc/mono/mconfig/config.xml" }}
+,{ "pid":12345, "tid":3, "ts":1744739958370952, "dur":6315, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/gabri/Documents/OneWayOut/MonoBleedingEdge/etc/mono/mconfig/config.xml" }}
+,{ "pid":12345, "tid":3, "ts":1744739958377367, "dur":140, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/gabri/Documents/OneWayOut/MonoBleedingEdge/etc/mono/browscap.ini" }}
+,{ "pid":12345, "tid":3, "ts":1744739958377603, "dur":4379, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/gabri/Documents/OneWayOut/MonoBleedingEdge/etc/mono/browscap.ini" }}
+,{ "pid":12345, "tid":3, "ts":1744739958382089, "dur":164, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.56f1\\Editor\\Data\\PlaybackEngines\\WindowsStandaloneSupport\\Variations\\win64_player_nondevelopment_mono\\MonoBleedingEdge\\etc\\mono\\4.5\\machine.config" }}
+,{ "pid":12345, "tid":3, "ts":1744739958382087, "dur":168, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/gabri/Documents/OneWayOut/MonoBleedingEdge/etc/mono/4.5/machine.config" }}
+,{ "pid":12345, "tid":3, "ts":1744739958382264, "dur":77, "ph":"X", "name": "EmitNodeStart",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1744739958382445, "dur":2528, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/gabri/Documents/OneWayOut/MonoBleedingEdge/etc/mono/4.5/machine.config" }}
+,{ "pid":12345, "tid":3, "ts":1744739958385060, "dur":158, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.56f1\\Editor\\Data\\PlaybackEngines\\WindowsStandaloneSupport\\Variations\\win64_player_nondevelopment_mono\\MonoBleedingEdge\\etc\\mono\\4.0\\web.config" }}
+,{ "pid":12345, "tid":3, "ts":1744739958385058, "dur":162, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/gabri/Documents/OneWayOut/MonoBleedingEdge/etc/mono/4.0/web.config" }}
+,{ "pid":12345, "tid":3, "ts":1744739958385996, "dur":2103, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/gabri/Documents/OneWayOut/MonoBleedingEdge/etc/mono/4.0/web.config" }}
+,{ "pid":12345, "tid":3, "ts":1744739958388217, "dur":195, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/gabri/Documents/OneWayOut/MonoBleedingEdge/etc/mono/4.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":3, "ts":1744739958389863, "dur":86, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1744739958388764, "dur":1212, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/gabri/Documents/OneWayOut/MonoBleedingEdge/etc/mono/4.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":3, "ts":1744739958390109, "dur":184, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.56f1\\Editor\\Data\\PlaybackEngines\\WindowsStandaloneSupport\\Variations\\win64_player_nondevelopment_mono\\MonoBleedingEdge\\etc\\mono\\2.0\\machine.config" }}
+,{ "pid":12345, "tid":3, "ts":1744739958390107, "dur":187, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/gabri/Documents/OneWayOut/MonoBleedingEdge/etc/mono/2.0/machine.config" }}
+,{ "pid":12345, "tid":3, "ts":1744739958390309, "dur":1450, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/gabri/Documents/OneWayOut/MonoBleedingEdge/etc/mono/2.0/machine.config" }}
+,{ "pid":12345, "tid":3, "ts":1744739958391814, "dur":160, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/gabri/Documents/OneWayOut/MonoBleedingEdge/etc/mono/2.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":3, "ts":1744739958393137, "dur":2199, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/gabri/Documents/OneWayOut/MonoBleedingEdge/etc/mono/2.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":3, "ts":1744739958395405, "dur":68, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Temp\\StagingArea\\WindowsPlayer.exe" }}
+,{ "pid":12345, "tid":3, "ts":1744739958395404, "dur":70, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/gabri/Documents/OneWayOut/OneWayOut.exe" }}
+,{ "pid":12345, "tid":3, "ts":1744739958395492, "dur":3146, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/gabri/Documents/OneWayOut/OneWayOut.exe" }}
+,{ "pid":12345, "tid":3, "ts":1744739958406179, "dur":78, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1744739958399476, "dur":6791, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/gabri/Documents/OneWayOut/OneWayOut_Data/Managed/mscorlib.dll" }}
+,{ "pid":12345, "tid":3, "ts":1744739958406340, "dur":2766, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/gabri/Documents/OneWayOut/OneWayOut_Data/Managed/System.Transactions.dll" }}
+,{ "pid":12345, "tid":3, "ts":1744739958409226, "dur":3639, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/gabri/Documents/OneWayOut/OneWayOut_Data/Managed/System.Runtime.Serialization.dll" }}
+,{ "pid":12345, "tid":3, "ts":1744739958412947, "dur":2234, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/gabri/Documents/OneWayOut/OneWayOut_Data/Managed/System.IO.Compression.dll" }}
+,{ "pid":12345, "tid":3, "ts":1744739958415247, "dur":2424, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/gabri/Documents/OneWayOut/OneWayOut_Data/Managed/System.Drawing.dll" }}
+,{ "pid":12345, "tid":3, "ts":1744739958417746, "dur":3588, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/gabri/Documents/OneWayOut/OneWayOut_Data/Managed/System.Core.dll" }}
+,{ "pid":12345, "tid":3, "ts":1744739958421492, "dur":2048, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/gabri/Documents/OneWayOut/OneWayOut_Data/Managed/Mono.Security.dll" }}
+,{ "pid":12345, "tid":3, "ts":1744739958423705, "dur":2350, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/gabri/Documents/OneWayOut/OneWayOut_Data/Managed/Unity.VisualScripting.State.dll" }}
+,{ "pid":12345, "tid":3, "ts":1744739958426199, "dur":2185, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/gabri/Documents/OneWayOut/OneWayOut_Data/Managed/Unity.Timeline.dll" }}
+,{ "pid":12345, "tid":3, "ts":1744739958431511, "dur":160, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1744739958428562, "dur":3148, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/gabri/Documents/OneWayOut/OneWayOut_Data/Managed/Unity.VisualScripting.Core.dll" }}
+,{ "pid":12345, "tid":3, "ts":1744739958431826, "dur":1649, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/gabri/Documents/OneWayOut/OneWayOut_Data/Managed/Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll" }}
+,{ "pid":12345, "tid":3, "ts":1744739958433571, "dur":1597, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/gabri/Documents/OneWayOut/OneWayOut_Data/Managed/UnityEngine.XRModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1744739958435246, "dur":2935, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/gabri/Documents/OneWayOut/OneWayOut_Data/Managed/UnityEngine.VideoModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1744739958438245, "dur":1448, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/gabri/Documents/OneWayOut/OneWayOut_Data/Managed/UnityEngine.VFXModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1744739958442124, "dur":70, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1744739958439766, "dur":2486, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/gabri/Documents/OneWayOut/OneWayOut_Data/Managed/UnityEngine.UnityWebRequestModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1744739958442339, "dur":54, "ph":"X", "name": "EmitNodeStart",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1744739958444518, "dur":66, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1744739958442397, "dur":2251, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/gabri/Documents/OneWayOut/OneWayOut_Data/Managed/UnityEngine.UnityTestProtocolModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1744739958444734, "dur":2192, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/gabri/Documents/OneWayOut/OneWayOut_Data/Managed/UnityEngine.UnityConnectModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1744739958447065, "dur":2614, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/gabri/Documents/OneWayOut/OneWayOut_Data/Managed/UnityEngine.UnityAnalyticsCommonModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1744739958449769, "dur":1969, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/gabri/Documents/OneWayOut/OneWayOut_Data/Managed/UnityEngine.UIModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1744739958454579, "dur":89, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1744739958451832, "dur":2879, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/gabri/Documents/OneWayOut/OneWayOut_Data/Managed/UnityEngine.TextRenderingModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1744739958454799, "dur":58, "ph":"X", "name": "EmitNodeStart",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1744739958454862, "dur":2024, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/gabri/Documents/OneWayOut/OneWayOut_Data/Managed/UnityEngine.TextCoreFontEngineModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1744739958457037, "dur":2101, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/gabri/Documents/OneWayOut/OneWayOut_Data/Managed/UnityEngine.SubsystemsModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1744739958459269, "dur":2386, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/gabri/Documents/OneWayOut/OneWayOut_Data/Managed/UnityEngine.SpriteShapeModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1744739958461750, "dur":1810, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/gabri/Documents/OneWayOut/OneWayOut_Data/Managed/UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1744739958464899, "dur":122, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1744739958463658, "dur":1447, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/gabri/Documents/OneWayOut/OneWayOut_Data/Managed/UnityEngine.PhysicsModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1744739958465234, "dur":1640, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/gabri/Documents/OneWayOut/OneWayOut_Data/Managed/UnityEngine.Physics2DModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1744739958466972, "dur":1085, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/gabri/Documents/OneWayOut/OneWayOut_Data/Managed/UnityEngine.NVIDIAModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1744739958468132, "dur":1005, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/gabri/Documents/OneWayOut/OneWayOut_Data/Managed/UnityEngine.InputModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1744739958469229, "dur":1428, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/gabri/Documents/OneWayOut/OneWayOut_Data/Managed/UnityEngine.IMGUIModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1744739958470774, "dur":822, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/gabri/Documents/OneWayOut/OneWayOut_Data/Managed/UnityEngine.GameCenterModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1744739958471677, "dur":1090, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/gabri/Documents/OneWayOut/OneWayOut_Data/Managed/UnityEngine.DSPGraphModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1744739958472851, "dur":965, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/gabri/Documents/OneWayOut/OneWayOut_Data/Managed/UnityEngine.ContentLoadModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1744739958475143, "dur":66, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1744739958473931, "dur":1288, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/gabri/Documents/OneWayOut/OneWayOut_Data/Managed/UnityEngine.ClusterInputModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1744739958475304, "dur":1465, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/gabri/Documents/OneWayOut/OneWayOut_Data/Managed/UnityEngine.AssetBundleModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1744739958476835, "dur":1645, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/gabri/Documents/OneWayOut/OneWayOut_Data/Managed/UnityEngine.AccessibilityModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1744739958478538, "dur":136, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.56f1\\Editor\\Data\\PlaybackEngines\\WindowsStandaloneSupport\\Variations\\win64_player_nondevelopment_mono\\UnityPlayer.dll" }}
+,{ "pid":12345, "tid":3, "ts":1744739958478536, "dur":139, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/gabri/Documents/OneWayOut/UnityPlayer.dll" }}
+,{ "pid":12345, "tid":3, "ts":1744739958478690, "dur":32371, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/gabri/Documents/OneWayOut/UnityPlayer.dll" }}
+,{ "pid":12345, "tid":3, "ts":1744739958511141, "dur":16489, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/gabri/Documents/OneWayOut/OneWayOut_Data/sharedassets2.assets.resS" }}
+,{ "pid":12345, "tid":3, "ts":1744739958527717, "dur":376845, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/gabri/Documents/OneWayOut/OneWayOut_Data/sharedassets1.assets.resS" }}
+,{ "pid":12345, "tid":3, "ts":1744739958904739, "dur":142729, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/gabri/Documents/OneWayOut/OneWayOut_Data/level10" }}
+,{ "pid":12345, "tid":3, "ts":1744739959047726, "dur":70471, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/gabri/Documents/OneWayOut/OneWayOut_Data/globalgamemanagers.assets" }}
+,{ "pid":12345, "tid":3, "ts":1744739959118337, "dur":2352, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1744739958351548, "dur":3802, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1744739958355351, "dur":1071, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1744739958356422, "dur":923, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1744739958357345, "dur":914, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1744739958358259, "dur":326, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1744739958358585, "dur":2911, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1744739958361507, "dur":56, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1744739958368839, "dur":2358, "ph":"X", "name": "WriteText",  "args": { "detail":"Library/Bee/artifacts/WinPlayerBuildProgram/Data/app.info" }}
+,{ "pid":12345, "tid":4, "ts":1744739958371201, "dur":130, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/gabri/Documents/OneWayOut/OneWayOut_Data/app.info" }}
+,{ "pid":12345, "tid":4, "ts":1744739958374097, "dur":3049, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/gabri/Documents/OneWayOut/OneWayOut_Data/app.info" }}
+,{ "pid":12345, "tid":4, "ts":1744739958377150, "dur":221, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/gabri/Documents/OneWayOut/MonoBleedingEdge/etc/mono/config" }}
+,{ "pid":12345, "tid":4, "ts":1744739958377591, "dur":1886, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/gabri/Documents/OneWayOut/MonoBleedingEdge/etc/mono/config" }}
+,{ "pid":12345, "tid":4, "ts":1744739958379540, "dur":136, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.56f1\\Editor\\Data\\PlaybackEngines\\WindowsStandaloneSupport\\Variations\\win64_player_nondevelopment_mono\\MonoBleedingEdge\\etc\\mono\\4.5\\web.config" }}
+,{ "pid":12345, "tid":4, "ts":1744739958379538, "dur":139, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/gabri/Documents/OneWayOut/MonoBleedingEdge/etc/mono/4.5/web.config" }}
+,{ "pid":12345, "tid":4, "ts":1744739958380467, "dur":2066, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/gabri/Documents/OneWayOut/MonoBleedingEdge/etc/mono/4.5/web.config" }}
+,{ "pid":12345, "tid":4, "ts":1744739958382606, "dur":149, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/gabri/Documents/OneWayOut/MonoBleedingEdge/etc/mono/4.5/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":4, "ts":1744739958383951, "dur":1175, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/gabri/Documents/OneWayOut/MonoBleedingEdge/etc/mono/4.5/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":4, "ts":1744739958385227, "dur":182, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/gabri/Documents/OneWayOut/MonoBleedingEdge/etc/mono/4.0/settings.map" }}
+,{ "pid":12345, "tid":4, "ts":1744739958385417, "dur":64, "ph":"X", "name": "EmitNodeStart",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1744739958386058, "dur":2124, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/gabri/Documents/OneWayOut/MonoBleedingEdge/etc/mono/4.0/settings.map" }}
+,{ "pid":12345, "tid":4, "ts":1744739958388263, "dur":278, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.56f1\\Editor\\Data\\PlaybackEngines\\WindowsStandaloneSupport\\Variations\\win64_player_nondevelopment_mono\\MonoBleedingEdge\\etc\\mono\\2.0\\web.config" }}
+,{ "pid":12345, "tid":4, "ts":1744739958388261, "dur":281, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/gabri/Documents/OneWayOut/MonoBleedingEdge/etc/mono/2.0/web.config" }}
+,{ "pid":12345, "tid":4, "ts":1744739958389930, "dur":114, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1744739958388815, "dur":1258, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/gabri/Documents/OneWayOut/MonoBleedingEdge/etc/mono/2.0/web.config" }}
+,{ "pid":12345, "tid":4, "ts":1744739958390183, "dur":151, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/gabri/Documents/OneWayOut/MonoBleedingEdge/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":4, "ts":1744739958390355, "dur":2060, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/gabri/Documents/OneWayOut/MonoBleedingEdge/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":4, "ts":1744739958392554, "dur":120, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.56f1\\Editor\\Data\\PlaybackEngines\\WindowsStandaloneSupport\\Variations\\win64_player_nondevelopment_mono\\MonoBleedingEdge\\EmbedRuntime\\mono-2.0-bdwgc.dll" }}
+,{ "pid":12345, "tid":4, "ts":1744739958392552, "dur":123, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/gabri/Documents/OneWayOut/MonoBleedingEdge/EmbedRuntime/mono-2.0-bdwgc.dll" }}
+,{ "pid":12345, "tid":4, "ts":1744739958393207, "dur":8877, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/gabri/Documents/OneWayOut/MonoBleedingEdge/EmbedRuntime/mono-2.0-bdwgc.dll" }}
+,{ "pid":12345, "tid":4, "ts":1744739958402334, "dur":3877, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/gabri/Documents/OneWayOut/OneWayOut_Data/Managed/System.dll" }}
+,{ "pid":12345, "tid":4, "ts":1744739958408959, "dur":52, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1744739958406294, "dur":2747, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/gabri/Documents/OneWayOut/OneWayOut_Data/Managed/System.Xml.Linq.dll" }}
+,{ "pid":12345, "tid":4, "ts":1744739958409167, "dur":90, "ph":"X", "name": "EmitNodeStart",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1744739958412042, "dur":283, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1744739958409260, "dur":3107, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/gabri/Documents/OneWayOut/OneWayOut_Data/Managed/System.Security.dll" }}
+,{ "pid":12345, "tid":4, "ts":1744739958412493, "dur":57, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/gabri/Documents/OneWayOut/OneWayOut_Data/Managed/System.Numerics.dll" }}
+,{ "pid":12345, "tid":4, "ts":1744739958412577, "dur":2101, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/gabri/Documents/OneWayOut/OneWayOut_Data/Managed/System.Numerics.dll" }}
+,{ "pid":12345, "tid":4, "ts":1744739958414742, "dur":2199, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/gabri/Documents/OneWayOut/OneWayOut_Data/Managed/System.IO.Compression.FileSystem.dll" }}
+,{ "pid":12345, "tid":4, "ts":1744739958417053, "dur":2338, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/gabri/Documents/OneWayOut/OneWayOut_Data/Managed/System.Data.dll" }}
+,{ "pid":12345, "tid":4, "ts":1744739958419498, "dur":2427, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/gabri/Documents/OneWayOut/OneWayOut_Data/Managed/System.ComponentModel.Composition.dll" }}
+,{ "pid":12345, "tid":4, "ts":1744739958423923, "dur":71, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1744739958422002, "dur":2004, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/gabri/Documents/OneWayOut/OneWayOut_Data/Managed/Unity.VisualScripting.Antlr3.Runtime.dll" }}
+,{ "pid":12345, "tid":4, "ts":1744739958424112, "dur":2330, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/gabri/Documents/OneWayOut/OneWayOut_Data/Managed/Unity.TextMeshPro.dll" }}
+,{ "pid":12345, "tid":4, "ts":1744739958426501, "dur":2430, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/gabri/Documents/OneWayOut/OneWayOut_Data/Managed/UnityEngine.UI.dll" }}
+,{ "pid":12345, "tid":4, "ts":1744739958429014, "dur":3027, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/gabri/Documents/OneWayOut/OneWayOut_Data/Managed/Unity.Postprocessing.Runtime.dll" }}
+,{ "pid":12345, "tid":4, "ts":1744739958432117, "dur":65, "ph":"X", "name": "EmitNodeStart",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1744739958432187, "dur":2507, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/gabri/Documents/OneWayOut/OneWayOut_Data/Managed/Assembly-CSharp.dll" }}
+,{ "pid":12345, "tid":4, "ts":1744739958434805, "dur":1629, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/gabri/Documents/OneWayOut/OneWayOut_Data/Managed/UnityEngine.WindModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1744739958436496, "dur":2547, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/gabri/Documents/OneWayOut/OneWayOut_Data/Managed/UnityEngine.VehiclesModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1744739958439170, "dur":2382, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/gabri/Documents/OneWayOut/OneWayOut_Data/Managed/UnityEngine.UnityWebRequestWWWModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1744739958441698, "dur":2509, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/gabri/Documents/OneWayOut/OneWayOut_Data/Managed/UnityEngine.UnityWebRequestAudioModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1744739958444379, "dur":2399, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/gabri/Documents/OneWayOut/OneWayOut_Data/Managed/UnityEngine.UnityCurlModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1744739958446877, "dur":3269, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/gabri/Documents/OneWayOut/OneWayOut_Data/Managed/UnityEngine.UnityAnalyticsModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1744739958450360, "dur":3060, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/gabri/Documents/OneWayOut/OneWayOut_Data/Managed/UnityEngine.TilemapModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1744739958455168, "dur":51, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1744739958453543, "dur":1706, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/gabri/Documents/OneWayOut/OneWayOut_Data/Managed/UnityEngine.TextCoreTextEngineModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1744739958455336, "dur":1920, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/gabri/Documents/OneWayOut/OneWayOut_Data/Managed/UnityEngine.TerrainModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1744739958457341, "dur":2030, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/gabri/Documents/OneWayOut/OneWayOut_Data/Managed/UnityEngine.SubstanceModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1744739958459503, "dur":1806, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/gabri/Documents/OneWayOut/OneWayOut_Data/Managed/UnityEngine.SpriteMaskModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1744739958463130, "dur":56, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1744739958461406, "dur":1849, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/gabri/Documents/OneWayOut/OneWayOut_Data/Managed/UnityEngine.ScreenCaptureModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1744739958463344, "dur":2925, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/gabri/Documents/OneWayOut/OneWayOut_Data/Managed/UnityEngine.ProfilerModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1744739958466394, "dur":1302, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/gabri/Documents/OneWayOut/OneWayOut_Data/Managed/UnityEngine.ParticleSystemModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1744739958467778, "dur":1052, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/gabri/Documents/OneWayOut/OneWayOut_Data/Managed/UnityEngine.JSONSerializeModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1744739958468951, "dur":1081, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/gabri/Documents/OneWayOut/OneWayOut_Data/Managed/UnityEngine.ImageConversionModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1744739958470136, "dur":930, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/gabri/Documents/OneWayOut/OneWayOut_Data/Managed/UnityEngine.GridModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1744739958471148, "dur":1130, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/gabri/Documents/OneWayOut/OneWayOut_Data/Managed/UnityEngine.DirectorModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1744739958472383, "dur":1912, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/gabri/Documents/OneWayOut/OneWayOut_Data/Managed/UnityEngine.CoreModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1744739958474362, "dur":1411, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/gabri/Documents/OneWayOut/OneWayOut_Data/Managed/UnityEngine.AudioModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1744739958475871, "dur":2346, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/gabri/Documents/OneWayOut/OneWayOut_Data/Managed/UnityEngine.AndroidJNIModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1744739958478339, "dur":1432, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/gabri/Documents/OneWayOut/OneWayOut_Data/Managed/UnityEngine.ARModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1744739958479869, "dur":4087, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/gabri/Documents/OneWayOut/OneWayOut_Data/sharedassets9.assets" }}
+,{ "pid":12345, "tid":4, "ts":1744739958484036, "dur":1779, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/gabri/Documents/OneWayOut/OneWayOut_Data/sharedassets8.resource" }}
+,{ "pid":12345, "tid":4, "ts":1744739958488187, "dur":72, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1744739958485897, "dur":2380, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/gabri/Documents/OneWayOut/OneWayOut_Data/sharedassets8.assets" }}
+,{ "pid":12345, "tid":4, "ts":1744739958488386, "dur":4276, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/gabri/Documents/OneWayOut/OneWayOut_Data/sharedassets7.assets.resS" }}
+,{ "pid":12345, "tid":4, "ts":1744739958492753, "dur":2635, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/gabri/Documents/OneWayOut/OneWayOut_Data/sharedassets6.assets" }}
+,{ "pid":12345, "tid":4, "ts":1744739958495466, "dur":3005, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/gabri/Documents/OneWayOut/OneWayOut_Data/sharedassets5.assets" }}
+,{ "pid":12345, "tid":4, "ts":1744739958498540, "dur":2749, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/gabri/Documents/OneWayOut/OneWayOut_Data/sharedassets4.assets.resS" }}
+,{ "pid":12345, "tid":4, "ts":1744739958501454, "dur":2922, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/gabri/Documents/OneWayOut/OneWayOut_Data/sharedassets3.resource" }}
+,{ "pid":12345, "tid":4, "ts":1744739958504510, "dur":2014, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/gabri/Documents/OneWayOut/OneWayOut_Data/sharedassets3.assets" }}
+,{ "pid":12345, "tid":4, "ts":1744739958506602, "dur":6739, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/gabri/Documents/OneWayOut/OneWayOut_Data/sharedassets2.resource" }}
+,{ "pid":12345, "tid":4, "ts":1744739958513427, "dur":3620, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/gabri/Documents/OneWayOut/OneWayOut_Data/sharedassets11.resource" }}
+,{ "pid":12345, "tid":4, "ts":1744739958517149, "dur":1702, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/gabri/Documents/OneWayOut/OneWayOut_Data/sharedassets10.assets.resS" }}
+,{ "pid":12345, "tid":4, "ts":1744739958518937, "dur":93732, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/gabri/Documents/OneWayOut/OneWayOut_Data/sharedassets1.resource" }}
+,{ "pid":12345, "tid":4, "ts":1744739958708390, "dur":77, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1744739958612740, "dur":95760, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/gabri/Documents/OneWayOut/OneWayOut_Data/resources.assets" }}
+,{ "pid":12345, "tid":4, "ts":1744739958708691, "dur":194222, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/gabri/Documents/OneWayOut/OneWayOut_Data/level6" }}
+,{ "pid":12345, "tid":4, "ts":1744739959045911, "dur":52, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1744739958903130, "dur":142870, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/gabri/Documents/OneWayOut/OneWayOut_Data/level3" }}
+,{ "pid":12345, "tid":4, "ts":1744739959046406, "dur":69390, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/gabri/Documents/OneWayOut/OneWayOut_Data/level0" }}
+,{ "pid":12345, "tid":4, "ts":1744739959116057, "dur":4620, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1744739959158190, "dur":2753, "ph":"X", "name": "ProfilerWriteOutput" }
 ,

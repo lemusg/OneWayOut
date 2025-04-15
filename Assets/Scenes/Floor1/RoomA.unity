@@ -1811,6 +1811,18 @@ PrefabInstance:
       propertyPath: m_SortingOrder
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3451276856495952953, guid: a891dc2b9825fd54a84babe86d8f84fe, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3451276856495952953, guid: a891dc2b9825fd54a84babe86d8f84fe, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3451276856495952953, guid: a891dc2b9825fd54a84babe86d8f84fe, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3668968809748652274, guid: a891dc2b9825fd54a84babe86d8f84fe, type: 3}
       propertyPath: moveSpeed
       value: 80
@@ -1839,6 +1851,18 @@ PrefabInstance:
       propertyPath: door
       value: 
       objectReference: {fileID: 1371616651}
+    - target: {fileID: 6828634353589277854, guid: a891dc2b9825fd54a84babe86d8f84fe, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828634353589277854, guid: a891dc2b9825fd54a84babe86d8f84fe, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7291210982319057210, guid: a891dc2b9825fd54a84babe86d8f84fe, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7439798813027823288, guid: a891dc2b9825fd54a84babe86d8f84fe, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: 0
@@ -1860,7 +1884,9 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 8419979416336716757, guid: a891dc2b9825fd54a84babe86d8f84fe, type: 3}
+    - {fileID: 2633621196872165440, guid: a891dc2b9825fd54a84babe86d8f84fe, type: 3}
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 4341311249068880353, guid: a891dc2b9825fd54a84babe86d8f84fe, type: 3}
       insertIndex: -1

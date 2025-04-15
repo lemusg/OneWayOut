@@ -5,33 +5,44 @@ using UnityEngine.SceneManagement;
 
 public class SplashManager : MonoBehaviour
 {
-    public GameObject fadeIn;
-    public GameObject fadeOut;
-    public bool fadeDone;
-    // This delay should equal the value of the fadeInDelay from the FadeIn object + 3f
-    public float delay;
-    // Start is called before the first frame update
-    void Start()
+    private CanvasGroup canvasGroup;
+
+    void Awake()
     {
-        StartCoroutine(FadeController());
+        canvasGroup = GameObject.Find("Fade").GetComponent<CanvasGroup>();
+        canvasGroup.alpha = 1f;
+        StartCoroutine(FadeIn());
+    }
+
+    private IEnumerator FadeIn()
+    {
+        yield return new WaitForSeconds(2f);
+        float elapsedTime = 0f;
         
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        if (fadeDone) {
-            SceneManager.LoadScene("Main Menu");
+        while (elapsedTime < 3f)
+        {
+            elapsedTime += Time.deltaTime;
+            canvasGroup.alpha = Mathf.Lerp(1f, 0f, elapsedTime / 3f);
+            yield return null;
         }
+        
+        canvasGroup.alpha = 0f;
+        yield return new WaitForSeconds(3f);
+        StartCoroutine(FadeOut());
     }
 
-    private IEnumerator FadeController() {
-        fadeIn.SetActive(true);
-        fadeOut.SetActive(false);
-        yield return new WaitForSeconds(delay);
-        fadeIn.SetActive(false);
-        fadeOut.SetActive(true);
-        yield return new WaitForSeconds(delay);
-        fadeDone = true;
+    public IEnumerator FadeOut()
+    {
+        float elapsedTime = 0f;
+        
+        while (elapsedTime < 3f)
+        {
+            elapsedTime += Time.deltaTime;
+            canvasGroup.alpha = Mathf.Lerp(0f, 1f, elapsedTime / 3f);
+            yield return null;
+        }
+        
+        canvasGroup.alpha = 1f;
+        SceneManager.LoadScene("Main Menu");
     }
 }

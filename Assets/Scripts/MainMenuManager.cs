@@ -7,13 +7,14 @@ using UnityEngine.SceneManagement;
 public class Title : MonoBehaviour
 {
     public GameObject title;
-    public GameObject fadeIn;
-    public GameObject fadeOut;
-    public bool fadeDone;
     public Button button;
     public Sprite buttonImage1;
     public Sprite buttonImage2;
     public Button quit;
+    public GameObject fade;
+    private CanvasGroup canvasGroup;
+    public GameObject popup;
+    public GameObject quitConfirmation;
     
     [Header("Audio")]
     public AudioClip backgroundMusic;  // The music clip to play
@@ -22,13 +23,15 @@ public class Title : MonoBehaviour
     [Range(0f, 1f)]
     public float musicVolume = 0.5f;  // Volume control
 
+    void Awake()
+    {
+        canvasGroup = fade.GetComponent<CanvasGroup>();
+        canvasGroup.alpha = 1f;
+        StartCoroutine(FadeIn());
+    }
     // Start is called before the first frame update
     void Start()
     {
-        StartCoroutine(FadeIn());
-        button.interactable = false;
-        quit.interactable = false;
-        StartCoroutine(Animation());
         button.onClick.AddListener(OnButtonClick);
         quit.onClick.AddListener(Quit);
 
@@ -43,13 +46,15 @@ public class Title : MonoBehaviour
         }
     }
 
-    // Update is called once per frame
     void Update()
     {
-        if (fadeDone)
-        {
-            button.interactable = true;
-            quit.interactable = true;
+        if (popup.activeSelf) {
+            if (Input.GetKeyDown(KeyCode.Y)) {
+                Application.Quit();
+            } else if (Input.GetKeyDown(KeyCode.N)) {
+                popup.SetActive(false);
+                quitConfirmation.SetActive(false);
+            }
         }
     }
 
@@ -59,7 +64,7 @@ public class Title : MonoBehaviour
         {
             audioSource.PlayOneShot(buttonClickSound);
         }
-        FadeOut(false);
+        StartCoroutine(FadeOut());
     }
 
     private void Quit()
@@ -68,12 +73,8 @@ public class Title : MonoBehaviour
         {
             audioSource.PlayOneShot(buttonClickSound);
         }
-        FadeOut(true);
-    }
-
-    private void FadeOut(bool isQuit)
-    {
-        StartCoroutine(FadeOutRoutine(isQuit));
+        popup.SetActive(true);
+        quitConfirmation.SetActive(true);
     }
 
     private IEnumerator Animation()
@@ -121,26 +122,39 @@ public class Title : MonoBehaviour
         title.transform.position = targetPos;
         button.gameObject.SetActive(true);
         quit.gameObject.SetActive(true);
+        StartCoroutine(Animation());
     }
 
     private IEnumerator FadeIn()
     {
-        fadeIn.SetActive(true);
-        yield return new WaitForSeconds(6f);
-        fadeIn.SetActive(false);
+        yield return new WaitForSeconds(2f);
+        float elapsedTime = 0f;
+        
+        while (elapsedTime < 3f)
+        {
+            elapsedTime += Time.deltaTime;
+            canvasGroup.alpha = Mathf.Lerp(1f, 0f, elapsedTime / 3f);
+            yield return null;
+        }
+        
+        canvasGroup.alpha = 0f;
+        fade.SetActive(false);        
         StartCoroutine(TitleAnimation());
-        fadeDone = true;
     }
 
-    private IEnumerator FadeOutRoutine(bool isQuit)
+    public IEnumerator FadeOut()
     {
-        fadeOut.SetActive(true);
-        yield return new WaitForSeconds(6f);
-        if (isQuit)
+        fade.SetActive(true);
+        float elapsedTime = 0f;
+        
+        while (elapsedTime < 3f)
         {
-            Application.Quit();
-        } else {
-            SceneManager.LoadScene("Scenes/LevelOne/RoomA");
+            elapsedTime += Time.deltaTime;
+            canvasGroup.alpha = Mathf.Lerp(0f, 1f, elapsedTime / 3f);
+            yield return null;
         }
+        
+        canvasGroup.alpha = 1f;
+        SceneManager.LoadScene("RoomA");
     }
 }

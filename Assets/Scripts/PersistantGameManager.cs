@@ -35,7 +35,7 @@ public class PersistantGameManager : MonoBehaviour
         audioSource = gameObject.AddComponent<AudioSource>();
         audioSource.clip = backgroundMusic;
         audioSource.loop = true;
-        audioSource.volume = 0.5f; // Adjust this value to set default volume
+        audioSource.volume = 0.25f; // Adjust this value to set default volume
         audioSource.Play();
     }
 

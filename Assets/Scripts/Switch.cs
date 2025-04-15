@@ -17,6 +17,7 @@ public class Switch : MonoBehaviour
     public Material buttOff;
     public static bool canFlip = false;
     public static bool win = false;
+    public GameObject popup;
     
     // Start is called before the first frame update
     void Start()
@@ -34,6 +35,8 @@ public class Switch : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.E))
             {
+                if (!popup.GetComponent<Popup>().triggered)
+                    popup.GetComponent<Popup>().triggered = true;
                 StartCoroutine(FlipSwitch());
             }
         }
