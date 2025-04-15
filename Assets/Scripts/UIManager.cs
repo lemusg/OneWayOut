@@ -151,6 +151,26 @@ public class UIManager : MonoBehaviour
             if (tooltipText != null) {
                 tooltipText.text = clueText;
             }
+            // Update tooltip position based on the hovered clue
+            RectTransform tooltipRect = tooltip.GetComponent<RectTransform>();
+            RectTransform clueRect = clueObj.GetComponent<RectTransform>();
+            
+            // Convert the clue's position to screen space
+            Vector2 screenPoint = RectTransformUtility.WorldToScreenPoint(null, clueObj.transform.position);
+            // Convert screen point to local point in the tooltip's parent
+            RectTransformUtility.ScreenPointToLocalPointInRectangle(
+                tooltipRect.parent.GetComponent<RectTransform>(),
+                screenPoint,
+                null,
+                out Vector2 localPoint
+            );
+            
+            // Position the tooltip to the left of the clue
+            tooltipRect.localPosition = new Vector3(
+                localPoint.x - tooltipRect.rect.width + 20f,
+                localPoint.y,
+                0f
+            );
         });
         trigger.triggers.Add(enterEntry);
         
