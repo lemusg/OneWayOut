@@ -505,6 +505,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5829223854354374424, guid: e640bee937613674388d75aa53bf8f2e, type: 3}
       propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5829223854354374424, guid: e640bee937613674388d75aa53bf8f2e, type: 3}
+      propertyPath: m_IsTrigger
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5907802326652795178, guid: e640bee937613674388d75aa53bf8f2e, type: 3}
@@ -568,7 +572,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &567881206
 SpriteRenderer:
   m_ObjectHideFlags: 0

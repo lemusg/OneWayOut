@@ -12,6 +12,8 @@ public class SimonSays : MonoBehaviour
     private bool wrong = false;
     private AudioSource audioSource;
     public AudioClip wrongSound;
+    public AudioClip correctSound;
+    private bool soundPlayed = false;
 
     void Awake()
     {
@@ -21,8 +23,11 @@ public class SimonSays : MonoBehaviour
     }
 
     void Update() {
-        if (Switch.win == true)
+        if (Switch.win == true && !soundPlayed) {
+            audioSource.PlayOneShot(correctSound);
+            soundPlayed = true;
             StopCoroutine(ShowSimon());
+        }
     }
 
     void Simon()

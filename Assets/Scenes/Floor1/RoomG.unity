@@ -396,7 +396,6 @@ MonoBehaviour:
   door: {fileID: 96595401}
   buttOn: {fileID: -3802577036314081666, guid: 2764b762093d23644b9af08afcc5dd9b, type: 3}
   buttOff: {fileID: -4064177444378859140, guid: 2764b762093d23644b9af08afcc5dd9b, type: 3}
-  winSound: {fileID: 0}
 --- !u!65 &256336244
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -713,7 +712,6 @@ MonoBehaviour:
   door: {fileID: 96595401}
   buttOn: {fileID: -3802577036314081666, guid: 2764b762093d23644b9af08afcc5dd9b, type: 3}
   buttOff: {fileID: -4064177444378859140, guid: 2764b762093d23644b9af08afcc5dd9b, type: 3}
-  winSound: {fileID: 0}
 --- !u!65 &402767245
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1226,7 +1224,6 @@ MonoBehaviour:
   door: {fileID: 96595401}
   buttOn: {fileID: -3802577036314081666, guid: 2764b762093d23644b9af08afcc5dd9b, type: 3}
   buttOff: {fileID: -4064177444378859140, guid: 2764b762093d23644b9af08afcc5dd9b, type: 3}
-  winSound: {fileID: 0}
 --- !u!65 &1253937637
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1455,7 +1452,6 @@ MonoBehaviour:
   door: {fileID: 96595401}
   buttOn: {fileID: -3802577036314081666, guid: 2764b762093d23644b9af08afcc5dd9b, type: 3}
   buttOff: {fileID: -4064177444378859140, guid: 2764b762093d23644b9af08afcc5dd9b, type: 3}
-  winSound: {fileID: 0}
 --- !u!65 &1665932117
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1595,7 +1591,8 @@ MonoBehaviour:
   buttOn: {fileID: -3802577036314081666, guid: 2764b762093d23644b9af08afcc5dd9b, type: 3}
   buttOff: {fileID: -4064177444378859140, guid: 2764b762093d23644b9af08afcc5dd9b, type: 3}
   switches: 
-  wrongSound: {fileID: 0}
+  wrongSound: {fileID: 8300000, guid: bd1a791ba72b3a14eb36d86dc2995c11, type: 3}
+  correctSound: {fileID: 8300000, guid: e1fa2e8e32cbaac4eb32fd99dc7d03b2, type: 3}
 --- !u!1 &1851123477
 GameObject:
   m_ObjectHideFlags: 0
@@ -1737,7 +1734,6 @@ MonoBehaviour:
   door: {fileID: 96595401}
   buttOn: {fileID: -3802577036314081666, guid: 2764b762093d23644b9af08afcc5dd9b, type: 3}
   buttOff: {fileID: -4064177444378859140, guid: 2764b762093d23644b9af08afcc5dd9b, type: 3}
-  winSound: {fileID: 0}
 --- !u!65 &2105780659
 BoxCollider:
   m_ObjectHideFlags: 0

@@ -17,13 +17,10 @@ public class Switch : MonoBehaviour
     public Material buttOff;
     public static bool canFlip = false;
     public static bool win = false;
-    private AudioSource audioSource;
-    public AudioClip winSound;
     
     // Start is called before the first frame update
     void Start()
     {
-        audioSource = gameObject.AddComponent<AudioSource>();
         GameObject player = GameObject.FindGameObjectWithTag("Player");
         UI = player.transform.Find("UI")?.gameObject;
         interactIcon = UI.transform.Find("Interact").gameObject;
@@ -43,7 +40,6 @@ public class Switch : MonoBehaviour
 
         if (correctSwitches == 5) {
             win = true;
-            audioSource.PlayOneShot(winSound);
             interactIcon.SetActive(false);
             interactText.text = "";
             foreach (Transform child in transform.parent) {
