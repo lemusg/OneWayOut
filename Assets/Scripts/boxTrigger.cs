@@ -11,8 +11,11 @@ public class boxTrigger : MonoBehaviour
     public GameObject door;
     public GameObject popup;
     private Door d;
+    public AudioClip win;
+    private AudioSource audioSource;
     void Start()
     {
+        audioSource = gameObject.AddComponent<AudioSource>();
         d = door.GetComponent<Door>();
     }
 
@@ -21,6 +24,9 @@ public class boxTrigger : MonoBehaviour
         if (boxesInTrigger == 3)
         {
             d.isOpen = true;
+            if (win != null)
+                audioSource.PlayOneShot(win);
+            boxesInTrigger = 0;
         }
     }
 
@@ -28,7 +34,9 @@ public class boxTrigger : MonoBehaviour
     {
         if (other.CompareTag("Box"))
         {
-            popup.GetComponent<Popup>().triggered = true;
+            if (popup != null)
+                if (!popup.GetComponent<Popup>().triggered)
+                    popup.GetComponent<Popup>().triggered = true;
             if (other.gameObject == box)
             {
                 GameObject light = transform.GetChild(0).gameObject;

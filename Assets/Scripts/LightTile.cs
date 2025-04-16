@@ -8,8 +8,9 @@ public class LightTile : MonoBehaviour
     public bool isInteractable = false;
     public bool isLit = false;
     public bool shouldBeLit = false;
-    private static int correctTilesLit = 0;
-    private static int incorrectTilesLit = 0;
+    public static int correctTilesLit = 0;
+    public static int incorrectTilesLit = 0;
+    public int numTiles;
     
     public Material litMaterial;
     public Material unlitMaterial;
@@ -18,16 +19,22 @@ public class LightTile : MonoBehaviour
     public GameObject door;
     public GameObject popup;
 
+    public AudioClip win;
+    private AudioSource audioSource;
+
     void Start()
     {
         GetComponent<MeshRenderer>().material = unlitMaterial;
+        audioSource = gameObject.AddComponent<AudioSource>();
     }
 
     void Update()
     {
         if (isInteractable && Input.GetKeyDown(KeyCode.E))
         {
-            popup.GetComponent<Popup>().triggered = true;
+            if (popup != null)
+                if (!popup.GetComponent<Popup>().triggered)
+                    popup.GetComponent<Popup>().triggered = true;
             ToggleTile();
         }
     }
@@ -51,9 +58,13 @@ public class LightTile : MonoBehaviour
 
     void CheckPuzzleCompletion()
     {
-        if (correctTilesLit == 3 && incorrectTilesLit == 0)  
+        if (correctTilesLit == numTiles && incorrectTilesLit == 0)  
         {
             door.GetComponent<Door>().isOpen = true;
+            if (win != null)
+                audioSource.PlayOneShot(win);
+            correctTilesLit = 0;
+            incorrectTilesLit = 0;
         }
     }
 

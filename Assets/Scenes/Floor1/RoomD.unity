@@ -250,6 +250,7 @@ MonoBehaviour:
   correctMat: {fileID: 2100000, guid: 63955e6228feac34aa5077114c0a6e99, type: 2}
   incorrectMat: {fileID: 2100000, guid: efbaff4d84b347a4ca58fc3d7d910240, type: 2}
   rotateSound: {fileID: 8300000, guid: cc66971c19612ca44b9a391d0c4c043a, type: 3}
+  win: {fileID: 0}
 --- !u!1 &326921346 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5354337615534564584, guid: e640bee937613674388d75aa53bf8f2e, type: 3}
@@ -514,6 +515,7 @@ MonoBehaviour:
   correctMat: {fileID: 2100000, guid: 63955e6228feac34aa5077114c0a6e99, type: 2}
   incorrectMat: {fileID: 2100000, guid: efbaff4d84b347a4ca58fc3d7d910240, type: 2}
   rotateSound: {fileID: 8300000, guid: cc66971c19612ca44b9a391d0c4c043a, type: 3}
+  win: {fileID: 0}
 --- !u!65 &515444716
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -619,7 +621,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &551816150
 Transform:
   m_ObjectHideFlags: 0
@@ -655,7 +657,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: d42ea5ab4747b9f4baacc34a69a5c59b, type: 2}
+  - {fileID: 2100000, guid: 9a16e992468f3cd4eaa7c8f7f4ec7ba9, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -788,7 +790,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &671417374
 Transform:
   m_ObjectHideFlags: 0
@@ -824,7 +826,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: d42ea5ab4747b9f4baacc34a69a5c59b, type: 2}
+  - {fileID: 2100000, guid: 9a16e992468f3cd4eaa7c8f7f4ec7ba9, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -894,6 +896,7 @@ MonoBehaviour:
   correctMat: {fileID: 2100000, guid: 63955e6228feac34aa5077114c0a6e99, type: 2}
   incorrectMat: {fileID: 2100000, guid: efbaff4d84b347a4ca58fc3d7d910240, type: 2}
   rotateSound: {fileID: 8300000, guid: cc66971c19612ca44b9a391d0c4c043a, type: 3}
+  win: {fileID: 0}
 --- !u!65 &796002989
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1053,6 +1056,7 @@ MonoBehaviour:
   correctMat: {fileID: 2100000, guid: 63955e6228feac34aa5077114c0a6e99, type: 2}
   incorrectMat: {fileID: 2100000, guid: efbaff4d84b347a4ca58fc3d7d910240, type: 2}
   rotateSound: {fileID: 8300000, guid: cc66971c19612ca44b9a391d0c4c043a, type: 3}
+  win: {fileID: 8300000, guid: e1fa2e8e32cbaac4eb32fd99dc7d03b2, type: 3}
 --- !u!65 &1357821943
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1158,7 +1162,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1365996365
 Transform:
   m_ObjectHideFlags: 0
@@ -1194,7 +1198,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: d42ea5ab4747b9f4baacc34a69a5c59b, type: 2}
+  - {fileID: 2100000, guid: 9a16e992468f3cd4eaa7c8f7f4ec7ba9, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1319,7 +1323,7 @@ PrefabInstance:
     - target: {fileID: -7635826562936255635, guid: 538e0445799444c47b9b3cc6c501b3d2, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: d42ea5ab4747b9f4baacc34a69a5c59b, type: 2}
+      objectReference: {fileID: 2100000, guid: 9a16e992468f3cd4eaa7c8f7f4ec7ba9, type: 2}
     - target: {fileID: 919132149155446097, guid: 538e0445799444c47b9b3cc6c501b3d2, type: 3}
       propertyPath: m_Name
       value: crystal
@@ -1467,7 +1471,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1855485824
 Transform:
   m_ObjectHideFlags: 0
@@ -1503,7 +1507,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: d42ea5ab4747b9f4baacc34a69a5c59b, type: 2}
+  - {fileID: 2100000, guid: 9a16e992468f3cd4eaa7c8f7f4ec7ba9, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

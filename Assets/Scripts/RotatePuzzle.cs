@@ -10,14 +10,13 @@ public class RotatePuzzle : MonoBehaviour
     public bool isInteractable = false;
     public TextMeshProUGUI interactText;
     public GameObject interactIcon;
-    private static int correctRotations = 0;
+    public static int correctRotations = 0;
     private bool isCorrect = false;
-    public Material correctMat;
-    public Material incorrectMat;
     private MeshRenderer objectRenderer;
     
     [Header("Audio")]
     public AudioClip rotateSound;
+    public AudioClip win;
     private AudioSource audioSource;
 
     void Start()
@@ -56,6 +55,9 @@ public class RotatePuzzle : MonoBehaviour
                         if (correctRotations >= 4)
                         {
                             door.GetComponent<Door>().isOpen = true;
+                            if (win != null)
+                                audioSource.PlayOneShot(win);
+                            correctRotations = 0;
                         }
                     }
                 }

@@ -191,14 +191,12 @@ public class UIManager : MonoBehaviour
 
     void Menu()
     {
-        Debug.Log("Menu function called - Setting gameUI to false and menuUI to true");
         gameUI.SetActive(false);
         menuUI.SetActive(true);
     }
 
     void ReturnMenu()
     {
-        Debug.Log("ReturnMenu function called - Setting menuUI to false and gameUI to true");
         menuUI.SetActive(false);
         gameUI.SetActive(true);
     }
@@ -280,8 +278,11 @@ public class UIManager : MonoBehaviour
         {
             PersistantGameManager.Instance.StopMusic();
         }
-        
         SceneManager.LoadScene("Scenes/Main Menu");
+        boxTrigger.boxesInTrigger = 0;
+        RotatePuzzle.correctRotations = 0;
+        LightTile.correctTilesLit = 0;
+        LightTile.incorrectTilesLit = 0;
     }
 
     void ShowSimonClue() {

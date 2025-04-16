@@ -105,12 +105,14 @@ public class Interactable : MonoBehaviour
     }
     // When interactable becomes inactive, if dialogue still open, close dialogue prompt
     void OnDisable() {
-        if (dialogueBox.activeSelf == true) {
-            interactIcon.SetActive(false);
-            interactText.text = "";
-            dialogueBox.SetActive(false);
-            dialogue.text = "";
-            skipText.text = "";
+        if (dialogueBox != null) {
+            if (dialogueBox.activeSelf == true) {
+                interactIcon.SetActive(false);
+                interactText.text = "";
+                dialogueBox.SetActive(false);
+                dialogue.text = "";
+                skipText.text = "";
+            }
         }
     }
 }

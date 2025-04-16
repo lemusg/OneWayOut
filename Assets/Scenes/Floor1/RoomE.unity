@@ -331,12 +331,14 @@ MonoBehaviour:
   isInteractable: 0
   isLit: 0
   shouldBeLit: 1
+  numTiles: 3
   litMaterial: {fileID: 2100000, guid: 63955e6228feac34aa5077114c0a6e99, type: 2}
   unlitMaterial: {fileID: 2100000, guid: efbaff4d84b347a4ca58fc3d7d910240, type: 2}
   interactText: {fileID: 673260840}
   interactIcon: {fileID: 951207123}
   door: {fileID: 427464586}
   popup: {fileID: 1931012927}
+  win: {fileID: 0}
 --- !u!65 &299195725
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -458,12 +460,14 @@ MonoBehaviour:
   isInteractable: 0
   isLit: 0
   shouldBeLit: 1
+  numTiles: 3
   litMaterial: {fileID: 2100000, guid: 63955e6228feac34aa5077114c0a6e99, type: 2}
   unlitMaterial: {fileID: 2100000, guid: efbaff4d84b347a4ca58fc3d7d910240, type: 2}
   interactText: {fileID: 673260840}
   interactIcon: {fileID: 951207123}
   door: {fileID: 427464586}
   popup: {fileID: 1931012927}
+  win: {fileID: 0}
 --- !u!65 &341291695
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -585,12 +589,14 @@ MonoBehaviour:
   isInteractable: 0
   isLit: 0
   shouldBeLit: 1
+  numTiles: 3
   litMaterial: {fileID: 2100000, guid: 63955e6228feac34aa5077114c0a6e99, type: 2}
   unlitMaterial: {fileID: 2100000, guid: efbaff4d84b347a4ca58fc3d7d910240, type: 2}
   interactText: {fileID: 673260840}
   interactIcon: {fileID: 951207123}
   door: {fileID: 427464586}
   popup: {fileID: 1931012927}
+  win: {fileID: 8300000, guid: e1fa2e8e32cbaac4eb32fd99dc7d03b2, type: 3}
 --- !u!65 &376054052
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -738,12 +744,14 @@ MonoBehaviour:
   isInteractable: 0
   isLit: 0
   shouldBeLit: 0
+  numTiles: 3
   litMaterial: {fileID: 2100000, guid: 63955e6228feac34aa5077114c0a6e99, type: 2}
   unlitMaterial: {fileID: 2100000, guid: efbaff4d84b347a4ca58fc3d7d910240, type: 2}
   interactText: {fileID: 673260840}
   interactIcon: {fileID: 951207123}
   door: {fileID: 427464586}
   popup: {fileID: 1931012927}
+  win: {fileID: 0}
 --- !u!65 &416616201
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -907,12 +915,14 @@ MonoBehaviour:
   isInteractable: 0
   isLit: 0
   shouldBeLit: 0
+  numTiles: 3
   litMaterial: {fileID: 2100000, guid: 63955e6228feac34aa5077114c0a6e99, type: 2}
   unlitMaterial: {fileID: 2100000, guid: efbaff4d84b347a4ca58fc3d7d910240, type: 2}
   interactText: {fileID: 673260840}
   interactIcon: {fileID: 951207123}
   door: {fileID: 427464586}
   popup: {fileID: 1931012927}
+  win: {fileID: 0}
 --- !u!65 &712052841
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1034,12 +1044,14 @@ MonoBehaviour:
   isInteractable: 0
   isLit: 0
   shouldBeLit: 0
+  numTiles: 3
   litMaterial: {fileID: 2100000, guid: 63955e6228feac34aa5077114c0a6e99, type: 2}
   unlitMaterial: {fileID: 2100000, guid: efbaff4d84b347a4ca58fc3d7d910240, type: 2}
   interactText: {fileID: 673260840}
   interactIcon: {fileID: 951207123}
   door: {fileID: 427464586}
   popup: {fileID: 1931012927}
+  win: {fileID: 0}
 --- !u!65 &761295713
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1241,12 +1253,14 @@ MonoBehaviour:
   isInteractable: 0
   isLit: 0
   shouldBeLit: 0
+  numTiles: 3
   litMaterial: {fileID: 2100000, guid: 63955e6228feac34aa5077114c0a6e99, type: 2}
   unlitMaterial: {fileID: 2100000, guid: efbaff4d84b347a4ca58fc3d7d910240, type: 2}
   interactText: {fileID: 673260840}
   interactIcon: {fileID: 951207123}
   door: {fileID: 427464586}
   popup: {fileID: 1931012927}
+  win: {fileID: 0}
 --- !u!65 &864388416
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1368,12 +1382,14 @@ MonoBehaviour:
   isInteractable: 0
   isLit: 0
   shouldBeLit: 0
+  numTiles: 3
   litMaterial: {fileID: 2100000, guid: 63955e6228feac34aa5077114c0a6e99, type: 2}
   unlitMaterial: {fileID: 2100000, guid: efbaff4d84b347a4ca58fc3d7d910240, type: 2}
   interactText: {fileID: 673260840}
   interactIcon: {fileID: 951207123}
   door: {fileID: 427464586}
   popup: {fileID: 1931012927}
+  win: {fileID: 0}
 --- !u!65 &943604285
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1913,12 +1929,14 @@ MonoBehaviour:
   isInteractable: 0
   isLit: 0
   shouldBeLit: 0
+  numTiles: 3
   litMaterial: {fileID: 2100000, guid: 63955e6228feac34aa5077114c0a6e99, type: 2}
   unlitMaterial: {fileID: 2100000, guid: efbaff4d84b347a4ca58fc3d7d910240, type: 2}
   interactText: {fileID: 673260840}
   interactIcon: {fileID: 951207123}
   door: {fileID: 427464586}
   popup: {fileID: 1931012927}
+  win: {fileID: 0}
 --- !u!65 &2098281993
 BoxCollider:
   m_ObjectHideFlags: 0

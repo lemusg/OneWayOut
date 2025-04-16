@@ -677,6 +677,7 @@ MonoBehaviour:
   box: {fileID: 6218812907403038589}
   door: {fileID: 419140631}
   popup: {fileID: 1015423306}
+  win: {fileID: 0}
 --- !u!64 &883400130
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -1209,6 +1210,7 @@ MonoBehaviour:
   box: {fileID: 1144822922545529750}
   door: {fileID: 419140631}
   popup: {fileID: 1015423306}
+  win: {fileID: 0}
 --- !u!64 &1497994135
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -1469,6 +1471,7 @@ MonoBehaviour:
   box: {fileID: 1696213267305401427}
   door: {fileID: 419140631}
   popup: {fileID: 1015423306}
+  win: {fileID: 8300000, guid: e1fa2e8e32cbaac4eb32fd99dc7d03b2, type: 3}
 --- !u!64 &1822442098
 MeshCollider:
   m_ObjectHideFlags: 0

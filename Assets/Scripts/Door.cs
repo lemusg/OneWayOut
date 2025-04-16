@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using TMPro;
 
 public class Door : MonoBehaviour
 {
@@ -15,6 +16,14 @@ public class Door : MonoBehaviour
     public int LevelEntryPoint;
     private AudioSource audioSource;
     public AudioClip openDoorSound;
+
+    private GameObject UI;
+    private TextMeshProUGUI dialogue;
+    private GameObject dialogueBox;
+    private GameObject interactIcon;
+    private TextMeshProUGUI interactText;
+    private TextMeshProUGUI skipText;
+    private string dialogueText;
     // Start is called before the first frame update
     void Start()
     {
@@ -24,6 +33,13 @@ public class Door : MonoBehaviour
         doorSprite = transform.GetChild(1).gameObject.GetComponent<SpriteRenderer>();
         audioSource = gameObject.AddComponent<AudioSource>();
         audioSource.clip = openDoorSound;
+        GameObject player = GameObject.FindGameObjectWithTag("Player");
+        UI = player.transform.Find("UI")?.gameObject;
+        dialogue = UI.transform.Find("Dialogue")?.GetComponent<TextMeshProUGUI>();
+        dialogueBox = UI.transform.Find("DialogueBG").gameObject;
+        interactIcon = UI.transform.Find("Interact").gameObject;
+        interactText = UI.transform.Find("InteractText")?.GetComponent<TextMeshProUGUI>();
+        skipText = UI.transform.Find("SkipText")?.GetComponent<TextMeshProUGUI>();
     }
 
     // Update is called once per frame
@@ -52,6 +68,17 @@ public class Door : MonoBehaviour
         //Enable collider for moving to next room
         doorCollider.enabled = true;
         float elapsedTime = 0f;
+        
+        //Hide dialogue/interact
+        if (dialogueBox != null) {
+            interactIcon.SetActive(false);
+            interactText.text = "";
+            if (dialogueBox.activeSelf == true) {
+                dialogueBox.SetActive(false);
+                dialogue.text = "";
+                skipText.text = "";
+            }
+        }
         
         //Fade out doorSprite to reveal open door
         while (elapsedTime < 2f)

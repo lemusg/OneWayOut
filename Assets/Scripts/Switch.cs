@@ -35,8 +35,9 @@ public class Switch : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.E))
             {
-                if (!popup.GetComponent<Popup>().triggered)
-                    popup.GetComponent<Popup>().triggered = true;
+                if (popup != null)
+                    if (!popup.GetComponent<Popup>().triggered)
+                        popup.GetComponent<Popup>().triggered = true;
                 StartCoroutine(FlipSwitch());
             }
         }
