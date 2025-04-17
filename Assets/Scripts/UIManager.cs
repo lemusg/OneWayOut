@@ -45,7 +45,9 @@ public class UIManager : MonoBehaviour
     public GameObject clues;
     public TextMeshProUGUI dialogue;
     public TextMeshProUGUI skipText;
-    private TextMeshProUGUI resetText;  // Changed to private since we'll find it via transform
+    private TextMeshProUGUI resetText;
+    [SerializeField] private GameObject resetIcon; // Changed to SerializeField to assign in inspector
+    
     private bool isTyping = false;
     private Coroutine typingCoroutine;
     private string fullText;
@@ -75,11 +77,27 @@ public class UIManager : MonoBehaviour
         gameUI.SetActive(true);
         menuUI.SetActive(false);
         
-        // Find the reset text component
-        resetText = transform.Find("ResetText")?.GetComponent<TextMeshProUGUI>();
+        // Initialize reset UI elements
+        if (resetIcon == null) resetIcon = transform.Find("ResetIcon")?.gameObject;
+        if (resetText == null) resetText = transform.Find("ResetText")?.GetComponent<TextMeshProUGUI>();
+        
+        // Ensure reset UI is properly initialized
+        if (resetIcon != null) 
+        {
+            resetIcon.SetActive(true); // Changed to true to show it constantly
+        }
+        else
+        {
+            Debug.LogWarning("Reset Icon not assigned in UIManager. Please assign it in the Inspector.");
+        }
+        
         if (resetText != null)
         {
             resetText.text = "Reset Room";
+        }
+        else
+        {
+            Debug.LogWarning("Reset Text not found in UIManager.");
         }
         
         menuButton.onClick.AddListener(() => {
@@ -102,10 +120,12 @@ public class UIManager : MonoBehaviour
             SkipTyping();
         }
 
-        // Handle room reset
+        // Handle room reset with visual feedback
         if (Input.GetKeyDown(KeyCode.R))
         {
+            if (resetText != null) resetText.text = "Resetting...";
             boxTrigger.ResetRoom();
+            StartCoroutine(ResetText());
         }
     }
 
@@ -305,5 +325,11 @@ public class UIManager : MonoBehaviour
         else if(clueCollected){
             tooltip.SetActive(true);
         }
+    }
+
+    private IEnumerator ResetText()
+    {
+        yield return new WaitForSeconds(1.0f);
+        if (resetText != null) resetText.text = "Reset Room";
     }
 }
