@@ -19,6 +19,8 @@ public class LightTile : MonoBehaviour
     public GameObject door;
     public GameObject popup;
 
+    [Header("Audio")]
+    public AudioClip toggleSound;
     public AudioClip win;
     private AudioSource audioSource;
 
@@ -26,6 +28,8 @@ public class LightTile : MonoBehaviour
     {
         GetComponent<MeshRenderer>().material = unlitMaterial;
         audioSource = gameObject.AddComponent<AudioSource>();
+        audioSource.spatialBlend = 1f;
+        audioSource.volume = 1.0f;
     }
 
     void Update()
@@ -43,6 +47,11 @@ public class LightTile : MonoBehaviour
     {
         isLit = !isLit;
         GetComponent<MeshRenderer>().material = isLit ? litMaterial : unlitMaterial;
+        
+        if (toggleSound != null)
+        {
+            audioSource.PlayOneShot(toggleSound, 6.0f);
+        }
         
         if (shouldBeLit)
         {

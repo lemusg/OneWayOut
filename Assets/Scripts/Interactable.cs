@@ -14,6 +14,7 @@ public class Interactable : MonoBehaviour
     public string dialogueText;
     private bool isInteractable = false;
     public bool isPaper = false;
+    private bool hasBeenRead = false;
     private UIManager uiManager;
     private SpriteRenderer spriteRenderer;
     
@@ -28,6 +29,17 @@ public class Interactable : MonoBehaviour
         skipText = UI.transform.Find("SkipText")?.GetComponent<TextMeshProUGUI>();
         uiManager = UI.GetComponent<UIManager>();
         spriteRenderer = GetComponent<SpriteRenderer>();
+    }
+
+    private void CleanupUI()
+    {
+        if (dialogueBox != null) dialogueBox.SetActive(false);
+        if (interactIcon != null) interactIcon.SetActive(false);
+        if (dialogue != null) dialogue.text = "";
+        if (interactText != null) interactText.text = "";
+        if (skipText != null) skipText.text = "";
+        if (UI != null) UI.GetComponent<UIManager>().SkipTyping();
+        isInteractable = false;
     }
 
     void Update()
@@ -54,14 +66,19 @@ public class Interactable : MonoBehaviour
                     dialogueBox.SetActive(false);
                     dialogue.text = "";
                     skipText.text = "";
-                    interactIcon.SetActive(true);
-                    interactText.text = "Interact";
-
+                    
                     if (isPaper && spriteRenderer != null)
                     {
+                        hasBeenRead = true;
                         uiManager.AddClue(spriteRenderer.sprite, dialogueText);
-                        Destroy(gameObject);
+                        CleanupUI();
                         uiManager.ShowClues();
+                        Destroy(gameObject);
+                    }
+                    else
+                    {
+                        interactIcon.SetActive(true);
+                        interactText.text = "Interact";
                     }
                 }
             }
@@ -88,31 +105,18 @@ public class Interactable : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player"))
         {
-            dialogueBox.SetActive(false);
-            interactIcon.SetActive(false);
-            UI.GetComponent<UIManager>().SkipTyping();
-            dialogue.text = "";
-            interactText.text = "";
-            skipText.text = "";
-            isInteractable = false;
-            if (isPaper)
+            CleanupUI();
+            if (isPaper && hasBeenRead)
             {
                 uiManager.clueCollected = true;
-                Destroy(gameObject);
                 uiManager.ShowClues();
+                Destroy(gameObject);
             }
         }
     }
-    // When interactable becomes inactive, if dialogue still open, close dialogue prompt
-    void OnDisable() {
-        if (dialogueBox != null) {
-            if (dialogueBox.activeSelf == true) {
-                interactIcon.SetActive(false);
-                interactText.text = "";
-                dialogueBox.SetActive(false);
-                dialogue.text = "";
-                skipText.text = "";
-            }
-        }
+
+    void OnDisable()
+    {
+        CleanupUI();
     }
 }

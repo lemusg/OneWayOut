@@ -338,7 +338,8 @@ MonoBehaviour:
   interactIcon: {fileID: 951207123}
   door: {fileID: 427464586}
   popup: {fileID: 1931012927}
-  win: {fileID: 0}
+  toggleSound: {fileID: 8300000, guid: 2a846478e30135e48800cf4bdc5b3586, type: 3}
+  win: {fileID: 8300000, guid: e1fa2e8e32cbaac4eb32fd99dc7d03b2, type: 3}
 --- !u!65 &299195725
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -467,7 +468,8 @@ MonoBehaviour:
   interactIcon: {fileID: 951207123}
   door: {fileID: 427464586}
   popup: {fileID: 1931012927}
-  win: {fileID: 0}
+  toggleSound: {fileID: 8300000, guid: 2a846478e30135e48800cf4bdc5b3586, type: 3}
+  win: {fileID: 8300000, guid: e1fa2e8e32cbaac4eb32fd99dc7d03b2, type: 3}
 --- !u!65 &341291695
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -596,6 +598,7 @@ MonoBehaviour:
   interactIcon: {fileID: 951207123}
   door: {fileID: 427464586}
   popup: {fileID: 1931012927}
+  toggleSound: {fileID: 8300000, guid: 2a846478e30135e48800cf4bdc5b3586, type: 3}
   win: {fileID: 8300000, guid: e1fa2e8e32cbaac4eb32fd99dc7d03b2, type: 3}
 --- !u!65 &376054052
 BoxCollider:
@@ -751,7 +754,8 @@ MonoBehaviour:
   interactIcon: {fileID: 951207123}
   door: {fileID: 427464586}
   popup: {fileID: 1931012927}
-  win: {fileID: 0}
+  toggleSound: {fileID: 8300000, guid: 2a846478e30135e48800cf4bdc5b3586, type: 3}
+  win: {fileID: 8300000, guid: e1fa2e8e32cbaac4eb32fd99dc7d03b2, type: 3}
 --- !u!65 &416616201
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -922,7 +926,8 @@ MonoBehaviour:
   interactIcon: {fileID: 951207123}
   door: {fileID: 427464586}
   popup: {fileID: 1931012927}
-  win: {fileID: 0}
+  toggleSound: {fileID: 8300000, guid: 2a846478e30135e48800cf4bdc5b3586, type: 3}
+  win: {fileID: 8300000, guid: e1fa2e8e32cbaac4eb32fd99dc7d03b2, type: 3}
 --- !u!65 &712052841
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1051,7 +1056,8 @@ MonoBehaviour:
   interactIcon: {fileID: 951207123}
   door: {fileID: 427464586}
   popup: {fileID: 1931012927}
-  win: {fileID: 0}
+  toggleSound: {fileID: 8300000, guid: 2a846478e30135e48800cf4bdc5b3586, type: 3}
+  win: {fileID: 8300000, guid: e1fa2e8e32cbaac4eb32fd99dc7d03b2, type: 3}
 --- !u!65 &761295713
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1260,7 +1266,8 @@ MonoBehaviour:
   interactIcon: {fileID: 951207123}
   door: {fileID: 427464586}
   popup: {fileID: 1931012927}
-  win: {fileID: 0}
+  toggleSound: {fileID: 8300000, guid: 2a846478e30135e48800cf4bdc5b3586, type: 3}
+  win: {fileID: 8300000, guid: e1fa2e8e32cbaac4eb32fd99dc7d03b2, type: 3}
 --- !u!65 &864388416
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1389,7 +1396,8 @@ MonoBehaviour:
   interactIcon: {fileID: 951207123}
   door: {fileID: 427464586}
   popup: {fileID: 1931012927}
-  win: {fileID: 0}
+  toggleSound: {fileID: 8300000, guid: 2a846478e30135e48800cf4bdc5b3586, type: 3}
+  win: {fileID: 8300000, guid: e1fa2e8e32cbaac4eb32fd99dc7d03b2, type: 3}
 --- !u!65 &943604285
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1936,7 +1944,8 @@ MonoBehaviour:
   interactIcon: {fileID: 951207123}
   door: {fileID: 427464586}
   popup: {fileID: 1931012927}
-  win: {fileID: 0}
+  toggleSound: {fileID: 8300000, guid: 2a846478e30135e48800cf4bdc5b3586, type: 3}
+  win: {fileID: 8300000, guid: e1fa2e8e32cbaac4eb32fd99dc7d03b2, type: 3}
 --- !u!65 &2098281993
 BoxCollider:
   m_ObjectHideFlags: 0

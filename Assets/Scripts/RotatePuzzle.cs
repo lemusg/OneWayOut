@@ -24,6 +24,11 @@ public class RotatePuzzle : MonoBehaviour
         correctRotations = 0;  // Reset the counter when scene starts
         objectRenderer = transform.GetChild(0).GetComponent<MeshRenderer>();
         
+        // Ensure beam starts disabled
+        GameObject beam = transform.GetChild(1).gameObject;
+        beam.SetActive(false);
+        isCorrect = false;
+        
         // Setup audio
         audioSource = gameObject.AddComponent<AudioSource>();
         audioSource.playOnAwake = false;

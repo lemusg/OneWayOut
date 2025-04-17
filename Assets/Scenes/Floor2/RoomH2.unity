@@ -447,7 +447,7 @@ GameObject:
   - component: {fileID: 532583035}
   - component: {fileID: 532583034}
   - component: {fileID: 532583033}
-  - component: {fileID: 532583032}
+  - component: {fileID: 532583038}
   m_Layer: 0
   m_Name: GreenStone
   m_TagString: Box
@@ -455,20 +455,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &532583032
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 532583031}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b7cea992da821544cb66e732d5f3c1c5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  pushSound: {fileID: 8300000, guid: cc66971c19612ca44b9a391d0c4c043a, type: 3}
-  pushForce: 2.5
 --- !u!54 &532583033
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -583,6 +569,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &532583038
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 532583031}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c89e00b65d0de0b498a2b35a31ed04c4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pushSound: {fileID: 0}
+  pushForce: 2.5
+  linkedBox: {fileID: 1159128862}
 --- !u!1 &1132794089
 GameObject:
   m_ObjectHideFlags: 0
@@ -690,7 +691,7 @@ GameObject:
   - component: {fileID: 1159128866}
   - component: {fileID: 1159128865}
   - component: {fileID: 1159128864}
-  - component: {fileID: 1159128863}
+  - component: {fileID: 1159128869}
   m_Layer: 0
   m_Name: RedStone
   m_TagString: Box
@@ -698,20 +699,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1159128863
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1159128862}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b7cea992da821544cb66e732d5f3c1c5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  pushSound: {fileID: 8300000, guid: cc66971c19612ca44b9a391d0c4c043a, type: 3}
-  pushForce: 2.5
 --- !u!54 &1159128864
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -826,6 +813,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1159128869
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1159128862}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c89e00b65d0de0b498a2b35a31ed04c4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pushSound: {fileID: 0}
+  pushForce: 2.5
+  linkedBox: {fileID: 1381151563}
 --- !u!1 &1200295830
 GameObject:
   m_ObjectHideFlags: 0
@@ -963,7 +965,7 @@ GameObject:
   - component: {fileID: 1381151567}
   - component: {fileID: 1381151566}
   - component: {fileID: 1381151565}
-  - component: {fileID: 1381151564}
+  - component: {fileID: 1381151570}
   m_Layer: 0
   m_Name: BlueStone
   m_TagString: Box
@@ -971,20 +973,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1381151564
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1381151563}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b7cea992da821544cb66e732d5f3c1c5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  pushSound: {fileID: 8300000, guid: cc66971c19612ca44b9a391d0c4c043a, type: 3}
-  pushForce: 2.5
 --- !u!54 &1381151565
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1099,6 +1087,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
+--- !u!114 &1381151570
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1381151563}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c89e00b65d0de0b498a2b35a31ed04c4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pushSound: {fileID: 0}
+  pushForce: 2.5
+  linkedBox: {fileID: 532583031}
 --- !u!1001 &1421777201
 PrefabInstance:
   m_ObjectHideFlags: 0

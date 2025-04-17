@@ -16,6 +16,6 @@ public class Ladder : MonoBehaviour
     IEnumerator ExitLevel() {
         SceneFader fader = FindObjectOfType<SceneFader>();
         yield return StartCoroutine(fader.FadeOut());
-        SceneManager.LoadScene("Credits");
+        SceneManager.LoadScene("Scenes/Floor2/Level2");
     }
 }

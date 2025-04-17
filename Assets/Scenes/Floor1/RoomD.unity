@@ -247,10 +247,8 @@ MonoBehaviour:
   isInteractable: 0
   interactText: {fileID: 1888369427}
   interactIcon: {fileID: 1674075217}
-  correctMat: {fileID: 2100000, guid: 63955e6228feac34aa5077114c0a6e99, type: 2}
-  incorrectMat: {fileID: 2100000, guid: efbaff4d84b347a4ca58fc3d7d910240, type: 2}
   rotateSound: {fileID: 8300000, guid: cc66971c19612ca44b9a391d0c4c043a, type: 3}
-  win: {fileID: 0}
+  win: {fileID: 8300000, guid: e1fa2e8e32cbaac4eb32fd99dc7d03b2, type: 3}
 --- !u!1 &326921346 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5354337615534564584, guid: e640bee937613674388d75aa53bf8f2e, type: 3}
@@ -512,10 +510,8 @@ MonoBehaviour:
   isInteractable: 0
   interactText: {fileID: 1888369427}
   interactIcon: {fileID: 1674075217}
-  correctMat: {fileID: 2100000, guid: 63955e6228feac34aa5077114c0a6e99, type: 2}
-  incorrectMat: {fileID: 2100000, guid: efbaff4d84b347a4ca58fc3d7d910240, type: 2}
   rotateSound: {fileID: 8300000, guid: cc66971c19612ca44b9a391d0c4c043a, type: 3}
-  win: {fileID: 0}
+  win: {fileID: 8300000, guid: e1fa2e8e32cbaac4eb32fd99dc7d03b2, type: 3}
 --- !u!65 &515444716
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -621,7 +617,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &551816150
 Transform:
   m_ObjectHideFlags: 0
@@ -790,7 +786,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &671417374
 Transform:
   m_ObjectHideFlags: 0
@@ -893,10 +889,8 @@ MonoBehaviour:
   isInteractable: 0
   interactText: {fileID: 1888369427}
   interactIcon: {fileID: 1674075217}
-  correctMat: {fileID: 2100000, guid: 63955e6228feac34aa5077114c0a6e99, type: 2}
-  incorrectMat: {fileID: 2100000, guid: efbaff4d84b347a4ca58fc3d7d910240, type: 2}
   rotateSound: {fileID: 8300000, guid: cc66971c19612ca44b9a391d0c4c043a, type: 3}
-  win: {fileID: 0}
+  win: {fileID: 8300000, guid: e1fa2e8e32cbaac4eb32fd99dc7d03b2, type: 3}
 --- !u!65 &796002989
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1053,8 +1047,6 @@ MonoBehaviour:
   isInteractable: 0
   interactText: {fileID: 1888369427}
   interactIcon: {fileID: 1674075217}
-  correctMat: {fileID: 2100000, guid: 63955e6228feac34aa5077114c0a6e99, type: 2}
-  incorrectMat: {fileID: 2100000, guid: efbaff4d84b347a4ca58fc3d7d910240, type: 2}
   rotateSound: {fileID: 8300000, guid: cc66971c19612ca44b9a391d0c4c043a, type: 3}
   win: {fileID: 8300000, guid: e1fa2e8e32cbaac4eb32fd99dc7d03b2, type: 3}
 --- !u!65 &1357821943
@@ -1162,7 +1154,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1365996365
 Transform:
   m_ObjectHideFlags: 0
@@ -1471,7 +1463,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1855485824
 Transform:
   m_ObjectHideFlags: 0

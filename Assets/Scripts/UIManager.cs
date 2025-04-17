@@ -45,6 +45,7 @@ public class UIManager : MonoBehaviour
     public GameObject clues;
     public TextMeshProUGUI dialogue;
     public TextMeshProUGUI skipText;
+    private TextMeshProUGUI resetText;  // Changed to private since we'll find it via transform
     private bool isTyping = false;
     private Coroutine typingCoroutine;
     private string fullText;
@@ -74,8 +75,14 @@ public class UIManager : MonoBehaviour
         gameUI.SetActive(true);
         menuUI.SetActive(false);
         
+        // Find the reset text component
+        resetText = transform.Find("ResetText")?.GetComponent<TextMeshProUGUI>();
+        if (resetText != null)
+        {
+            resetText.text = "Reset Room";
+        }
+        
         menuButton.onClick.AddListener(() => {
-            Debug.Log("Menu button clicked!");
             Menu();
         });
         returnMenu.onClick.AddListener(ReturnMenu);
@@ -93,6 +100,12 @@ public class UIManager : MonoBehaviour
         if (Input.GetMouseButtonDown(0))
         {
             SkipTyping();
+        }
+
+        // Handle room reset
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+            boxTrigger.ResetRoom();
         }
     }
 
@@ -167,8 +180,8 @@ public class UIManager : MonoBehaviour
             
             // Position the tooltip to the left of the clue
             tooltipRect.localPosition = new Vector3(
-                localPoint.x - tooltipRect.rect.width + 20f,
-                localPoint.y,
+                localPoint.x - tooltipRect.rect.width + 40f,
+                localPoint.y - 20f,
                 0f
             );
         });
