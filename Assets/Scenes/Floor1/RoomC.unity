@@ -709,7 +709,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fd572275af7bd324eaad4e7fec075fcc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogueText: Simon Says?
+  dialogueText: 
   isPaper: 1
 --- !u!1001 &946566969
 PrefabInstance:

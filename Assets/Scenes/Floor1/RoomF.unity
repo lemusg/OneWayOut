@@ -457,7 +457,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fd572275af7bd324eaad4e7fec075fcc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogueText: You're getting kind of close...
+  dialogueText: 
   isPaper: 1
 --- !u!65 &177402930
 BoxCollider:
