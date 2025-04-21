@@ -1,0 +1,74 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Splash.unity
+    guid: 9f8fb13955270d34993f5f53500f9f24
+  - enabled: 1
+    path: Assets/Scenes/Main Menu.unity
+    guid: a5ffd7ab24da108428d1e995887b376e
+  - enabled: 1
+    path: Assets/Scenes/Floor1/RoomA.unity
+    guid: ccde64de80073fc44a0b07872cb9ccc4
+  - enabled: 1
+    path: Assets/Scenes/Floor1/RoomB.unity
+    guid: de7547b69c16cd24abc734b554d48931
+  - enabled: 1
+    path: Assets/Scenes/Floor1/RoomC.unity
+    guid: 793590b3a3f07544aa261786ff40758d
+  - enabled: 1
+    path: Assets/Scenes/Floor1/RoomD.unity
+    guid: 8824d2926934a134c9580d6c2154965f
+  - enabled: 1
+    path: Assets/Scenes/Floor1/RoomE.unity
+    guid: 5d359d58bc7d15b499017c030f059cf0
+  - enabled: 1
+    path: Assets/Scenes/Floor1/RoomF.unity
+    guid: c9e13182f8075b54a9ef575bd92537c2
+  - enabled: 1
+    path: Assets/Scenes/Floor1/RoomG.unity
+    guid: bfa083e5a9c057c4f936454d80676d2f
+  - enabled: 1
+    path: Assets/Scenes/Floor1/RoomH.unity
+    guid: bf87d787395b80b46bb67b095e3a8692
+  - enabled: 1
+    path: Assets/Scenes/Floor1/RoomI.unity
+    guid: 95de376c38c11d14b82cad7563256beb
+  - enabled: 1
+    path: Assets/Scenes/Floor2/Level2.unity
+    guid: 11ce7b20bccdd86438aa670f98cf2ce8
+  - enabled: 1
+    path: Assets/Scenes/Floor2/RoomA2.unity
+    guid: 5533669324dbfd44e9a3bfaf2fc172cb
+  - enabled: 1
+    path: Assets/Scenes/Floor2/RoomB2.unity
+    guid: d38651acd2aa7de4fbe2789e832b8ed1
+  - enabled: 1
+    path: Assets/Scenes/Floor2/RoomC2.unity
+    guid: 23e0bab27de42a24eb756a9dd5c15636
+  - enabled: 1
+    path: Assets/Scenes/Floor2/RoomD2.unity
+    guid: 6707787fda4bfdd4991fee55b21a1fa3
+  - enabled: 1
+    path: Assets/Scenes/Floor2/RoomE2.unity
+    guid: 6e28e860c7978a84fb5ebc751fe4d1a8
+  - enabled: 1
+    path: Assets/Scenes/Floor2/RoomF2.unity
+    guid: ce31ee45263f0564c982404237455551
+  - enabled: 1
+    path: Assets/Scenes/Floor2/RoomG2.unity
+    guid: 171ec0b437f6d694caeb8b553687df76
+  - enabled: 1
+    path: Assets/Scenes/Floor2/RoomH2.unity
+    guid: fc8538d96f13ffc41957f149c1c37697
+  - enabled: 1
+    path: Assets/Scenes/Floor2/RoomI2.unity
+    guid: d1937b2344f838842a95ce80f892bde6
+  - enabled: 1
+    path: Assets/Scenes/Credits.unity
+    guid: a14dd619e981df24aa6d824cab1606da
+  m_configObjects: {}
