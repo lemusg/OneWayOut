@@ -81,7 +81,7 @@ public class Door : MonoBehaviour
         }
         
         //Fade out doorSprite to reveal open door
-        while (elapsedTime < 2f)
+        while (elapsedTime < 1.5f)
         {
             elapsedTime += Time.deltaTime;
             Color color = doorSprite.color;
