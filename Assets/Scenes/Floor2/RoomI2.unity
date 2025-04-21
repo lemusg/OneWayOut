@@ -5380,11 +5380,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 998196757387866831, guid: f3ff2d0ce59fd7045ad2dc120c28caaa, type: 3}
       propertyPath: m_Intensity
-      value: 2
+      value: 3.19
       objectReference: {fileID: 0}
     - target: {fileID: 998196757387866831, guid: f3ff2d0ce59fd7045ad2dc120c28caaa, type: 3}
       propertyPath: m_SpotAngle
-      value: 85
+      value: 77.52
       objectReference: {fileID: 0}
     - target: {fileID: 998196757387866831, guid: f3ff2d0ce59fd7045ad2dc120c28caaa, type: 3}
       propertyPath: m_RenderMode
